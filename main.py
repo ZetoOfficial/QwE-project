@@ -2,7 +2,7 @@ from requests import get as r_get
 from json import loads
 from time import sleep
 from csv import DictWriter
-from schemas import Vacancies, Vacancy, VacancyOut
+from app.schemas import Vacancies, Vacancy
 
 
 def get_vacancy(id: int) -> Vacancy:
@@ -17,8 +17,6 @@ def get_vacancy(id: int) -> Vacancy:
     sleep(0.25)
     with r_get(f"https://api.hh.ru/vacancies/{id}") as req:
         data = loads(req.content.decode())
-        print(f"Вакансия добавлена: {data.get('name')}")
-        print(data.get("salary"))
         return Vacancy.parse_obj(data)
 
 

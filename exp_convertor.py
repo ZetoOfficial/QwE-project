@@ -1,5 +1,5 @@
 from csv import DictReader, DictWriter
-from schemas import Vacancy
+from app.schemas import Vacancy
 
 with open("vacancies2.csv", "r", newline="", encoding="utf-8") as f:
     reader = DictReader(f)

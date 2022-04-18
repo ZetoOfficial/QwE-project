@@ -25,7 +25,7 @@ class Skill(BaseModel):
 
 
 class Vacancy(BaseModel):
-    id: str
+    id: int
     name: str
     area: Optional[Area]
     salary: Optional[Salary]
@@ -33,19 +33,6 @@ class Vacancy(BaseModel):
     description: Optional[str]
     key_skills: Optional[list[Skill]]
     alternate_url: Optional[str]
-
-
-class VacancyOut(Vacancy):
-    """Person model used for serialization."""
-
-    class Config:
-        json_encoders = {
-            "area": lambda a: a.name,
-            "salary": lambda s: (s.start or 0 + s.to or 0) + 80
-            if s.currency == "USD"
-            else s.start or 0 + s.to or 0,
-            "experience": lambda e: e.name,
-        }
 
 
 class Vacancies(BaseModel):
