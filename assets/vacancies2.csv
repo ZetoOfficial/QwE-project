@@ -1,0 +1,619 @@
+id,name,area,salary,experience,cnt_skills,key_skills,alternate_url
+52067341,Lead Fullstack/Backend developer,Москва,800000,6,7,"Node.js, JavaScript, GraphQL, React.js, Microservices, Английский язык, PostgreSQL",https://hh.ru/vacancy/52067341
+54814552,Tech Lead / Architect Backend (Python),Москва,560000,6,4,"Python, AWS, MySQL, NoSQL",https://hh.ru/vacancy/54814552
+48889312,Python backend developer,Москва,500000,6,5,"Python, MongoDB, PostgreSQL, Docker, Креативность",https://hh.ru/vacancy/48889312
+54675463,Senior Backend Developer (Node.js),Санкт-Петербург,480000,6,5,"JavaScript, Node.js, Linux, Работа в команде, Design Patterns",https://hh.ru/vacancy/54675463
+54522888,Backend Python Engineer - to Dubai,Москва,440000,6,5,"Python, Django Framework, Английский язык, AWS, Django",https://hh.ru/vacancy/54522888
+54815816,Senior Kotlin Developer (Backend),Санкт-Петербург,400000,6,9,"Java, Kotlin, PostgreSQL, AWS, Redis, ElasticSearch, CI/CD, code review, load tests",https://hh.ru/vacancy/54815816
+54767526,Back-End Web Developer,Москва,400000,6,7,"Node.js, Linux, Nginx, Английский язык, MySQL, PHP, Laravel",https://hh.ru/vacancy/54767526
+54225848,Tech Lead (Backend / DevOps),Москва,344000,6,5,"Docker, Английский язык, Работа с большим объемом информации, Kubernetes, CI/CD",https://hh.ru/vacancy/54225848
+54165113,Senior Backend Developer (NodeJS),Москва,326000,6,5,"SQL, Redis, ClickHouse, ООП, RabbitMQ",https://hh.ru/vacancy/54165113
+54650390,Node.JS Backend Engineer (Remote),Москва,320000,6,7,"Redis, Английский язык, AWS, Azure, Node.js, Microservice, Английский язык (Upper-Intermediate)",https://hh.ru/vacancy/54650390
+54516352,Senior Backend Developer (Java),Москва,284000,6,8,"Atlassian Jira, Spring Framework, Java, PostgreSQL, MySQL, Apache Maven, Oracle CRM, API",https://hh.ru/vacancy/54516352
+54155791,Ведущий C++ backend разработчик,Москва,275000,6,1,C++,https://hh.ru/vacancy/54155791
+54512128,PHP-Программист (BackEnd),Москва,250000,6,5,"Symfony, MySQL, PHP, Laravel, Git",https://hh.ru/vacancy/54512128
+51316145,Backend Java разработчик,Москва,205000,6,6,"Spring Framework, Git, REST, JDBC, Linux, Jenkins",https://hh.ru/vacancy/51316145
+54732797,"Bitrix разработчик (Frontend / Backend), туристический маркетплейс",Москва,200000,6,7,"1С-Битрикс, Bitrix24, jQuery, PHP, JavaScript, MySQL, HTML",https://hh.ru/vacancy/54732797
+54484129,Backend разработчик (Java / Kotlin),Москва,200000,6,5,"Java, Spring Framework, PostgreSQL, Kotlin, Spring Boot",https://hh.ru/vacancy/54484129
+54484130,Backend разработчик (Java / Kotlin),Санкт-Петербург,200000,6,5,"Java, Spring Framework, PostgreSQL, Kotlin, Spring Boot",https://hh.ru/vacancy/54484130
+54484137,Backend разработчик (Java / Kotlin),Ростов-на-Дону,200000,6,5,"Java, Spring Framework, PostgreSQL, Kotlin, Spring Boot",https://hh.ru/vacancy/54484137
+54484138,Backend разработчик (Java / Kotlin),Ставрополь,200000,6,5,"Java, Spring Framework, PostgreSQL, Kotlin, Spring Boot",https://hh.ru/vacancy/54484138
+54484134,Backend разработчик (Java / Kotlin),Воронеж,200000,6,5,"Java, Spring Framework, PostgreSQL, Kotlin, Spring Boot",https://hh.ru/vacancy/54484134
+54484133,Backend разработчик (Java / Kotlin),Брянск,200000,6,5,"Java, Spring Framework, PostgreSQL, Kotlin, Spring Boot",https://hh.ru/vacancy/54484133
+54484132,Backend разработчик (Java / Kotlin),Белгород,200000,6,5,"Java, Spring Framework, PostgreSQL, Kotlin, Spring Boot",https://hh.ru/vacancy/54484132
+54484135,Backend разработчик (Java / Kotlin),Липецк,200000,6,5,"Java, Spring Framework, PostgreSQL, Kotlin, Spring Boot",https://hh.ru/vacancy/54484135
+54484131,Backend разработчик (Java / Kotlin),Астрахань,200000,6,5,"Java, Spring Framework, PostgreSQL, Kotlin, Spring Boot",https://hh.ru/vacancy/54484131
+54484136,Backend разработчик (Java / Kotlin),Орел,200000,6,5,"Java, Spring Framework, PostgreSQL, Kotlin, Spring Boot",https://hh.ru/vacancy/54484136
+54277642,Team-lead PHP Bitrix Back-end,Москва,200000,6,6,"1С-Битрикс, MySQL, JavaScript, PHP 7.4/8, CSS, jQuery",https://hh.ru/vacancy/54277642
+54740888,Backend-разработчик (Node.js/TypeScript),Москва,200000,6,4,"Node.js, JavaScript, SQL, TypeScript",https://hh.ru/vacancy/54740888
+54815529,Senior QA Automation Engineer (Backend),Санкт-Петербург,180000,6,5,"Тестирование, Atlassian Jira, testrail, Backend, QA Automation",https://hh.ru/vacancy/54815529
+54296103,Senior PHP Developer / Backend разработчик PHP/ Yii2 / Senior,Калининград,180000,6,5,"Redis, MySQL, PHP, Git, Yii2",https://hh.ru/vacancy/54296103
+54415546,Backend Java-разработчик,Ижевск,175000,6,5,"Java, Английский язык, PostgreSQL, Android, Mercurial",https://hh.ru/vacancy/54415546
+54814974,Backend Java Spring Boot Developer,Нижний Новгород,100000,6,6,"Angular, AngularJS, JavaScript, Java, TypeScript, Fluent in English (oral/written)",https://hh.ru/vacancy/54814974
+54814976,Backend Java Spring Boot Developer,Пермь,100000,6,6,"Angular, AngularJS, JavaScript, Java, TypeScript, Fluent in English (oral/written)",https://hh.ru/vacancy/54814976
+54814972,Backend Java Spring Boot Developer,Екатеринбург,100000,6,6,"Angular, AngularJS, JavaScript, Java, TypeScript, Fluent in English (oral/written)",https://hh.ru/vacancy/54814972
+54814979,Backend Java Spring Boot Developer,Ярославль,100000,6,6,"Angular, AngularJS, JavaScript, Java, TypeScript, Fluent in English (oral/written)",https://hh.ru/vacancy/54814979
+54814973,Backend Java Spring Boot Developer,Новосибирск,100000,6,6,"Angular, AngularJS, JavaScript, Java, TypeScript, Fluent in English (oral/written)",https://hh.ru/vacancy/54814973
+54814977,Backend Java Spring Boot Developer,Саратов,100000,6,6,"Angular, AngularJS, JavaScript, Java, TypeScript, Fluent in English (oral/written)",https://hh.ru/vacancy/54814977
+54814975,Backend Java Spring Boot Developer,Омск,100000,6,6,"Angular, AngularJS, JavaScript, Java, TypeScript, Fluent in English (oral/written)",https://hh.ru/vacancy/54814975
+54814978,Backend Java Spring Boot Developer,Томск,100000,6,6,"Angular, AngularJS, JavaScript, Java, TypeScript, Fluent in English (oral/written)",https://hh.ru/vacancy/54814978
+54473248,Архитектор программной системы (backend),Екатеринбург,60000,6,5,"Разработка технических заданий, Средства криптографической защиты информации, Информационная безопасность, Bash, Информационные технологии",https://hh.ru/vacancy/54473248
+54554431,Senior Backend Engineer (Remote),Москва,600000,4,5,"Python, PostgreSQL, Django Framework, Docker, AWS",https://hh.ru/vacancy/54554431
+54554459,Senior Backend Engineer (Remote),Санкт-Петербург,600000,4,5,"Python, PostgreSQL, Django Framework, Docker, AWS",https://hh.ru/vacancy/54554459
+54292079,Middle+/Senior Backend Developer (Node.js),Москва,600000,4,5,"JavaScript, PostgreSQL, Docker, Node.js, MySQL",https://hh.ru/vacancy/54292079
+54378309,Full-stack разработчик (с уклоном в Backend),Москва,500000,4,10,"Мобильные приложения, Web, Node.js, React, Next.js, TypeScrypt, Redux, Frontend, Backend, Безопасность данных",https://hh.ru/vacancy/54378309
+54604105,Software Engineer / Back-End Разработчик .Net Core,Москва,480000,4,11,"Git, C#, ООП, Английский язык, .NET Core, PostgreSQL, Redis, Apache Kafka, Elasticsearch, MS SQL, AWS",https://hh.ru/vacancy/54604105
+54258292,Senior Backend Engineer (Go/PHP),Москва,440000,4,11,"PostgreSQL, Linux, Laravel, PHP, ООП, Go, Fluent English, Teamplayer, API, SOLID, Soft skills",https://hh.ru/vacancy/54258292
+54809788,Senior backend разработчик (Ruby on Rails),Москва,440000,4,6,"GraphQL, Английский язык, Ruby, TypeScript, Ruby On Rails, Backend",https://hh.ru/vacancy/54809788
+54088867,Back-end Developer,Санкт-Петербург,440000,4,5,"Node.js, JavaScript, PostgreSQL, MongoDB, TypeScript",https://hh.ru/vacancy/54088867
+54637835,Backend Team Lead (юнит Smart Money),Москва,415000,4,7,"Teamleading, Development, руководство командой разработчиков, Scrum, PHP, Управление командой, Разработка ПО",https://hh.ru/vacancy/54637835
+54566490,Senior Backend developer (Laravel PHP),Москва,400000,4,12,"MySQL, PHP, Git, Laravel, PHPUnit, Unit Testing, Teamleading, Backend, Паттерны проектирования, Работа в команде, Умение объяснять, Удаленная работа",https://hh.ru/vacancy/54566490
+54620050,Senior Back-end разработчик (Java / Kotlin),Воронеж,400000,4,9,"Java, Kotlin, Postgres, Spring Boot, REST, SQL, Angular, Docker, Английский язык",https://hh.ru/vacancy/54620050
+54605101,Senior Backend Разработчик Node.js (Удаленно),Москва,400000,4,8,"JavaScript, Git, Express.js, Мобильность, Node.js, Backend, PostgreSQL, Express",https://hh.ru/vacancy/54605101
+54279731,Senior Backend (Node.js) Developer/Team lead,Москва,400000,4,9,"Node.js, Typescript, JavaScript, PHP, Git, MySQL, MongoDB, RabbitMQ, Redis",https://hh.ru/vacancy/54279731
+54606827,Backend Developer с опытом разработки на Node.js. Middle +/Senior.,Москва,400000,4,7,"JavaScript, Node.js, TypeScript, Оптимизация кода, REST, Docker, Git",https://hh.ru/vacancy/54606827
+40029324,"C# Lead / Senior разработчик (.net, back-end)",Москва,400000,4,6,".NET Framework, C#, MS SQL, LINQ, .NET Core, ASP.NET Core",https://hh.ru/vacancy/40029324
+54137026,Главный Backend Разработчик,Москва,400000,4,5,"Apache Maven, Spring Framework, Git, Java, Hibernate ORM",https://hh.ru/vacancy/54137026
+54250247,"Back-end разработчик (PHP 7, Symfony 5, PostgreSQL)",Санкт-Петербург,400000,4,4,"Symfony, PHP, RabbitMQ, PostgreSQL",https://hh.ru/vacancy/54250247
+54250246,"Back-end разработчик (PHP 7, Symfony 5, PostgreSQL)",Новосибирск,400000,4,4,"Symfony, PHP, RabbitMQ, PostgreSQL",https://hh.ru/vacancy/54250246
+54250245,"Back-end разработчик (PHP 7, Symfony 5, PostgreSQL)",Омск,400000,4,4,"Symfony, PHP, RabbitMQ, PostgreSQL",https://hh.ru/vacancy/54250245
+53026376,Software Engineer (Backend Node.JS),Москва,380000,4,11,"TypeScript, PostgreSQL, Docker, Node.js, Atlassian Jira, Kubernetes, CI/CD, Биллинг, RabbitMQ, Atlassian Confluence, Gitlab",https://hh.ru/vacancy/53026376
+37790906,Senior Backend разработчик (Go) (to Riga),Москва,380000,4,10,"Golang, Java, C++, MongoDB, Linux, AWS, SCALA, Python, highload, Go",https://hh.ru/vacancy/37790906
+44535853,Senior Backend developer (Go) (remote),Москва,380000,4,10,"Golang, Java, C++, MongoDB, Linux, AWS, SCALA, Python, highload, Go",https://hh.ru/vacancy/44535853
+54485942,Senior Backend Engineer (Kotlin/C++/Python) в Joompay (to Riga),Москва,380000,4,2,"Java, Kotlin",https://hh.ru/vacancy/54485942
+50649647,Go (Golang ) разработчик (Backend)/Senior,Москва,375000,4,5,"Golang, Git, Go, SQL, Linux",https://hh.ru/vacancy/50649647
+54764193,Backend разработчик Ruby on Rails,Москва,360000,4,5,"Ruby 2.7, Ruby on Rails 5, PostgreSQL, Git, Docker",https://hh.ru/vacancy/54764193
+54570526,Senior Backend Developer в Playfair,Москва,350000,4,13,"PostgreSQL, SQL, Docker, Python, Git, .NET Core, .Net 5, ASP .Net Web API, Entity Framework, unit-тесты, BigQuery, Google Kubernetes Engine, NUnit",https://hh.ru/vacancy/54570526
+54724368,Backend разработчик / PHP developer,Москва,350000,4,8,"PHP, Laravel, Slim Framework, PHP7, MongoDB, MySQL, RabbitMQ, CI/CD - Jenkins",https://hh.ru/vacancy/54724368
+45919663,Backend разработчик / PHP developer,Ростов-на-Дону,350000,4,8,"PHP, Laravel, Slim Framework, PHP7, MongoDB, MySQL, RabbitMQ, CI/CD - Jenkins",https://hh.ru/vacancy/45919663
+54653270,Backend Node.js developer (Senior),Санкт-Петербург,350000,4,4,"Node.js, JavaScript, MySQL, Backend",https://hh.ru/vacancy/54653270
+54599536,Senior Backend Developer .NET C#,Москва,350000,4,5,"NoSQL, SaaS, .NET, .NET Core 6, C#",https://hh.ru/vacancy/54599536
+54596502,Senior backend developer (Node.js),Москва,336000,4,7,"Node.js, TypeScript, Docker, ES, Design Patterns, JavaScript, PostgreSQL",https://hh.ru/vacancy/54596502
+54485860,Backend Engineer (Kotlin/C++/Python) в Joompay (to Riga),Москва,330000,4,2,"Java, Kotlin",https://hh.ru/vacancy/54485860
+54831622,Lead Software Engineer Backend,Москва,325000,4,7,".NET Framework, ORM, EF Core, C#, Опыт управления коллективом, gRPC, REST",https://hh.ru/vacancy/54831622
+54117973,Backend Engineer (DBD/DBA),Новосибирск,320000,4,14,"Python, Linux, Erlang, Английский язык, PostgreSQL, REST API, Postgrest, PL/PgSQL, SQL, Stored functions, Views, Indexes, DB clusters, Haskelldb",https://hh.ru/vacancy/54117973
+50484429,Senior Backend Engineer Java,Москва,320000,4,4,"Английский язык, Java, Spring Framework, docker",https://hh.ru/vacancy/50484429
+54118798,Senior Backend Engineer (javascript / node.js),Москва,320000,4,4,"Node.js, Docker, Prototype Js, JavaScript",https://hh.ru/vacancy/54118798
+54554697,ASIC Backend Design Engineer,Москва,320000,4,3,"MS PowerPoint, Verilog HDL, English",https://hh.ru/vacancy/54554697
+54118484,Senior Backend Engineer (js / node.js),Москва,320000,4,4,"Node.js, Docker, REST, JavaScript",https://hh.ru/vacancy/54118484
+54155910,Senior Backend Engineer (Go),Москва,320000,4,5,"SQL, Git, ООП, Docker, REST",https://hh.ru/vacancy/54155910
+45399599,Старший PHP-программист (Senior backend developer),Санкт-Петербург,315000,4,8,"MySQL, Git, ООП, Symfony, PHP7, docker, Memcached, Redis",https://hh.ru/vacancy/45399599
+49902930,Senior Backend developer,Санкт-Петербург,305000,4,3,"Python, SQL, PostgreSQL",https://hh.ru/vacancy/49902930
+54627081,Backend Team Lead,Москва,300000,4,28,"JavaScript, Node.js, MVC, TypeScript, Redis, .NET, C#, HTTP, REST, SOAP, Microservices, RabbitMQ, Docker, XML, XSL, Xsd, JSON, Git, Refactoring, OpenTracing, GitLab, GitLab CI, Shell scripts, ReactJs, Ajax, SPA, WebPack, Babel",https://hh.ru/vacancy/54627081
+54432460,Backend developer SENIOR,Барнаул,300000,4,19,".NET Core, DDD, CI, Vkontakte Api, Office, RPC API, Rest API, SOLID, DRY, KISS, YAGNI, BDUP, Docker, Kubernetes, Helm Charts, Kafka, Rabbit MQ, Azure Service Bus, C#",https://hh.ru/vacancy/54432460
+54819538,Backend developer Senior,Новосибирск,300000,4,19,".NET Core, DDD, CI, Vkontakte Api, Office, RPC API, Rest API, SOLID, DRY, KISS, YAGNI, BDUP, Docker, Kubernetes, Helm Charts, Kafka, Rabbit MQ, Azure Service Bus, C#",https://hh.ru/vacancy/54819538
+54819539,Backend developer Senior,Красноярск,300000,4,19,".NET Core, DDD, CI, Vkontakte Api, Office, RPC API, Rest API, SOLID, DRY, KISS, YAGNI, BDUP, Docker, Kubernetes, Helm Charts, Kafka, Rabbit MQ, Azure Service Bus, C#",https://hh.ru/vacancy/54819539
+54819540,Backend developer Senior,Омск,300000,4,19,".NET Core, DDD, CI, Vkontakte Api, Office, RPC API, Rest API, SOLID, DRY, KISS, YAGNI, BDUP, Docker, Kubernetes, Helm Charts, Kafka, Rabbit MQ, Azure Service Bus, C#",https://hh.ru/vacancy/54819540
+54218061,Python Developer (Backend),Москва,300000,4,8,"Python, Linux, Git, Rest API, Continuous Integration / Continious Delivery, Асинхронное программирование, aiohttp, asyncio",https://hh.ru/vacancy/54218061
+54513536,Senior Backend C#,Москва,300000,4,13,"C#, SQL, ORACLE, RabbitMQ, NHibernate, Git, TDD, DDD, NET 5.0, Oracle Pl/SQL, JetBrains, Rider, GraphQL",https://hh.ru/vacancy/54513536
+54660306,Senior Backend Developer Work From Home,Москва,300000,4,5,"Английский язык, .NET Framework, rider, Multithread Programming, socket programing",https://hh.ru/vacancy/54660306
+52161496,Программист Backend Golang (Middle+ или Senior),Москва,300000,4,7,"Git, SQL, Redmine, ООП, Google API, Машинное обучение, Golang",https://hh.ru/vacancy/52161496
+54589895,Python разработчик (senior) (backend) / Backend Team lead,Москва,300000,4,6,"Python, Django Framework, PostgreSQL, Linux, SQL, golang",https://hh.ru/vacancy/54589895
+54157444,Backend Node.js Developer,Санкт-Петербург,300000,4,5,"Node.js, TypeScript, SQL, Blockchain, Удаленная работа",https://hh.ru/vacancy/54157444
+54556313,Backend Engineer (Node.js + AWS),Москва,300000,4,6,"Node.js, JavaScript, MongoDB, CSS, HTML, AWS",https://hh.ru/vacancy/54556313
+54411761,Senior Back-end разработчик (GO),Санкт-Петербург,300000,4,6,"Git, ООП, Golang, Docker, Kubernetes, Kafka",https://hh.ru/vacancy/54411761
+49142760,Back-end разработчик / PHP Developer,Москва,300000,4,6,"Git, PHP, PostgreSQL, Redis, MongoDB, PHP7",https://hh.ru/vacancy/49142760
+54594674,Middle/Senior Backend Developer (Node.js),Москва,300000,4,4,"JavaScript, Node.js, Typescript, Nest.js",https://hh.ru/vacancy/54594674
+54663416,Backend Developer PHP,Москва,300000,4,6,"PHP, Symfony, Git, PostgreSQL, ООП, Go",https://hh.ru/vacancy/54663416
+48475287,PHP - разработчик (Backend),Москва,300000,4,6,"PHP5, UX, Git, ООП, SQL, MySQL",https://hh.ru/vacancy/48475287
+54367079,Разработчик Kotlin back-end,Краснодар,300000,4,4,"Java, Kotlin, SQL, Kafka",https://hh.ru/vacancy/54367079
+50507176,Senior Backend Developer (удаленно),Пермь,295000,4,11,"Git, C#, LINQ, Docker, ASP.NET, .NET Core, MySQL, CI/CD, MS Visual Studio, ООП, .NET Framework",https://hh.ru/vacancy/50507176
+50507350,Senior Backend Developer (удаленно),Казань,295000,4,11,"Git, C#, LINQ, Docker, ASP.NET, .NET Core, ООП, MySQL, ASP.NET Core, CI/CD, MS Visual Studio",https://hh.ru/vacancy/50507350
+50507071,Senior Backend Developer (удаленно),Ростов-на-Дону,295000,4,10,"Git, C#, LINQ, Docker, ASP.NET, CI/CD, .NET Core, MySQL, TeamCity, Microsoft Visual Studio",https://hh.ru/vacancy/50507071
+48001931,Senior Backend Developer,Санкт-Петербург,295000,4,10,"Git, C#, LINQ, Docker, ASP.NET, SQL, REST, ООП, Kubernetes, Redis",https://hh.ru/vacancy/48001931
+52682962,Senior .NET Backend Developer,Санкт-Петербург,285000,4,14,"Git, Redis, Docker, C#, RabbitMQ, .NET Framework, .NET Core, MySQL, MongoDB, ASP.NET, MS Visual Studio, SQL, ООП, CI/CD",https://hh.ru/vacancy/52682962
+47211682,Senior .NET Backend Developer (CRM-система),Санкт-Петербург,285000,4,11,"Git, C#, RabbitMQ, Docker, .NET Core, Kafka, Visual Studio C#, MongoDB, YouTrack, CI/CD, Kibana",https://hh.ru/vacancy/47211682
+54278842,Инженер-разработчик (.NET/C#) / Regular developer / бекенд-разработчик,Санкт-Петербург,280000,4,11,"С#, Web API, EntityFramework, PostgreSQL, MongoDB, RabbitMQ, MassTransit, Docker, .NET Core, Graylog, Zabbix",https://hh.ru/vacancy/54278842
+54278841,Инженер-разработчик (.NET/C#) / Regular developer / бекенд-разработчик,Москва,280000,4,11,"С#, Web API, EntityFramework, PostgreSQL, MongoDB, RabbitMQ, MassTransit, Docker, .NET Core, Graylog, Zabbix",https://hh.ru/vacancy/54278841
+54278844,Инженер-разработчик (.NET/C#) / Regular developer / бекенд-разработчик,Казань,280000,4,11,"С#, Web API, EntityFramework, PostgreSQL, MongoDB, RabbitMQ, MassTransit, Docker, .NET Core, Graylog, Zabbix",https://hh.ru/vacancy/54278844
+54278843,Инженер-разработчик (.NET/C#) / Regular developer / бекенд-разработчик,Калининград,280000,4,11,"С#, Web API, EntityFramework, PostgreSQL, MongoDB, RabbitMQ, MassTransit, Docker, .NET Core, Graylog, Zabbix",https://hh.ru/vacancy/54278843
+53588375,Backend Developer (.NET and .NET Core),Москва,280000,4,7,".NET Core, Английский язык, C#, .Net, MS SQL, Docker, Microservice architecture",https://hh.ru/vacancy/53588375
+54259172,Backend Developer (.NET and .NET Core),Санкт-Петербург,280000,4,7,".NET Core, Английский язык, C#, .Net, MS SQL, Docker, Microservice architecture",https://hh.ru/vacancy/54259172
+54259174,Backend Developer (.NET and .NET Core),Нижний Новгород,280000,4,7,".NET Core, Английский язык, C#, .Net, MS SQL, Docker, Microservice architecture",https://hh.ru/vacancy/54259174
+54259173,Backend Developer (.NET and .NET Core),Новосибирск,280000,4,7,".NET Core, Английский язык, C#, .Net, MS SQL, Docker, Microservice architecture",https://hh.ru/vacancy/54259173
+54259175,Backend Developer (.NET and .NET Core),Самара,280000,4,7,".NET Core, Английский язык, C#, .Net, MS SQL, Docker, Microservice architecture",https://hh.ru/vacancy/54259175
+54620769,Backend developer (Ruby),Москва,280000,4,6,"Ruby, Node.js, ООП, Fluent English, Ruby On Rails, DRY",https://hh.ru/vacancy/54620769
+52614397,Senior .NET Backend Developer,Москва,280000,4,6,"Git, Redis, Docker, C#, RabbitMQ, .NET 5.0",https://hh.ru/vacancy/52614397
+50627855,"Senior .NET Backend Developer (CRM-система, удаленно)",Нижний Новгород,280000,4,3,"C#, .NET Framework, .NET Core",https://hh.ru/vacancy/50627855
+54637080,Senior PHP Backend Developer,Москва,280000,4,5,"MySQL, PHP, SQL, API, Laravel",https://hh.ru/vacancy/54637080
+50630139,"Senior .NET Backend Developer (CRM-система), удаленно",Уфа,280000,4,2,"C#, .NET Core",https://hh.ru/vacancy/50630139
+54437032,Middle / Senior Разработчик Back-End Java / BigData,Москва,275000,4,11,"Java, Spring Framework, Grails, Hibernate ORM, Vert.X, Java EE, Clickhouse, REST, Web Application Development, Docker, Kubernetes",https://hh.ru/vacancy/54437032
+50775604,Senior backend developer,Новосибирск,275000,4,10,"MySQL, Node.js, PostgreSQL, Английский язык, PHP, RabbitMQ, TDD, Elasticsearch, Gitlab, Linux",https://hh.ru/vacancy/50775604
+54251390,Backend PHP developer,Санкт-Петербург,275000,4,5,"MySQL, PostgreSQL, PHP, Laravel, Symfony",https://hh.ru/vacancy/54251390
+54244769,Senior разработчик PHP (backend),Москва,275000,4,5,"Git, ООП, PHP, SQL, MySQL",https://hh.ru/vacancy/54244769
+54523959,Senior backend engineer,Москва,275000,4,1,Python,https://hh.ru/vacancy/54523959
+52998021,Senior Backend developer (Symfony PHP),Калининград,270000,4,8,"Symfony, Git, Linux, MySQL, PHP, ООП, Redis, MongoDB",https://hh.ru/vacancy/52998021
+54294587,Senior backend developer,Нижний Новгород,265000,4,3,"JavaScript, Python, C++",https://hh.ru/vacancy/54294587
+54815755,Middle Kotlin Developer (Backend),Санкт-Петербург,260000,4,11,"Java, Kotlin, PostgreSQL, Docker, AWS, Redis, code review, CI/CD, unit, integration, load tests",https://hh.ru/vacancy/54815755
+54115316,Разработчик ETL/Backend на Python Middle,Москва,260000,4,9,"Python, PostgreSQL, SQL, SQLAlchemy, Pandas, Numpy, Pytest, Plotly Dash, Docker",https://hh.ru/vacancy/54115316
+54241150,"Senior backend PHP developer / PHP разработчик, удалённо",Москва,260000,4,7,"PHP, MySQL, Linux, Git, Design Patterns, Unit Testing, RESTful API",https://hh.ru/vacancy/54241150
+54352347,Senior backend developer PHP (Symfony) / Старший разработчик PHP,Москва,260000,4,7,"SQL, PostgreSQL, Symfony, RabbitMQ, CQRS, REST, PHP7",https://hh.ru/vacancy/54352347
+54352348,Senior backend developer PHP (Symfony) / Старший разработчик PHP,Санкт-Петербург,260000,4,7,"SQL, PostgreSQL, Symfony, RabbitMQ, CQRS, REST, PHP7",https://hh.ru/vacancy/54352348
+54352349,Senior backend developer PHP (Symfony) / Старший разработчик PHP,Новосибирск,260000,4,7,"SQL, PostgreSQL, Symfony, RabbitMQ, CQRS, REST, PHP7",https://hh.ru/vacancy/54352349
+54790578,"Backend developer (Python, Go)",Санкт-Петербург,260000,4,2,"Python, Go",https://hh.ru/vacancy/54790578
+54790579,"Backend developer (Python, Go)",Воронеж,260000,4,2,"Python, Go",https://hh.ru/vacancy/54790579
+54287128,"Middle+ Backend Developer (PHP, Symphony)",Москва,258000,4,5,"Symfony, PHP, Codeception, Docker, MySQL",https://hh.ru/vacancy/54287128
+54326636,"Middle+ Backend Developer (PHP, Symphony)",Москва,258000,4,5,"Symfony, Codeception, PHP, Docker, ООП",https://hh.ru/vacancy/54326636
+54543863,Java Backend Developer,Санкт-Петербург,250000,4,13,"Java, Spring Framework, Git, ООП, REST, Apache Maven, SQL, PostgreSQL, Разработка нового продукта, Apache Kafka, Elasticsearch, MySQL, Hibernate ORM",https://hh.ru/vacancy/54543863
+54831652,Backend Developer (Senior),Москва,250000,4,14,"Английский язык, SaaS, PostgreSQL, Node.js, Typescript, NestJS, Python, FastAPI, SQLAchemy, Domain Driven Design, Flask, DDD, Backend, REST API",https://hh.ru/vacancy/54831652
+52476505,Java middle backend teamlead,Челябинск,250000,4,11,"Java, HighLoad, Spring Framework, MySQL, Паттерны проектирования, Hibernate ORM, liquibase, ClickHouse, MongoDB, RabbitMQ, Apache Maven",https://hh.ru/vacancy/52476505
+54550458,Backend-разработчик,Тверь,250000,4,13,"Hibernate ORM, Java, Spring Framework, Git, PostgreSQL, Unit Testing, Intellij IDEA, Linux, Java SE, ООП, Docker, Hazelcast, RabbitMQ",https://hh.ru/vacancy/54550458
+54514186,"Backend-разработчик NodeJS, TypeScript Senior",Кемерово,250000,4,10,"Git, Linux, Node.js, JavaScript, PostgreSQL, Планирование, Удаленная работа, GitHub Actions, Telegraf, socket.io",https://hh.ru/vacancy/54514186
+54818731,"Backend-разработчик NodeJS, TypeScript Senior",Москва,250000,4,10,"Git, Linux, Node.js, JavaScript, PostgreSQL, Планирование, Удаленная работа, GitHub Actions, Telegraf, socket.io",https://hh.ru/vacancy/54818731
+54818732,"Backend-разработчик NodeJS, TypeScript Senior",Санкт-Петербург,250000,4,10,"Git, Linux, Node.js, JavaScript, PostgreSQL, Планирование, Удаленная работа, GitHub Actions, Telegraf, socket.io",https://hh.ru/vacancy/54818732
+54818734,"Backend-разработчик NodeJS, TypeScript Senior",Новосибирск,250000,4,10,"Git, Linux, Node.js, JavaScript, PostgreSQL, Планирование, Удаленная работа, GitHub Actions, Telegraf, socket.io",https://hh.ru/vacancy/54818734
+54818735,"Backend-разработчик NodeJS, TypeScript Senior",Красноярск,250000,4,10,"Git, Linux, Node.js, JavaScript, PostgreSQL, Планирование, Удаленная работа, GitHub Actions, Telegraf, socket.io",https://hh.ru/vacancy/54818735
+54818733,"Backend-разработчик NodeJS, TypeScript Senior",Омск,250000,4,10,"Git, Linux, Node.js, JavaScript, PostgreSQL, Планирование, Удаленная работа, GitHub Actions, Telegraf, socket.io",https://hh.ru/vacancy/54818733
+54818730,"Backend-разработчик NodeJS, TypeScript Senior",Барнаул,250000,4,10,"Git, Linux, Node.js, JavaScript, PostgreSQL, Планирование, Удаленная работа, GitHub Actions, Telegraf, socket.io",https://hh.ru/vacancy/54818730
+54002752,Senior .Net Backend Developer,Санкт-Петербург,250000,4,9,"C#, MS SQL, MongoDB, RabbitMQ, Scrum, Teamleading, CI/CD, Разработка нового продукта, Agile Project Management",https://hh.ru/vacancy/54002752
+54286830,Senior Backend Developer / Ведущий разработчик Node.js,Москва,250000,4,9,"Node.js, PostgreSQL, Спортивные мероприятия, Linux, Docker, CI/CD, unit-тесты, ES6, JavaScript",https://hh.ru/vacancy/54286830
+54829087,Teamlead Backend- разработчик (node.js),Москва,250000,4,5,"SQL, MongoDB, Cистемы управления базами данных, Планирование карьеры, Microsoft Access",https://hh.ru/vacancy/54829087
+54556577,Backend-разработчик (Clojure),Москва,250000,4,8,"Git, Clojure, MongoDB, Java, Проектирование баз данных, API, Redis, Compojure",https://hh.ru/vacancy/54556577
+54563184,Java-разработчик (Backend Developer) middle+ / senior,Москва,250000,4,9,"PostgreSQL, SQL, Git, Java, SaaS, JSON, RabbitMQ, REST API, Unit Testing",https://hh.ru/vacancy/54563184
+52243457,Разработчик Бэк-энд системы CDP (Java),Москва,250000,4,8,"Java, СУБД, Unix, JavaScript, HTTP, MS SQL, Python, Jenkins",https://hh.ru/vacancy/52243457
+54522552,Java backend developer,Москва,250000,4,5,"Spring Framework, Hibernate ORM, Java, Apache Maven, Docker",https://hh.ru/vacancy/54522552
+51970350,"Старший backend-разработчик (С++, Java, Python)",Москва,250000,4,5,"1С программирование, Git, Scrum, DevOps, 1С: Предприятие 8",https://hh.ru/vacancy/51970350
+54167020,PHP Backend разработчик (Middle/Middle+),Волгоград,250000,4,8,"PHP, MySQL, ООП, Redis, PostgreSQL, Symfony, Laravel, Yii2",https://hh.ru/vacancy/54167020
+54355292,"Python разработчик/Backend-Developer Python (middle, Удаленно)",Москва,250000,4,5,"Git, Python, Английский язык, SQL, Управление проектами",https://hh.ru/vacancy/54355292
+54210221,Backend-разработчик NodeJS (TypeScript) (Lead/Senior),Москва,250000,4,4,"Linux, Docker, Bash, Администрирование серверов Linux",https://hh.ru/vacancy/54210221
+54851441,"Backend разработчик (PHP, Laravel, MySQL, Redis, Memcached)",Москва,250000,4,5,"AngularJS, MySQL, JavaScript, Redis, PHP",https://hh.ru/vacancy/54851441
+54851442,"Backend разработчик (PHP, Laravel, MySQL, Redis, Memcached)",Санкт-Петербург,250000,4,5,"AngularJS, MySQL, JavaScript, Redis, PHP",https://hh.ru/vacancy/54851442
+54851443,"Backend разработчик (PHP, Laravel, MySQL, Redis, Memcached)",Новосибирск,250000,4,5,"AngularJS, MySQL, JavaScript, Redis, PHP",https://hh.ru/vacancy/54851443
+54144437,"Бэкенд-разработчик middle (PHP, Go)",Казань,250000,4,5,"PostgreSQL, PHP, SaaS, Golang, Node.js",https://hh.ru/vacancy/54144437
+54778349,Ведущий Backend Go Lang разработчик,Москва,250000,4,5,"Golang, Git, Go, Docker, Kubernetes",https://hh.ru/vacancy/54778349
+49928175,"Senior Python Backend Developer, команда NLP (MTS AI)",Москва,250000,4,3,"Python, NLP, Microservices",https://hh.ru/vacancy/49928175
+54290782,"Senior Python Backend Developer, чат-бот платформа (MTS AI)",Москва,250000,4,3,"Python, NLP, Backend",https://hh.ru/vacancy/54290782
+53694386,Senior Backend Python/С++ Developer (MTS AI),Москва,250000,4,3,"Python, Docker, C++",https://hh.ru/vacancy/53694386
+49254587,Senior Backend Python/С++ Developer продукт Audiogramm (MTS AI),Москва,250000,4,3,"Python, Docker, C++",https://hh.ru/vacancy/49254587
+54296029,Senior Backend Python Developer платформа видеоаналитики (MTS AI),Москва,250000,4,1,Python,https://hh.ru/vacancy/54296029
+54263149,JavaScript NodeJS E-commerce back-end developer [Remote],Москва,244000,4,14,"JavaScript, Node.js, PostgreSQL, MySQL, NodeJS, MongoDB, Unix, Bash, Design Patterns, NestJS, MedusaJS, Vendure, DevOps, API",https://hh.ru/vacancy/54263149
+48120190,Senior Backend developer в Travel Tech (Python/Ruby),Санкт-Петербург,240000,4,10,"Ruby, Ruby On Rails, Git, JavaScript, HTML, CSS, PostgreSQL, Python, Django Framework, Backend",https://hh.ru/vacancy/48120190
+54662775,"Программист Backend developer GO, Node JS, C++",Москва,240000,4,8,"Golang, Linux, Go, Аналитическое мышление, Планирование карьеры, js, Node.js, C++",https://hh.ru/vacancy/54662775
+54416934,Node.js backend developer (middle+/senior),Москва,240000,4,5,"Node.js, Работа с базами данных, Английский язык, Redis, Креативность",https://hh.ru/vacancy/54416934
+54043666,Backend Node.js Developer,Москва,240000,4,8,"Node.js, MongoDB, Git, PHP, web, CI/CD, JavaScript, TypeScript",https://hh.ru/vacancy/54043666
+53359968,Backend Node Developer,Москва,240000,4,5,"Node.js, JavaScript, Nest.JS, Redis, Git",https://hh.ru/vacancy/53359968
+53360036,Backend Node Developer,Санкт-Петербург,240000,4,5,"Node.js, JavaScript, Nest.JS, Redis, Git",https://hh.ru/vacancy/53360036
+47490126,Senior Backend-разработчик (офис/удаленно),Йошкар-Ола,235000,4,9,"C#, Agile Project Management, Git, JavaScript, MVC, Grasp, SOA, Transact-SQL, .NET 5",https://hh.ru/vacancy/47490126
+53161267,BackEnd разработчик NodeJS Центр HR TECH,Москва,230000,4,12,"JavaScript, Node.js, React, Scrum, TypeScript, Agile Project Management, Git, PostgreSQL, Atlassian Jira, Atlassian Confluence, MobX, MolecularJS",https://hh.ru/vacancy/53161267
+54283806,"Backend-разработчик (JS, NodeJS)",Москва,230000,4,13,"JavaScript, MongoDB, Git, Node.js, Linux, jQuery, ES6-7, elasticsearch, REST, JSDoc, Leaflet.js, GeoServer, Mapbox",https://hh.ru/vacancy/54283806
+53060045,Backend - разработчик (PHP) S/M,Москва,230000,4,6,"Git, Redis, PostgreSQL, Symfony, ООП, PHP",https://hh.ru/vacancy/53060045
+54294841,Мiddle/senior backend-developer,Екатеринбург,227000,4,2,"C++, Python",https://hh.ru/vacancy/54294841
+53952205,Backend разработчик (Стек .net / C#),Москва,225000,4,14,"Git, Less, C#, react, typescript, .NET Framework, JavaScript, HTML, ASP.NET, CSS3, MS SQL, SaaS, RabbitMQ, Redis",https://hh.ru/vacancy/53952205
+54439299,Программист Java/Spring/REST Backend (удалённо),Москва,225000,4,7,"Java, Git, Spring Framework, REST, Spring, ООП, BPMN",https://hh.ru/vacancy/54439299
+54726974,Backend разработчик (node js),Москва,225000,4,5,"JavaScript, Git, Node.js, React, ООП",https://hh.ru/vacancy/54726974
+54587940,Backend Разработчик (Middle/Senior),Москва,225000,4,5,"Laravel, PostgreSQL, PHP, Git, ООП",https://hh.ru/vacancy/54587940
+54744756,Backend-разработчик (Senior),Екатеринбург,225000,4,5,"Git, Yii2, PHP, PostgreSQL, Linux",https://hh.ru/vacancy/54744756
+54244476,Middle разработчик PHP (backend),Москва,225000,4,5,"Git, ООП, PHP, SQL, MySQL",https://hh.ru/vacancy/54244476
+54243498,Backend .NET Core developer (удаленная работа),Москва,225000,4,2,"С#, .NET Core",https://hh.ru/vacancy/54243498
+54830258,"Middle Backend Developer (PHP, Symfony)",Москва,224000,4,6,"SQL, Управление проектами, PHP, Linux, MySQL, Symfony",https://hh.ru/vacancy/54830258
+47901543,Middle BackEnd Developer .Net C# (удаленно),Москва,220000,4,8,"C#, .NET Framework, Английский язык, Scrum, ASP.NET, Core, SQL, NoSQL",https://hh.ru/vacancy/47901543
+54760607,Backend Developer (PHP),Москва,220000,4,9,"MySQL, PHP, Git, Laravel, Redis, REST, SOLID, JavaScript, SQL",https://hh.ru/vacancy/54760607
+54427311,Бэкенд-разработчик (.Net Core),Москва,220000,4,5,"C#, Entity Framework, .NET Framework, .net Core, PostgreSQL",https://hh.ru/vacancy/54427311
+53982396,Middle Javascript Vue UI/UX разработчик с навыками backend (node.js),Москва,215000,4,14,"SQL, PostgreSQL, JavaScript, REST API, vue, openlayers, TypeScript, Анализ данных, Разработка нового продукта, leaflet, mapbox, devextreme, potree, Node.js",https://hh.ru/vacancy/53982396
+53455542,Senior Backend-разработчик (C#),Санкт-Петербург,210000,4,8,"Agile Project Management, C#, SQL, ООП, MVC, TDD, Scrum, .NET 5",https://hh.ru/vacancy/53455542
+42246166,Senior/Advanced senior backend developer,Калуга,205000,4,5,"Python, Git, Linux, Agile Project Management, Spring Framework",https://hh.ru/vacancy/42246166
+54064416,Backend Node.js Developer (Blockchain),Москва,205000,4,5,"Docker, RabbitMQ, Node.js, TypeScript, PostreSQL",https://hh.ru/vacancy/54064416
+52550982,Java backend developer,Екатеринбург,200000,4,7,"Java, backend, Spring Framework, Hibernate ORM, PostgreSQL, REST, Желание работать и зарабатывать",https://hh.ru/vacancy/52550982
+54049347,Ведущий back-end программист (javascript) (удаленно),Москва,200000,4,5,"PostgreSQL, Git, Atlassian Jira, SQL, Работа с жалобами клиентов",https://hh.ru/vacancy/54049347
+54738946,Frontend-разработчик React.JS (TypeScript) и Backend-разработчик C#,Москва,200000,4,5,"Git, Entity Framework, C#, .NET Framework, Английский язык",https://hh.ru/vacancy/54738946
+54206175,Middle Backend Java Developer,Москва,200000,4,8,"POS, Java, ORACLE, Oracle DB, MySQL, XML, Java EE, Java SE",https://hh.ru/vacancy/54206175
+54716430,"Backend-разработчик / PHP / Хайлоад, удаленно",Москва,200000,4,7,"PHP, Symfony, ООП, MySQL, Docker, Click House, Kubernetes",https://hh.ru/vacancy/54716430
+54390172,Middle Backend Developer C# / .NET Core,Санкт-Петербург,200000,4,5,".NET Framework, Entity Framework, C#, Git, ASP.NET",https://hh.ru/vacancy/54390172
+50238288,"Разработчик PHP (Symfony, удаленно) - Senior Backend Developer",Санкт-Петербург,200000,4,7,"Symfony, PHP, JavaScript, ООП, Git, MySQL, Vue.js",https://hh.ru/vacancy/50238288
+50308726,C# разработчик (.net 5/backend),Санкт-Петербург,200000,4,6,"C#, WPF, .NET Framework, MS SQL Server, LINQ, SQL",https://hh.ru/vacancy/50308726
+54684268,Java разработчик / Backend Java Developer (Team Lead),Москва,200000,4,5,"Java, Spring Framework, Git, ООП, Hibernate ORM",https://hh.ru/vacancy/54684268
+53249580,Backend - разработчик (PHP),Барнаул,200000,4,7,"PHP, Git, MySQL, ООП, CSS, JS, Работа в команде",https://hh.ru/vacancy/53249580
+54693441,PHP Backend разработчик (удалённая работа),Москва,200000,4,6,"SQL, MySQL, ClickHouse, PHPUnit, API, Backend",https://hh.ru/vacancy/54693441
+53981607,"PHP-разработчик (Senior, Middle,Backend)",Нижний Новгород,200000,4,5,"Git, Yii, JavaScript, MySQL, PostgreSQL",https://hh.ru/vacancy/53981607
+54853840,Backend Developer (Golang),Москва,200000,4,5,"Goland, Java, JavaScript, Linux, Vue",https://hh.ru/vacancy/54853840
+54462505,Senior Backend Developer C#,Оренбург,200000,4,3,"C#, микросервисы, ASP.NET Core",https://hh.ru/vacancy/54462505
+48877821,Backend Developer,Воронеж,190000,4,8,"Agile Project Management, Scrum, .NET Core, Аналитическое мышление, Kanban, С#, PostgreSQL, RabbitMQ",https://hh.ru/vacancy/48877821
+53701203,Разработчик Python (backend),Москва,185000,4,8,"Python, Git, SQL, PostgreSQL, GDAL, Django, SOAP, XML",https://hh.ru/vacancy/53701203
+44512428,Senior Backend Разработчик,Тольятти,184000,4,13,"Git, MySQL, SQL, Английский язык, PostgreSQL, PHP, Docker, Elasticsearch, Kafka, Symfony, Swagger, Blackfire, Codeception",https://hh.ru/vacancy/44512428
+50848416,Middle/Senior Backend разработчик (Node.JS),Новосибирск,180000,4,14,"Node.js, MySQL, Git, Nginx, PostgreSQL, MongoDB, Linux, RabbitMQ, API, Next.js, TypeScript, WebSocket, Express.js, Socket.io",https://hh.ru/vacancy/50848416
+54323804,Бэкенд-разработчик (senior/middle PHP developer),Москва,180000,4,6,"PHP, Symfony, Умение работать в команде и самостоятельно, Удаленная работа, PostgreSQL, MySQL",https://hh.ru/vacancy/54323804
+52552887,.NET/C# backend developer,Екатеринбург,180000,4,6,"ASP.NET, C#, .NET Framework, Entity Framework, PostgreSQL, .NET Core",https://hh.ru/vacancy/52552887
+52889764,C# .Net Backend Developer,Москва,180000,4,8,"C#, Redis, .NET Framework, SQL, NoSQL, MongoDB, dotnet core, docker",https://hh.ru/vacancy/52889764
+33820561,Backend-разработчик PHP (Middle),Владивосток,180000,4,4,"MySQL, ООП, PHP, Веб-программирование",https://hh.ru/vacancy/33820561
+54564067,Backend PHP/ Backend Go Lead Developer,Москва,180000,4,5,"ООП, Git, PHP, Laravel, MVC",https://hh.ru/vacancy/54564067
+54766266,Программист PHP (бэкенд),Москва,175000,4,7,"Git, MySQL, VueJS, Bitrix, Elasticsearch, Фреймворки, Умение работать в условиях многозадачности",https://hh.ru/vacancy/54766266
+54653123,Backend-разработчик,Москва,175000,4,9,"PHP, MySQL, Laravel, JavaScript, HTML, CSS, Git, OOП, Scrum",https://hh.ru/vacancy/54653123
+54750863,"PHP-программист (Yii2, Backend Middle)",Москва,175000,4,5,"Git, ООП, PHP, Redis, PostgreSQL",https://hh.ru/vacancy/54750863
+54480706,Node.js Backend Developer,Санкт-Петербург,175000,4,4,"Node.js, MongoDB, Redis, Kafka",https://hh.ru/vacancy/54480706
+53824691,Web-разработчик (Back End),Москва,170000,4,13,"MySQL, Управление проектами, HTML, CMS Bitrix, Laravel, PHP, JavaScript, jQuery, Node.js, React, Percona, Yii, Git",https://hh.ru/vacancy/53824691
+53803434,Руководитель отдела Backend,Томск,170000,4,5,"Управление проектами, Управление персоналом, Управление командой, Ведение переговоров, PHP",https://hh.ru/vacancy/53803434
+54522743,"Разработчик C++ (видео-инфраструктура, backend)",Москва,170000,4,4,"Linux, Git, C++, GNU coreutils",https://hh.ru/vacancy/54522743
+52144927,"PHP-программист (Yii2, Backend Middle)",Москва,165000,4,8,"Git, MySQL, PHP, Redis, JavaScript, yii2, Composer, PSR",https://hh.ru/vacancy/52144927
+54088809,Middle Backend-разработчик,Казань,160000,4,9,"C#, Agile Project Management, Git, JavaScript, MVC, Grasp, SOA, Transact-SQL, .NET 5",https://hh.ru/vacancy/54088809
+54801000,PHP Backend Developer,Санкт-Петербург,160000,4,6,"Git, PostgreSQL, ООП, NoSQL, Backend, PHP",https://hh.ru/vacancy/54801000
+54848473,Middle Backend-разработчик (удаленно),Москва,160000,4,5,"Git, PHP, JavaScript, JSON API, Laravel",https://hh.ru/vacancy/54848473
+54219441,Разработчик JS backend,Москва,160000,4,5,"Node.js, Express, SQL, Git, Linux",https://hh.ru/vacancy/54219441
+47442670,PHP Backend Developer,Санкт-Петербург,155500,4,13,"PHP5, JavaScript, Git, Linux, MySQL, PHP, PHP7, Docker, k8s, kubernetes, Symfony, mssql, sqlserver",https://hh.ru/vacancy/47442670
+41725137,Middle Backend Разработчик,Тольятти,152000,4,13,"Git, MySQL, SQL, Английский язык, PostgreSQL, PHP, Docker, Elasticsearch, Kafka, Symfony, Swagger, Blackfire, Codeception",https://hh.ru/vacancy/41725137
+53052138,Ведущий Backend разработчик,Новосибирск,150000,4,14,"СУБД, ООП, SQL, PostgreSQL, Базы данных, HTML, Web Application Development, BPM, JavaScript, Java, MS SQL, Работа в команде, MySQL, Git",https://hh.ru/vacancy/53052138
+54480526,C# Backend разработчик,Санкт-Петербург,150000,4,11,"C#, .NET Framework, Git, Python, Docker, Tensorflow, PyTorch, AWS, ООП, Машинное обучение, Электронная коммерция",https://hh.ru/vacancy/54480526
+54512257,Back-end разработчик,Ростов-на-Дону,150000,4,11,"Ruby On Rails, Python, JavaScript, Git, Linux, Ruby, MVC, WEB аналитика, Middle, Fintech, Django",https://hh.ru/vacancy/54512257
+54366982,Middle / Senior Backend Web Developer (Laravel / PHP),Самара,150000,4,10,"PHP, JS, CSS3, MySQL, Linux, HTML5, Работа в команде, Laravel, Backend, Docker",https://hh.ru/vacancy/54366982
+54771593,Senior PHP Back-end Developer,Москва,150000,4,9,"Linux, Git, PostgreSQL, PHP, MySQL, Redis, RabbitMQ, Highload, Docker",https://hh.ru/vacancy/54771593
+54766409,Бэкенд PHP Yii2 разработчик,Самара,150000,4,8,"Git, JavaScript, ООП, MySQL, PHP, Yii, Рефакторинг кода, Highload",https://hh.ru/vacancy/54766409
+54617859,.NET Backend / Fullstack разработчик (удаленно),Москва,150000,4,5,".NET Framework, ASP.NET, Entity Framework, C#, JavaScript",https://hh.ru/vacancy/54617859
+50338089,Веб-разработчик (бэкенд),Москва,150000,4,7,"PHP, HTTP, Laravel, ES6/ES7, MySQL, API, 1С-Битрикс",https://hh.ru/vacancy/50338089
+54218584,Middle / Senior Back-end разработчик C# / .NET,Москва,150000,4,7,"ASP.NET, Git, LINQ, C#, NoSQL, PostgreSQL, MongoDB",https://hh.ru/vacancy/54218584
+54460190,Backend Node.js Engineer,Москва,150000,4,5,"PostgreSQL, SQL, Node.js, Базы данных, MS Access",https://hh.ru/vacancy/54460190
+54460191,Backend Node.js Engineer,Новосибирск,150000,4,5,"PostgreSQL, SQL, Node.js, Базы данных, MS Access",https://hh.ru/vacancy/54460191
+54843864,Back-end разработчик,Москва,150000,4,3,"Python, Планирование карьеры, PostgreSQL",https://hh.ru/vacancy/54843864
+54427041,Backend-разработчик,Москва,150000,4,5,"Golang, Git, Python, PostgreSQL, MySQL",https://hh.ru/vacancy/54427041
+54598529,"PHP-разработчик (Middle, Backend)",Нижний Новгород,150000,4,5,"Git, JavaScript, Yii, jQuery, MySQL",https://hh.ru/vacancy/54598529
+54025638,Бэкенд разработчик ASP.NET Core (C# / WebAPI),Пермь,150000,4,5,"Scrum, PostgreSQL, C#, CSS, ORACLE",https://hh.ru/vacancy/54025638
+54582227,Middle Backend разработчик (PHP),Москва,150000,4,6,"Yii, MySQL, Git, PHP, ООП, Linux",https://hh.ru/vacancy/54582227
+54446275,Backend-разработчик (PHP),Москва,150000,4,5,"MySQL, PHP, SQL, Scrum, Sphinx",https://hh.ru/vacancy/54446275
+54517391,Middle Back-end разработчик,Москва,150000,4,5,"Git, ООП, PHP, Laravel, MySQL",https://hh.ru/vacancy/54517391
+54618766,Backend-разработчик (PHP),Москва,150000,4,5,"MySQL, PHP, SQL, Scrum, CSS",https://hh.ru/vacancy/54618766
+54147027,"Middle Back-End Developer (PHP, Symfony)",Москва,145000,4,8,"PHP, Symfony, Docker, Docker-compose, Nginx, MySQL, Linux, (*nix)",https://hh.ru/vacancy/54147027
+54147002,"Middle Back-End Developer (PHP, Symfony)",Санкт-Петербург,145000,4,8,"PHP, Symfony, Docker, Docker-compose, Nginx, MySQL, Linux, (*nix)",https://hh.ru/vacancy/54147002
+54147004,"Middle Back-End Developer (PHP, Symfony)",Казань,145000,4,8,"PHP, Symfony, Docker, Docker-compose, Nginx, MySQL, Linux, (*nix)",https://hh.ru/vacancy/54147004
+54147003,"Middle Back-End Developer (PHP, Symfony)",Новосибирск,145000,4,8,"PHP, Symfony, Docker, Docker-compose, Nginx, MySQL, Linux, (*nix)",https://hh.ru/vacancy/54147003
+54147005,"Middle Back-End Developer (PHP, Symfony)",Иннополис,145000,4,8,"PHP, Symfony, Docker, Docker-compose, Nginx, MySQL, Linux, (*nix)",https://hh.ru/vacancy/54147005
+52537085,Backend developer / Разработчик .NET C# Middle / Senior,Москва,140000,4,14,"MySQL, Базы данных, ClickHouse, MassTransit, PostgreSQL, CI/CD, TDD, DDD, Docker, Kubernetes, C#, MongoDB, Microservices, Git",https://hh.ru/vacancy/52537085
+51965306,Backend developer / Разработчик .NET C# Middle / Senior,Нижний Новгород,140000,4,14,"MySQL, Базы данных, ClickHouse, MassTransit, PostgreSQL, CI/CD, TDD, DDD, Docker, Kubernetes, C#, MongoDB, Microservices, Git",https://hh.ru/vacancy/51965306
+54662562,Backend разработчик PHP,Москва,140000,4,9,"PHP, Laravel, ООП, Английский язык, MySQL, Git, API, Творческое мышление, Symfony",https://hh.ru/vacancy/54662562
+53627111,Backend-разработчик Java,Санкт-Петербург,135000,4,8,"Java, SQL, ООП, Spring Framework, Spring Boot, NoSQL, REST, Cuba Platform\Jmix",https://hh.ru/vacancy/53627111
+54469997,Middle Backend developer (Symfony),Москва,130000,4,9,"Symfony, PHP, MySQL, API, Elasticsearch, Удаленная работа, Bitbucket, Стабильность, Паттерны проектирования",https://hh.ru/vacancy/54469997
+53805468,Middle Backend developer,Воронеж,130000,4,9,"JavaScript, TypeScript, Node.js, React JS, SQL, PostgreSQL, RestAPI, Git, ECMAScript 6",https://hh.ru/vacancy/53805468
+54329526,Программист 1-С Битрикс | Разработчик Bitrix | Backend разработчик,Москва,130000,4,9,"JavaScript, jQuery, PHP, 1С-Битрикс, Ajax, Bitrix, Framework, MySQL, PHP7",https://hh.ru/vacancy/54329526
+41095804,"Бэк-энд разработчик (Python, SQL)",Москва,130000,4,6,"Python, Git, Linux, SQL, PostgreSQL, Docker",https://hh.ru/vacancy/41095804
+54571855,Backend-разработчик (Node.JS),Санкт-Петербург,130000,4,5,"Git, PostgreSQL, TypeScript, Node.js, Redis",https://hh.ru/vacancy/54571855
+54234238,Middle/Senior Backend C# developer,Новосибирск,130000,4,5,"Git, ООП, C#, ASP.NET, .NET Framework",https://hh.ru/vacancy/54234238
+54566235,Back-end/PHP/Bitrix разработчик,Москва,125000,4,13,"PHP, MySQL, Ajax, CSS3, Unix, HTML, HTML5, 1С-Битрикс, Разработка CMS, API, Системная интеграция, JavaScript, PHP5",https://hh.ru/vacancy/54566235
+53854560,Backend-разработчик PHP (Middle),Екатеринбург,125000,4,13,"JavaScript, MySQL, Yii, Laravel, Docker, Docker Compose, HTML, CSS, PHP7, ООП, Node.js, Dart, Работа в команде",https://hh.ru/vacancy/53854560
+54372538,Back-End Web Developer (php),Тюмень,125000,4,13,"JavaScript, jQuery, Git, PHP5, HTML, PHP, 1С-Битрикс, ООП, CSS, laravel, Symfony, Ubuntu Server, php7",https://hh.ru/vacancy/54372538
+54450653,BackEnd JS Developer,Ростов-на-Дону,125000,4,8,"Node.js, Express, PostgreSQL, Redis, Jest, Написание тестов, Удаленная работа, Проектная работа",https://hh.ru/vacancy/54450653
+46821180,Middle Backend разработчик Java,Калуга,125000,4,4,"Java, Spring Framework, Hibernate ORM, Spring Boot",https://hh.ru/vacancy/46821180
+54384250,Back-End Developer,Краснодар,120000,4,10,"C#, ООП, MS SQL, Git, Linux, MS Visual Studio, MS SQL Server, Управление проектами, SQL, .NET Framework",https://hh.ru/vacancy/54384250
+53364201,Backend-разработчик (удаленно),Санкт-Петербург,120000,4,8,"CRM, PHP, Битрикс 24, 1С-Битрикс, Битрикс24, Веб-программирование, ООП, JS",https://hh.ru/vacancy/53364201
+50101171,Middle/Senior PHP developer (backend),Новосибирск,120000,4,10,"PHP, MySQL, laravel, Yii, Backend, PostgreSQL, Git, Redis, REST, Vue js",https://hh.ru/vacancy/50101171
+54431951,Back-end веб-разработчик,Тюмень,120000,4,6,"C#, ASP.NET, MS SQL, .NET Framework, PostgreSQL, SQL",https://hh.ru/vacancy/54431951
+54431952,Back-end веб-разработчик,Сургут,120000,4,6,"C#, ASP.NET, MS SQL, .NET Framework, PostgreSQL, SQL",https://hh.ru/vacancy/54431952
+54500855,Backend Developer / Разработчик,Новосибирск,115000,4,9,"Python, PHP, JavaScript, Laravel, Vue.js, Работа в команде, Многозадачность, Умение адаптироваться, Желание развиваться и обучаться",https://hh.ru/vacancy/54500855
+54120924,Backend-разработчик PHP Yii2,Москва,115000,4,5,"ООП, Yii, PHP, MySQL, Nginx",https://hh.ru/vacancy/54120924
+54199900,Backend-разработчик,Санкт-Петербург,110000,4,3,"Java, Spring Framework, Hibernate ORM",https://hh.ru/vacancy/54199900
+54661809,Backend разработчик,Саратов,107500,4,9,"ООП, REST, SQL, MVC, Yii, PHP, REST API, API, Git",https://hh.ru/vacancy/54661809
+54762473,Backend / Fullstack разработчик Kotlin / Java,Нижний Новгород,105000,4,11,"Kotlin, Java, Базы данных, Spring, Exposed, SQL, Intellij IDEA, Git, Gradle, HTTP, HTTPS",https://hh.ru/vacancy/54762473
+54762474,Backend / Fullstack разработчик Kotlin / Java,Самара,105000,4,11,"Kotlin, Java, Базы данных, Spring, Exposed, SQL, Intellij IDEA, Git, Gradle, HTTP, HTTPS",https://hh.ru/vacancy/54762474
+54762475,Backend / Fullstack разработчик Kotlin / Java,Волгоград,105000,4,11,"Kotlin, Java, Базы данных, Spring, Exposed, SQL, Intellij IDEA, Git, Gradle, HTTP, HTTPS",https://hh.ru/vacancy/54762475
+50602586,Backend / Fullstack разработчик Kotlin / Java,Ростов-на-Дону,105000,4,11,"Kotlin, Java, Базы данных, Spring, Exposed, SQL, Intellij IDEA, Git, Gradle, HTTP, HTTPS",https://hh.ru/vacancy/50602586
+43259172,Middle Backend NodeJS разработчик,Красноярск,105000,4,5,"высшее образование, Node.js, JavaScript, Разработка ПО, Английский язык",https://hh.ru/vacancy/43259172
+54706361,Backend Typescript разработчик,Барнаул,100000,4,10,"Node.js, PostgreSQL, Облачные технологии, Typescript, Backend, REST, JSON API, Blockchain, Smart Contracts, Solidity",https://hh.ru/vacancy/54706361
+54041053,Senior Java Backend Developer,Ростов-на-Дону,100000,4,9,"Git, SQL, SCALA, Java, ООП, Java Core, JavaScript, MS SQL, Оптимизация кода",https://hh.ru/vacancy/54041053
+54041202,Senior Java Backend Developer,Волгоград,100000,4,9,"Git, SQL, SCALA, Java, ООП, Java Core, JavaScript, MS SQL, Оптимизация кода",https://hh.ru/vacancy/54041202
+51938940,Разработчик бэкэнда в Санкт-Петербург (Go),Новосибирск,100000,4,6,"Git, Node.js, MySQL, Redis, Golang.Org, Go",https://hh.ru/vacancy/51938940
+54712078,Разработчик backend (Web/App),Санкт-Петербург,100000,4,5,"JavaScript, MySQL, HTML5, TypeScript, PHP",https://hh.ru/vacancy/54712078
+54856393,Backend-разработчик (Node.js),Петропавловка (Республика Бурятия),100000,4,5,"Node.js, MongoDB, Linux, Docker, Git",https://hh.ru/vacancy/54856393
+54246645,Backend / Fullstack PHP developer (middle),Петрозаводск,97500,4,9,"Symfony, Linux, Bootstrap, React, REST API, ООП, MySQL, Git, JavaScript",https://hh.ru/vacancy/54246645
+52917928,Back-end разработчик (удаленно),Екатеринбург,90000,4,6,"Git, PHP, ООП, Laravel, MySQL, Code review",https://hh.ru/vacancy/52917928
+52917904,Back-end разработчик (удаленно),Уфа,90000,4,6,"Git, PHP, ООП, Laravel, MySQL, Code review",https://hh.ru/vacancy/52917904
+52917880,Back-end разработчик (удаленно),Пермь,90000,4,6,"Git, PHP, ООП, Laravel, MySQL, Code review",https://hh.ru/vacancy/52917880
+52917807,Back-end разработчик (удаленно),Магнитогорск,90000,4,5,"PHP, ООП, Laravel, MySOL, Code review",https://hh.ru/vacancy/52917807
+54857788,Middle backend developer (symfony) / fullstack разработчик,Севастополь,90000,4,4,"Symfony, SQL, PHP, API",https://hh.ru/vacancy/54857788
+54521932,Middle backend developer,Ярославль,85000,4,6,"FreeBSD, ООП, Golang, MariaDB, PHP, MySQL",https://hh.ru/vacancy/54521932
+52797369,Senior Backend Engineer for a Fintech startup: Scala/Java/C#/TS/Go → Haskell,Москва,460000,2,10,"Software Development, Haskell, SCALA, Kotlin, Rust, Java, C#, F#, Clojure, Elixir",https://hh.ru/vacancy/52797369
+47483263,Backend разработчик (Go) (to Riga),Москва,330000,2,5,"Go, Java, C++, C#, SCALA",https://hh.ru/vacancy/47483263
+54682167,Back-end разработчик / PHP программист (Symfony),Москва,325000,2,11,"PHP, PostgreSQL, SQL, JavaScript, REST, Laravel, MySQL, Symfony, Docker, SOLID, SaaS",https://hh.ru/vacancy/54682167
+54850243,Back-end разработчик / PHP программист,Москва,300000,2,11,"PHP, PostgreSQL, SQL, JavaScript, REST, Laravel, MySQL, Symfony, Docker, SOLID, SaaS",https://hh.ru/vacancy/54850243
+54367280,Middle Back-end разработчик (Java / Kotlin),Воронеж,300000,2,9,"Java, Kotlin, Postgres, Spring Boot, REST, SQL, Angular, Docker, Английский язык",https://hh.ru/vacancy/54367280
+54468576,Backend developer Golang,Москва,300000,2,8,"Linux, Git, Go, Golang, Docker, PostgreSQL, REST, Микросервисы",https://hh.ru/vacancy/54468576
+53886163,PHP/Go Backend Developer,Пермь,300000,2,6,"PostgreSQL, MySQL, Symfony, PHP, Redis, Golang",https://hh.ru/vacancy/53886163
+54148872,Backend-разработчик (Golang),Москва,300000,2,5,"SQL, Backend-сервисы, СУБД, Go, Docker",https://hh.ru/vacancy/54148872
+54465808,Backend Developer,Москва,300000,2,4,"Symfony, Laravel, PHP, RabbitMQ",https://hh.ru/vacancy/54465808
+53079275,Java Developer/ Backend разработчик (CDP платформа),Санкт-Петербург,275000,2,12,"SQL, Java, ООП, SCALA, Java Core, PostgreSQL, Spark, Linux, kafka, Spring Framework, HTTP, kubernetes",https://hh.ru/vacancy/53079275
+48722697,Java Developer/ Backend разработчик (продукт +интеграции),Москва,275000,2,12,"SQL, Java, ООП, SCALA, Java Core, PostgreSQL, Spark, Linux, kafka, Spring Framework, HTTP, kubernetes",https://hh.ru/vacancy/48722697
+48685047,Senior backend developer,Сочи,275000,2,10,"MySQL, Node.js, PostgreSQL, Английский язык, PHP, RabbitMQ, TDD, Elasticsearch, Gitlab, Linux",https://hh.ru/vacancy/48685047
+52557130,Back-end Developer (Python),Санкт-Петербург,275000,2,3,"Teamleading, Python, Django Framework",https://hh.ru/vacancy/52557130
+54684097,Backend разработчик C# (ASP.NET Core),Новосибирск,270000,2,4,"C#, ASP.NET, MVC, ООП",https://hh.ru/vacancy/54684097
+54262058,Software Engineer (Golang) / Backend-разработчик,Москва,250000,2,11,"Разработка ПО, Golang, Серверное программирование, Тестирование, PostgreSQL, Функциональное тестирование, MongoDB, Redis, docker, Git, ООП",https://hh.ru/vacancy/54262058
+54168329,Backend-разработчик / Middle+ PHP (Laravel) Developer,Санкт-Петербург,250000,2,10,"Git, MySQL, PHP, Управление проектами, Laravel, CI/CD, Scrum, Docker, Backend, Вовлеченность",https://hh.ru/vacancy/54168329
+54148822,.Net Backend разработчик,Москва,250000,2,5,"Английский язык, .NET Core, C#, TypeScript, Elasticsearch",https://hh.ru/vacancy/54148822
+53816644,Backend-разработчик/Node.js Backend Developer,Санкт-Петербург,250000,2,5,"MongoDB, Python, PostgreSQL, JavaScript, Git",https://hh.ru/vacancy/53816644
+54586201,Web-разработчик back-end C#,Москва,250000,2,3,"ASP.NET, .NET Framework, MS Visual Studio",https://hh.ru/vacancy/54586201
+54576796,Backend developer,Барнаул,250000,2,5,".NET Core, DDD, SOLID, CI, Vkontakte Api",https://hh.ru/vacancy/54576796
+54658298,NodeJS E-commerce back-end developer [Remote],Москва,244000,2,14,"Git, MySQL, PostgreSQL, Node.js, JavaScript, Design Patterns, NestJS, MedusaJS, Vendure, DevOPS, API, Unix, Bash, MongoDB",https://hh.ru/vacancy/54658298
+54658299,NodeJS E-commerce back-end developer [Remote],Санкт-Петербург,244000,2,12,"Git, MySQL, PostgreSQL, Node.js, JavaScript, MongoDB, Bash, Unix, MedusaJS, DevOPS, Design Patterns, API",https://hh.ru/vacancy/54658299
+51157305,Middle PHP разработчик (middle backend php developer),Санкт-Петербург,236500,2,14,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, PostgreSQL, Redis, API, Git, Laravel, Yii",https://hh.ru/vacancy/51157305
+51157313,Middle PHP разработчик (middle backend php developer),Москва,236500,2,13,"MySQL, Symfony, ООП, PHP7, NoSQL, SOLID, Docker, PostgreSQL, Redis, API, Git, Laravel, Yii",https://hh.ru/vacancy/51157313
+54636921,Middle+ Backend-разработчик (Python),Москва,225000,2,19,"Python, Django Framework, Swagger, Postgres, CI/CD, Gitlab CI, Docker, SQL, Websockets, Redis, Sentry, K8s, Prometheus, Grafana EFK, SQLAlchemy, telegram bots, Threading / Multiprocessing в Python, AWS, English B1-C2",https://hh.ru/vacancy/54636921
+54625815,Back-end .net разработчик,Москва,225000,2,13,"C#, SQL, Azure, NoSQL, GraphQL, ASP.NET, .NET Framework, ADO.NET, PostgreSQL, MongoDB, Docker, Kubernetes, Администрирование серверов Linux",https://hh.ru/vacancy/54625815
+52490191,Backend разработчик PHP ( Symfony),Москва,225000,2,9,"ООП, PHP, MySQL, Git, MVC, RabbitMQ, YouTrack, Redis, Symfony",https://hh.ru/vacancy/52490191
+54395395,Backend Java-разработчик,Москва,225000,2,7,"Git, Spring Framework, Java, SQL, Linux, Kafka, maven",https://hh.ru/vacancy/54395395
+54223264,Python Backend разработчик,Москва,225000,2,6,"Python, Git, Linux, FastAPI, DRF, PostgreSQL",https://hh.ru/vacancy/54223264
+54603419,Middle-backend Python разработчик / программист,Москва,220000,2,13,"Python, Git, Unix, SQL, Web Application Development, Django Framework, Flask, ООП, API, ETL, Falcon, MS SQL, RabbitMQ",https://hh.ru/vacancy/54603419
+54760603,Backend Developer (PHP),Нижний Новгород,220000,2,9,"MySQL, PHP, Git, Laravel, Redis, SQL, REST, SOLID, JavaScript",https://hh.ru/vacancy/54760603
+48336132,Backend PHP разработчик,Москва,220000,2,5,"MongoDB, MySQL, Symfony, PostgreSQL, PHP5",https://hh.ru/vacancy/48336132
+53583670,"Backend developer (Kotlin, Java)",Иннополис,220000,2,5,"Kotlin, Java, Git, ООП, Gradle",https://hh.ru/vacancy/53583670
+54760592,Middle Backend developer (PHP),Санкт-Петербург,220000,2,4,"MySQL, PHP, Git, Laravel",https://hh.ru/vacancy/54760592
+54528968,Middle PHP разработчик (middle backend php developer),Нижний Новгород,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528968
+54528972,Middle PHP разработчик (middle backend php developer),Краснодар,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528972
+54528978,Middle PHP разработчик (middle backend php developer),Хабаровск,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528978
+54528964,Middle PHP разработчик (middle backend php developer),Екатеринбург,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528964
+54528969,Middle PHP разработчик (middle backend php developer),Ростов-на-Дону,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528969
+54528980,Middle PHP разработчик (middle backend php developer),Рязань,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528980
+54528965,Middle PHP разработчик (middle backend php developer),Красноярск,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528965
+54528962,Middle PHP разработчик (middle backend php developer),Омск,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528962
+54528975,Middle PHP разработчик (middle backend php developer),Ижевск,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528975
+54528967,Middle PHP разработчик (middle backend php developer),Ярославль,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528967
+54528966,Middle PHP разработчик (middle backend php developer),Тюмень,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528966
+54528973,Middle PHP разработчик (middle backend php developer),Саратов,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528973
+54528974,Middle PHP разработчик (middle backend php developer),Барнаул,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528974
+54528970,Middle PHP разработчик (middle backend php developer),Мурманск,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528970
+54528976,Middle PHP разработчик (middle backend php developer),Тольятти,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528976
+54528971,Middle PHP разработчик (middle backend php developer),Челябинск,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528971
+54528963,Middle PHP разработчик (middle backend php developer),Томск,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528963
+54528977,Middle PHP разработчик (middle backend php developer),Иркутск,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528977
+54528979,Middle PHP разработчик (middle backend php developer),Кемерово,206500,2,13,"MySQL, Symfony, ООП, PHP 7.3, PHP7, NoSQL, SOLID, Docker, Memcached, PostgreSQL, Redis, API, Git",https://hh.ru/vacancy/54528979
+54452946,Java backend developer,Иннополис,201100,2,9,"Java, Spring Framework, Apache Maven, JUnit, JDBC, Git, SQL, Gradle, Java Core",https://hh.ru/vacancy/54452946
+53517403,Python Backend Developer,Санкт-Петербург,200000,2,13,"PostgreSQL, OOP, SQL, Flask, Python, Web, aiohttp, ORM, Управление проектами, Коммуникация, Паттерны проектирования, Оптимизация запросов, СУБД",https://hh.ru/vacancy/53517403
+54572151,Middle Backend Developer Node.js,Москва,200000,2,11,"Docker, SQL, Git, Node.js, Redis, Blockchain, Блокчейн, Криптовалюта, Удаленная работа, Работа с базами данных, MySQL",https://hh.ru/vacancy/54572151
+54633496,Разработчик Java (backend),Москва,200000,2,9,"Java, Spring Framework, PostgreSQL, Git, Spring Boot, NoSQL, Kafka, RabbitMQ, Spring 4",https://hh.ru/vacancy/54633496
+54734452,Backend-разработчик (Java),Тверь,200000,2,6,"PostgreSQL, Java, Spring Framework, Git, Intellij IDEA, Docker",https://hh.ru/vacancy/54734452
+54760423,Middle/Senior Backend PHP разработчик,Екатеринбург,200000,2,7,"PHP, PostgreSQL, MySQL, MongoDB, Redis, ClickHouse, Backend",https://hh.ru/vacancy/54760423
+54330198,.NET Server-side Developer (MMO),Санкт-Петербург,200000,2,6,"C#, .NET Framework, ООП, Entity Framework, .NET Core, Unity",https://hh.ru/vacancy/54330198
+51122852,Backend Developer (PHP/Yii2/Laravel),Казань,200000,2,8,"CSS, Git, MySQL, JavaScript, PHP, HTML, jQuery, Memcached",https://hh.ru/vacancy/51122852
+52998267,Middle/Senior JS-разработчик (backend / frontend / full-stack),Москва,200000,2,5,"Node.js, JavaScript, TypeScript, React, Английский язык",https://hh.ru/vacancy/52998267
+54660606,Разработчик Middle Backend/FullStack (удаленно),Москва,200000,2,5,"Hibernate ORM, Spring Framework, PostgreSQL, Java, SQL",https://hh.ru/vacancy/54660606
+52335454,Middle Backend Developer (удаленно),Москва,200000,2,6,"Git, SQL, Английский язык, PostgreSQL, ООП, Node.js",https://hh.ru/vacancy/52335454
+53205820,QA Automation C# (backend),Москва,200000,2,8,"SQL, Git, Oracle Pl/SQL, XML, ORACLE, QA, C#, JSON",https://hh.ru/vacancy/53205820
+54794224,PHP программист Backend / PHP разработчик (PHP developer),Санкт-Петербург,200000,2,7,"PHP, Linux, JavaScript, Laravel, Git, MySQL, ООП",https://hh.ru/vacancy/54794224
+54649905,Middle backend developer,Москва,200000,2,5,"Node.js, Linux, PostgreSQL, Redis, RabbitMQ",https://hh.ru/vacancy/54649905
+54609265,Back-end - Software Developer – Platform development,Иркутск,200000,2,5,"Spring Framework, Java, SQL, Java SE, JDBC",https://hh.ru/vacancy/54609265
+49317346,Middle .NET Backend Developer,Москва,200000,2,5,"Git, RabbitMQ, Docker, C#, .NET Framework",https://hh.ru/vacancy/49317346
+54654034,Middle Backend Developer,Рязань,200000,2,6,"SQL, GO, NET Core C#, С#, Linux, NoSQL",https://hh.ru/vacancy/54654034
+42749296,Backend разработчик (PHP),Москва,200000,2,4,"Git, ООП, PHP, SQL",https://hh.ru/vacancy/42749296
+54565403,Backend разработчик ASP.NET Core MVC,Москва,195000,2,6,"Entity Framework, C#, LINQ, SQL, MS SQL Server, ООП",https://hh.ru/vacancy/54565403
+54372254,Бэкенд-разработчик (Python) / Middle Python / Python Developer (Remote),Москва,185000,2,6,"Python, Git, MongoDB, Redis, Design Patterns, Flask",https://hh.ru/vacancy/54372254
+54203821,Backend-разработчик (Go / Golang),Москва,185000,2,6,"Golang, PostgreSQL, Docker, RabbitMQ, MongoDB, ООП",https://hh.ru/vacancy/54203821
+49891594,Back-End Developer,Краснодар,184000,2,6,"Git, MySQL, JavaScript, Java, PostgreSQL, Rust",https://hh.ru/vacancy/49891594
+49891595,Back-End Developer,Пермь,184000,2,6,"Git, MySQL, JavaScript, Java, PostgreSQL, Rust",https://hh.ru/vacancy/49891595
+51834014,Backend/Frontend- разработчик (Middle/Senior-TeamLeader),Ижевск,180000,2,8,"JavaScript, MySQL, Обучение и развитие, Управление персоналом, PHP, MVC, React, Vue",https://hh.ru/vacancy/51834014
+45876028,PHP - разработчик (Back-end developer),Омск,180000,2,9,"Laravel, MySQL, Git, HighLoad, REST API, Docker, Symfony, TDD, PostgreSQL",https://hh.ru/vacancy/45876028
+54223173,Middle Backend developer (PHP),Калининград,180000,2,8,"Git, Linux, MySQL, PHP, ООП, Redis, Laravel, Symfony",https://hh.ru/vacancy/54223173
+54784401,Backend PHP,Челябинск,180000,2,5,"Git, PHP, Laravel, Linux, Английский язык",https://hh.ru/vacancy/54784401
+36939930,Разработчик бэкэнда,Санкт-Петербург,180000,2,4,"Node.js, JavaScript, MySQL, Git",https://hh.ru/vacancy/36939930
+54654110,Backend developer с опытом разработки или желанием перейти на Go,Сочи,177700,2,4,"Golang, блокчейн, blockchain, Go",https://hh.ru/vacancy/54654110
+54315537,Middle Backend-разработчик PHP (Yii2),Москва,175000,2,18,"Git, Yii, PostgreSQL, Yii2, PHP, SQL, Linux, Redis, Symfony, Laravel, MySQL, Docker, ООП, ClickHouse, Composer, Паттерны проектирования, MVC, Backend",https://hh.ru/vacancy/54315537
+54397231,Middle Back-End Developer (Ruby),Санкт-Петербург,175000,2,8,"Ruby, PHP, reactjs, Elixir, SQL, PostgreSQL, Ruby On Rails, Redis",https://hh.ru/vacancy/54397231
+54369750,Middle Backend Developer (Python),Москва,175000,2,5,"Python, SQL, Django Framework, PostgreSQL, Английский язык",https://hh.ru/vacancy/54369750
+54114298,QA Backend Specialist (удаленно),Москва,175000,2,5,"Atlassian Confluence, Atlassian Jira, Git, Linux, SQL",https://hh.ru/vacancy/54114298
+54294857,Backend PHP разработчик (Laravel),Москва,175000,2,6,"ООП, Laravel, PHP, Git, Linux, MySQL",https://hh.ru/vacancy/54294857
+54270974,Backend-разработчик,Махачкала,175000,2,5,"MySQL, CSS, HTML, PHP, phpMyAdmin",https://hh.ru/vacancy/54270974
+50829866,PHP Backend разработчик,Москва,175000,2,5,"Git, Symfony, Yii, PHP, Docker",https://hh.ru/vacancy/50829866
+54571307,PHP разработчик (backend),Москва,175000,2,1,PHP,https://hh.ru/vacancy/54571307
+54824477,Backend developer (Бэкенд разработчик),Санкт-Петербург,170000,2,14,"PHP, MySQL, Symfony, Git, ООП, Jetbrains Phpstorm, PHP5, Грамотность, PHP7, Composer, Backend, Рефакторинг кода, PHPUnit, SQL",https://hh.ru/vacancy/54824477
+53812070,.Net Backend Developer,Санкт-Петербург,170000,2,8,"C#, MS SQL, MongoDB, RabbitMQ, Scrum, CI/CD, Разработка нового продукта, Agile Project Management",https://hh.ru/vacancy/53812070
+54146355,"Web Developer, front-end JavaScript, back-end C#",Москва,170000,2,6,"Git, JavaScript, MS SQL Server, C#, .NET Framework, Node.js",https://hh.ru/vacancy/54146355
+54666268,Backend-разработчик (PHP),Санкт-Петербург,170000,2,5,"Symfony, PostgreSQL, PHP, PHPUnit, Docker",https://hh.ru/vacancy/54666268
+54493278,Back-end разработчик (laravel),Москва,170000,2,4,"HTML, CSS, laravel, PHP",https://hh.ru/vacancy/54493278
+54003795,Backend developer C#,Москва,170000,2,1,C#,https://hh.ru/vacancy/54003795
+54375581,Backend-разработчик (на PHP),Москва,165000,2,7,"HTML, Laravel, PHP, Lotus Symphony, Lumen, MySQL, MongoDB",https://hh.ru/vacancy/54375581
+54635351,Backend developer (Node.js),Москва,165000,2,4,"Node.js, Linux, NodeJS, TypeScript",https://hh.ru/vacancy/54635351
+54523379,"Python (Django, DRF) backend программист",Москва,165000,2,5,"Docker, Redis, Git, Linux, Python",https://hh.ru/vacancy/54523379
+52686372,PHP Backend разработчик (удаленно),Москва,165000,2,4,"Git, Symfony, Yii, PHP",https://hh.ru/vacancy/52686372
+54453983,Python Backend Developer Remote,Санкт-Петербург,160000,2,9,"Git, Docker, MongoDB, Notion, Docker-compose, Удаленная работа, GitHub, Continuous Integration, Английский язык",https://hh.ru/vacancy/54453983
+54486087,Backend blockchain developer (Remote),Санкт-Петербург,160000,2,9,"Linux, Git, PostgreSQL, Bash, Английский язык, GraphQL, Blockchain, Node.js, Typescript",https://hh.ru/vacancy/54486087
+54554622,Backend Middle+ Python/Django,Москва,160000,2,8,"Python, Golang, Docker, Docker-compose, Go, Django, MySQL, PostgreSQL",https://hh.ru/vacancy/54554622
+54694124,Senior/Middle Java Developer (Backend),Санкт-Петербург,160000,2,6,"Spring Framework, PostgreSQL, Java, Camunda, WebFlux, Hibernate ORM",https://hh.ru/vacancy/54694124
+52264376,Backend-разработчик (Node.js),Санкт-Петербург,160000,2,8,"NoSQL, API, Node.js, SQL, RabbitMQ, PostgreSQL, Backend, SaaS",https://hh.ru/vacancy/52264376
+53337960,Программист (backend go developer),Санкт-Петербург,160000,2,6,"Java, Postgres, MongoDB, Blockchain, Hyperleger Fabric, GO",https://hh.ru/vacancy/53337960
+54508238,Программист (backend java developer),Санкт-Петербург,160000,2,6,"Java, Postgres, MongoDB, Blockchain, Hyperleger Fabric, GO",https://hh.ru/vacancy/54508238
+53081472,"C# developer junior / middle (.net, full-stack / back-end)",Москва,160000,2,6,".NET Framework, C#, MS SQL, LINQ, .NET Core, ASP.NET Core",https://hh.ru/vacancy/53081472
+54693575,Middle Backend Developer (Golang / PHP),Санкт-Петербург,160000,2,7,"Golang, Git, PostgreSQL, k8s, Docker, Gitlab, Backend",https://hh.ru/vacancy/54693575
+54569441,Backend разработчик Java/Spring,Москва,160000,2,5,"Android, Android SDK, SQLite, Java, Kotlin",https://hh.ru/vacancy/54569441
+54560721,Backend-разработчик,Москва,160000,2,5,"Git, Node.js, MongoDB, PostgreSQL, MySQL",https://hh.ru/vacancy/54560721
+53066640,Backend-разработчик (PHP),Ростов-на-Дону,160000,2,3,"Laravel, PHP, Базы данных",https://hh.ru/vacancy/53066640
+54713518,Middle .NET Backend Developer,Новосибирск,155000,2,8,"Git, C#, Docker, RabbitMQ, .NET Framework, .NET Core, Kibana, SQL",https://hh.ru/vacancy/54713518
+48957664,Middle .NET Backend Developer,Санкт-Петербург,155000,2,7,"Git, C#, Docker, RabbitMQ, Visual Studio C#, CI/CD, Kibana",https://hh.ru/vacancy/48957664
+50396378,Backend-программист PHP (Senior),Владивосток,155000,2,6,"MySQL, PHP7, CSS, HTML, PostgreSQL, SQL",https://hh.ru/vacancy/50396378
+54583000,Разработчик Back-end,Красноярск,150000,2,7,"Умение работать в условиях многозадачности, Умение адаптироваться, Мотивированность на результат обучения, Oracle Pl/SQL, JavaScript, CSS, HTML",https://hh.ru/vacancy/54583000
+54582999,Разработчик Back-end,Новосибирск,150000,2,7,"Умение работать в условиях многозадачности, Умение адаптироваться, Мотивированность на результат обучения, Oracle Pl/SQL, JavaScript, CSS, HTML",https://hh.ru/vacancy/54582999
+54582998,Разработчик Back-end,Томск,150000,2,7,"Умение работать в условиях многозадачности, Умение адаптироваться, Мотивированность на результат обучения, Oracle Pl/SQL, JavaScript, CSS, HTML",https://hh.ru/vacancy/54582998
+54582996,Разработчик Back-end,Кемерово,150000,2,7,"Умение работать в условиях многозадачности, Умение адаптироваться, Мотивированность на результат обучения, Oracle Pl/SQL, JavaScript, CSS, HTML",https://hh.ru/vacancy/54582996
+49221151,Backend developer (PHP),Москва,150000,2,11,"Symfony, PHP, MySQL, Redis, СУБД, Ориентация на результат, PHP7, ООП, Удаленная работа, Linux, Git",https://hh.ru/vacancy/49221151
+54354487,Backend QA Engineer,Санкт-Петербург,150000,2,7,"Python, Git, exploratory, Анализ требований, Тестирование, Разработка нового продукта, Postman",https://hh.ru/vacancy/54354487
+54676883,"Backend-разработчик (PHP, Go)",Москва,150000,2,11,"PHP, PostgreSQL, SQL, ООП, Git, MVC, PHP7, Symfony, NPM, Node.js, Linux",https://hh.ru/vacancy/54676883
+54791123,Backend-разработчик,Екатеринбург,150000,2,7,"ООП, Gitlab, Git, Linux, Управление проектами, Системное мышление, SQL",https://hh.ru/vacancy/54791123
+47879340,"Middle Backend разработчик, Санкт-Петербург",Нижний Новгород,150000,2,5,"Git, Node.js, Английский — B1 — Средний, JavaScript, MySQL",https://hh.ru/vacancy/47879340
+47879339,"Middle Backend разработчик, Санкт-Петербург",Новосибирск,150000,2,5,"Git, Node.js, Английский — B1 — Средний, JavaScript, MySQL",https://hh.ru/vacancy/47879339
+54628485,Back-end developer (PHP),Москва,150000,2,5,"CMS Bitrix, Redis, Elastic-search, PHP, Git",https://hh.ru/vacancy/54628485
+54518187,Back-end developer (PHP),Челябинск,150000,2,5,"CMS Bitrix, Redis, Elastic-search, PHP, Git",https://hh.ru/vacancy/54518187
+49487302,Backend - разработчик,Москва,150000,2,5,"JavaScript, Git, PostgreSQL, Node.js, PHP",https://hh.ru/vacancy/49487302
+52839072,Backend-разработчик,Санкт-Петербург,150000,2,5,"Golang, Postgres, RabbitMQ, Git, Linux",https://hh.ru/vacancy/52839072
+54156516,Middle PHP Developer (back-end разработчик веб-приложений) Lab4U,Москва,150000,2,5,"Git, MySQL, ООП, JavaScript, jQuery",https://hh.ru/vacancy/54156516
+53334436,Backend-разработчик (Middle),Ростов-на-Дону,150000,2,5,"SQL, C#, DDD, Microsoft Access, С#",https://hh.ru/vacancy/53334436
+53556616,Backend-разработчик (Middle),Калуга,150000,2,5,"SQL, C#, DDD, Microsoft Access, С#",https://hh.ru/vacancy/53556616
+50028181,Backend-разработчик (Middle),Санкт-Петербург,150000,2,5,"SQL, C#, DDD, Microsoft Access, С#",https://hh.ru/vacancy/50028181
+53334435,Backend-разработчик (Middle),Екатеринбург,150000,2,5,"SQL, C#, DDD, Microsoft Access, С#",https://hh.ru/vacancy/53334435
+37423597,Middle Backend разработчик,Санкт-Петербург,150000,2,4,"Node.js, JavaScript, MySQL, Git",https://hh.ru/vacancy/37423597
+54731266,JS Backend developer (Middle/Middle+),Нижний Новгород,150000,2,3,"PostgreSQL, Swagger, CI",https://hh.ru/vacancy/54731266
+54417976,Middle Back-end программист/Python С++,Ростов-на-Дону,150000,2,1,Python,https://hh.ru/vacancy/54417976
+50628165,Middle .NET Backend Developer (удаленно),Краснодар,145000,2,3,"C#, .NET Framework, .NET Core",https://hh.ru/vacancy/50628165
+50630230,Middle .NET Backend Developer (удаленно),Томск,145000,2,3,"C#, .NET Framework, .NET Core",https://hh.ru/vacancy/50630230
+54822830,"Backend разработчик, удаленно (автобизнес)",Ростов-на-Дону,140000,2,21,"Git, PHP, JavaScript, SQL, MySQL, CSS, 1С-Битрикс, CRM, MS SQL, Веб-программирование, 1С программирование, HTML, Битрикс 24, Битрикс24, Работа в CRM системе, Backend, Оптимизация запросов, HTML/CSS, API, PHP7.2, JS",https://hh.ru/vacancy/54822830
+54802866,"Backend разработчик, удаленно (автобизнес)",Москва,140000,2,21,"Git, PHP, JavaScript, SQL, MySQL, CSS, 1С-Битрикс, CRM, MS SQL, Веб-программирование, 1С программирование, HTML, Битрикс 24, Битрикс24, Работа в CRM системе, Backend, Оптимизация запросов, HTML/CSS, API, PHP7.2, JS",https://hh.ru/vacancy/54802866
+54802869,"Backend разработчик, удаленно (автобизнес)",Нижний Новгород,140000,2,21,"Git, PHP, JavaScript, SQL, MySQL, CSS, 1С-Битрикс, CRM, MS SQL, Веб-программирование, 1С программирование, HTML, Битрикс 24, Битрикс24, Работа в CRM системе, Backend, Оптимизация запросов, HTML/CSS, API, PHP7.2, JS",https://hh.ru/vacancy/54802869
+54767159,"Backend разработчик, удаленно (автобизнес)",Краснодар,140000,2,21,"Git, PHP, JavaScript, SQL, MySQL, CSS, 1С-Битрикс, CRM, MS SQL, Веб-программирование, 1С программирование, HTML, Битрикс 24, Битрикс24, Работа в CRM системе, Backend, Оптимизация запросов, HTML/CSS, API, PHP7.2, JS",https://hh.ru/vacancy/54767159
+54292842,JAVA-программист (Back-end),Краснодар,140000,2,8,"Hibernate ORM, Java, RabbitMQ, SQL, Spring Framework, Java Core, Удаленная работа, Docker-compose",https://hh.ru/vacancy/54292842
+47878879,"Middle Backend разработчик (игры), Санкт-Петербург",Нижний Новгород,140000,2,6,"Английский — B1 — Средний, Node.js, JavaScript, Git, C++, Математическая статистика",https://hh.ru/vacancy/47878879
+47878878,"Middle Backend разработчик (игры), Санкт-Петербург",Новосибирск,140000,2,6,"Английский — B1 — Средний, Node.js, JavaScript, Git, C++, Математическая статистика",https://hh.ru/vacancy/47878878
+35914384,Middle NodeJS - разработчик (backend),Томск,140000,2,7,"Node.js, SQL, PostgreSQL, Git, NoSQL, JavaScript, Nestjs",https://hh.ru/vacancy/35914384
+54786670,Middle backend разработчик (PHP),Санкт-Петербург,140000,2,6,"MySQL, Git, JavaScript, PostgreSQL, PHP, Laravel",https://hh.ru/vacancy/54786670
+54329213,Backend-Developer Python (middle),Воронеж,140000,2,6,"Python, PostgreSQL, Git, Linux, ML, Flask",https://hh.ru/vacancy/54329213
+54744689,Backend-разработчик (Middle),Екатеринбург,140000,2,5,"Git, Yii2, PHP, PostgreSQL, Linux",https://hh.ru/vacancy/54744689
+51102047,Middle Backend Developer (PHP),Санкт-Петербург,140000,2,5,"MySQL, Git, PHP, SQL, Golang",https://hh.ru/vacancy/51102047
+52852430,NodeJS (Backend) разработчик (Middle),Москва,140000,2,2,"Node.js, JavaScript",https://hh.ru/vacancy/52852430
+54491037,Backend разработчик (PHP),Калининград,140000,2,3,"PHP, Laravel, MySQL",https://hh.ru/vacancy/54491037
+51496861,QA automation engineer (Backend),Челябинск,136000,2,9,"JIRA, Confluence, Sharepoint, DataGrip/DBeaver, TeamCity, SOAP (REST), WSDL, Java, IntellijIdea",https://hh.ru/vacancy/51496861
+54719864,Backend-разработчик Node.js,Москва,135000,2,12,"Работа в условиях многозадачности, Backend, Коммуникабельность, стрессоустойчивость, Опыт работы в команде, Высокая ответственность, Стремление к профессиональному росту, Удаленная работа, Git, Node.js, PostgreSQL, JavaScript",https://hh.ru/vacancy/54719864
+52386413,Backend-developer в группу voip-разработки,Челябинск,135000,2,11,"MySQL, Git, Perl, VoIP, Internet, MariaDB, Redis, Python, Kamailio, Go, Debian",https://hh.ru/vacancy/52386413
+54564075,Backend разработчик .NET (C#),Пермь,135000,2,4,"Разработка ПО, Git, ООП, С#",https://hh.ru/vacancy/54564075
+54278735,Middle Back-end разработчик,Санкт-Петербург,130500,2,5,"Git, PHP, MySQL, Laravel, Docker",https://hh.ru/vacancy/54278735
+54600900,Backend-разработчик JavaScript (Middle),Ростов-на-Дону,130000,2,14,"JavaScript, HTML, CSS, Git, Английский язык, Node.js, React.js, ООП, Linux, Redux, Nest.js, SQL, NoSQL, AngularJS",https://hh.ru/vacancy/54600900
+54396021,Back-end разработчик / PHP программист (Symfony),Владимир,130000,2,10,"Doctrine, JS, CSS-верстка, Symfony, PHP, PostgreSQL, Redis, Memcached, Linux, RabbitMQ",https://hh.ru/vacancy/54396021
+42931557,Middle Backend разработчик (игры),Санкт-Петербург,130000,2,5,"Node.js, JavaScript, Git, C++, Математическая статистика",https://hh.ru/vacancy/42931557
+50990738,Web-разработчик / Backend программист Python,Калуга,130000,2,5,"Python, Git, PostgreSQL, Linux, MongoDB",https://hh.ru/vacancy/50990738
+52046108,Senior Java Backend Developer,Краснодар,130000,2,4,"PostgreSQL, XML, JSON, Java Script",https://hh.ru/vacancy/52046108
+54290958,PHP бэкенд разработчик на yii1,Балашиха,130000,2,5,"HTML, CSS3, PHP, jQuery, JS",https://hh.ru/vacancy/54290958
+54412626,PHP бэкенд разработчик на yii1,Мытищи,130000,2,5,"HTML, CSS3, PHP, jQuery, JS",https://hh.ru/vacancy/54412626
+54412625,PHP бэкенд разработчик на yii1,Балашиха,130000,2,5,"HTML, CSS3, PHP, jQuery, JS",https://hh.ru/vacancy/54412625
+54412628,PHP бэкенд разработчик на yii1,Ивантеевка,130000,2,5,"HTML, CSS3, PHP, jQuery, JS",https://hh.ru/vacancy/54412628
+54412627,PHP бэкенд разработчик на yii1,Королев,130000,2,5,"HTML, CSS3, PHP, jQuery, JS",https://hh.ru/vacancy/54412627
+54296811,PHP бэкенд разработчик на yii1,Москва,130000,2,5,"HTML, CSS3, PHP, jQuery, JS",https://hh.ru/vacancy/54296811
+54290960,PHP бэкенд разработчик на yii1,Мытищи,130000,2,5,"HTML, CSS3, PHP, jQuery, JS",https://hh.ru/vacancy/54290960
+54290961,PHP бэкенд разработчик на yii1,Ивантеевка,130000,2,5,"HTML, CSS3, PHP, jQuery, JS",https://hh.ru/vacancy/54290961
+54290959,PHP бэкенд разработчик на yii1,Королев,130000,2,5,"HTML, CSS3, PHP, jQuery, JS",https://hh.ru/vacancy/54290959
+54435687,Backend разработчик,Москва,130000,2,2,"PHP, MySQL",https://hh.ru/vacancy/54435687
+51218160,Backend developer,Тула,125000,2,7,"TypeScript, JavaScript, Nest.js, Node.js, blockchain, metamask, solidity",https://hh.ru/vacancy/51218160
+52299856,Бэкенд веб-разработчик / Backend web developer (Middle),Самара,125000,2,9,"PHP, MySQL, JavaScript, HTML, Laravel, 1С-Битрикс, Yii2, Figma, Symfony",https://hh.ru/vacancy/52299856
+54344619,Ищем Backend и Frontend Python специалистов,Санкт-Петербург,125000,2,6,"Git, Django Framework, PostgreSQL, SQL, Docker, Vue.js",https://hh.ru/vacancy/54344619
+54625612,Backend developer (Python),Москва,125000,2,8,"Python, Linux, SQL, MongoDB, R, Базы данных, Bash, Git",https://hh.ru/vacancy/54625612
+50230818,"Разработчик PHP (Symfony, удаленно) - Middle Backend Developer",Санкт-Петербург,125000,2,7,"Symfony, PHP, JavaScript, ООП, Git, MySQL, Vue.js",https://hh.ru/vacancy/50230818
+54461354,Python Backend разработчик,Москва,125000,2,5,"Python, Git, PostgreSQL, Django Framework, SQL",https://hh.ru/vacancy/54461354
+54644899,Middle разработчик 1С-Битрикc (back-end),Томск,125000,2,5,"jQuery, 1С-Битрикс, JavaScript, MySQL, Ajax",https://hh.ru/vacancy/54644899
+54535206,Программист PHP (Backend),Владивосток,120000,2,13,"backend, PHP, PostgreSQL, API, MVC, REST, Git, Laravel, Symfony, ORM, Unit Testing, SOLID, DRY",https://hh.ru/vacancy/54535206
+54488153,Middle Backend developer,Москва,120000,2,10,"ASP.NET, MS SQL, C#, VBScript, HTML, Git, PostgreSQL, JavaScript, JS, С#",https://hh.ru/vacancy/54488153
+54494456,Backend Developer (Node.js),Рязань,120000,2,6,"Node.js, MongoDB, Английский язык, Backend, Docker, Golang",https://hh.ru/vacancy/54494456
+52739630,Web-разработчик/PHP-программист (Back-End разработчик),Брянск,120000,2,6,"PHP, Zend Framework, doctrine, Symfony, JavaScript, ООП",https://hh.ru/vacancy/52739630
+49901299,Back-end разработчик,Челябинск,120000,2,6,"С#, .NET Framework, Java, Rest-api, Angular 2+, SQL",https://hh.ru/vacancy/49901299
+54642704,Backend разработчик \ Программист \ Веб-программист,Оренбург,120000,2,8,"Git, PHP, MySQL, Yii2, PHP7, SOLID, Symfony, ООП",https://hh.ru/vacancy/54642704
+54163205,PHP разработчик (middle php backend developer),Москва,120000,2,6,"PHP, MySQL, Git, backend, highload, ООП",https://hh.ru/vacancy/54163205
+54774170,Middle/Senior Backend программист (PHP),Владивосток,120000,2,5,"Redis, MySQL, Symfony, PostgreSQL, Git",https://hh.ru/vacancy/54774170
+54611849,Серверный разработчик / Backend Developer,Иркутск,115000,2,10,"Go, Python, Git, Redis, MySQL, Unix, MongoDB, Kafka, RabbitMQ, nsq",https://hh.ru/vacancy/54611849
+54505869,Backend-разработчик на PHP (Middle/Junior),Екатеринбург,115000,2,7,"Git, MySQL, Symfony, PHP, ООП, PostgreSQL, Laravel",https://hh.ru/vacancy/54505869
+54659958,"Middle backend Node.JS разработчик в команду ""Фабрика Решений""",Красноярск,115000,2,5,"Node.js, TypeScript, Express.js, NestJS, SQL",https://hh.ru/vacancy/54659958
+53836627,Back-end разработчик .Net,Санкт-Петербург,115000,2,4,"C#, PostgreSQL, Git, Microsoft Visual Studio",https://hh.ru/vacancy/53836627
+52611756,Middle PHP Backend разработчик,Ростов-на-Дону,115000,2,5,"PHP, PostgreSQL, JavaScript, PHP7, Laravel",https://hh.ru/vacancy/52611756
+54866819,Backend-разработчик (PHP),Екатеринбург,115000,2,2,"PHP, Yii2",https://hh.ru/vacancy/54866819
+54398649,"PHP-developer / PHP-разработчик (backend, удаленно)",Санкт-Петербург,112500,2,7,"MySQL, PHP, Git, Linux, Yii, Laravel, ООП",https://hh.ru/vacancy/54398649
+42637341,Backend-разработчик Kotlin/Java (middle),Барнаул,109000,2,7,"Git, SQL, Spring Framework, PostgreSQL, Hibernate ORM, JUnit, Java",https://hh.ru/vacancy/42637341
+52825232,Junior Backend Разработчик (C#),Москва,108500,2,5,"Git, C#, .NET Framework, .NET Core, Опыт работы с реляционными базами данных",https://hh.ru/vacancy/52825232
+54362012,PHP программист back-end (Middle),Тольятти,105000,2,4,"JavaScript, MySQL, PHP, Ajax",https://hh.ru/vacancy/54362012
+50373987,"Backend-программист / Программист PHP / Разработчик на 1С-Битрикс, удаленно",Воронеж,100000,2,22,"CSS, HTML, 1С-Битрикс, PHP, Создание сайтов, CMS Wordpress, Разработка CMS, Linux, SOAP, MODx, 1C, ООП, HTML/CSS, Wordpress, CMS OpenCart, JavaScript, Блочная верстка, Веб-программирование, MVC, OpenCart, HTML-верстка, Внешняя оптимизация сайта",https://hh.ru/vacancy/50373987
+54711277,Fullstack Middle Developer (Backend),Челябинск,100000,2,12,"JavaScript, typescript, Vue.js, React.js, MongoDB, PostreSql, Git, Azure, React, MySQL, PostgreSQL, C#.NET",https://hh.ru/vacancy/54711277
+54493735,Junior Back-end разработчик,Москва,100000,2,12,"PostgreSQL, PHP, MongoDB, JavaScript, Git, Bitrix, Java Script, Backend, Node.js, JS, Yii2, Express.js",https://hh.ru/vacancy/54493735
+54741357,Backend - разработчик,Москва,100000,2,9,"JavaScript, PHP, Веб-программирование, Node.js, Nest.js, SQL, ООП, MongoDB, PostgreSQL",https://hh.ru/vacancy/54741357
+53686836,PHP-разработчик (Back-end программист),Новосибирск,100000,2,11,"MySQL, ООП, Git, Docker, PHP7, Nginx, Elasticsearch, JavaScript, HTML, CSS, 1С-Битрикс",https://hh.ru/vacancy/53686836
+53930401,Backend разработчик,Омск,100000,2,9,"PHP, CMS Wordpress, MySQL, Английский язык, CMS Drupal, Git, docker, PHP5, backend",https://hh.ru/vacancy/53930401
+54538064,Бэкенд-разработчик,Кемерово,100000,2,10,"PHP, Docker, CSS, Базы данных, Composer, Python, golang, SQL, Nginx, HTML/CSS",https://hh.ru/vacancy/54538064
+54245325,Junior+/Middle Backend разработчик (Python/Django),Москва,100000,2,9,"Python, Django Framework, RestAPI, JSON, PostgreSQL, SQL, Linux, ООП, Git",https://hh.ru/vacancy/54245325
+54539164,C# разработчик (команда Backend),Пермь,100000,2,6,"C#, Git, .NET Framework, .Net Core, Unit Testing, Ориентация на результат",https://hh.ru/vacancy/54539164
+54183497,Backend-разработчик (Node.js),Новосибирск,100000,2,8,"Git, JavaScript, Node.js, Docker, TypeScript, NoSQL, GraphQL, REST API",https://hh.ru/vacancy/54183497
+54446841,Backend-разработчик,Хабаровск,100000,2,9,"PHP, HTML, JavaScript, MySQL, CSS, jQuery, Git, Java, Ajax",https://hh.ru/vacancy/54446841
+54498281,Backend-разработчик,Санкт-Петербург,100000,2,8,"PHP, JavaScript, MySQL, Git, Yii2, REST, Vue, Linux",https://hh.ru/vacancy/54498281
+54425944,Back-end разработчик,Ярославль,100000,2,7,"REST, Go, PHP, MySQL, Kubernetes, HTTP, ООП",https://hh.ru/vacancy/54425944
+54387097,Back-end разработчик,Вологда,100000,2,7,"REST, Go, PHP, MySQL, Kubernetes, HTTP, ООП",https://hh.ru/vacancy/54387097
+39971918,Middle Backend Developer,Ростов-на-Дону,100000,2,7,"Git, C#, SQL, Golang, golang, go, Django",https://hh.ru/vacancy/39971918
+54152515,Junior Backend Developer,Орел,100000,2,5,"Git, PHP, ООП, PostgreSQL, JavaScript",https://hh.ru/vacancy/54152515
+54664476,Backend разработчик,Череповец,100000,2,4,"Node.js, Git, PostgreSQL, JavaScript",https://hh.ru/vacancy/54664476
+54802587,Backend-разработчик,Санкт-Петербург,100000,2,5,"JavaScript, C#, HTML, ASP.NET, CSS",https://hh.ru/vacancy/54802587
+54791284,Middle Backend PHP,Челябинск,100000,2,5,"MySQL, Git, PHP, PostgreSQL, Linux",https://hh.ru/vacancy/54791284
+54471040,Разработчик бекэнда,Томск,100000,2,5,"Golang, MongoDB, SQL, Go, GraphQL",https://hh.ru/vacancy/54471040
+54165919,Backend разработчик,Нижний Новгород,100000,2,3,"С#, Entity Framework, SQL",https://hh.ru/vacancy/54165919
+54624447,Back-end разработчик,Челябинск,95000,2,9,"Node.js, JavaScript, Git, PostgreSQL, MongoDB, Nginx, Linux, Адекватность, .NET Core",https://hh.ru/vacancy/54624447
+54623661,"Программист JavaScript (JavaScript developer, backend)",Нижний Новгород,95000,2,10,"Git, JavaScript, ES5, HTML5, Canvas, Nodejs, Rabbit, Redis, Postgree, MySQL",https://hh.ru/vacancy/54623661
+54766966,Python backend developer,Челябинск,95000,2,6,"Git, Python, Блокчейн, Желание учиться и развиваться, PostgreSQL, Redis",https://hh.ru/vacancy/54766966
+54513589,Back-end developer,Нижний Новгород,95000,2,6,"PostgreSQL, SQL, REST API, Работа с базами данных, Git, ООП",https://hh.ru/vacancy/54513589
+48744596,Backend разработчик (net core),Нижний Новгород,95000,2,6,"Entity Framework, ООП, Linux, .NET Framework, C#, SQL",https://hh.ru/vacancy/48744596
+54653532,Бэкенд-разработчик (Golang),Екатеринбург,95000,2,3,"Golang, Backend, ИТ",https://hh.ru/vacancy/54653532
+54738050,Backend разработчик,Ижевск,90000,2,16,"Грамотная речь, Творческое мышление, проведение опросов общественного мнения, Опрятность, Работа в условиях многозадачности, Python, Linux, SQL, PostgreSQL, Git, Flask, REST API, JavaScript, C/C++, CSS, AWS",https://hh.ru/vacancy/54738050
+54317776,Junior Backend Developer,Москва,90000,2,10,"Git, Spring Framework, PostgreSQL, Java, JavaScript, Angular, TypeScript, Golang, Go, Spring Boot",https://hh.ru/vacancy/54317776
+54383968,Backend - разработчик (PHP Symfony) M/J,Барнаул,90000,2,7,"Symfony, Git, PostgreSQL, RabbitMQ, Linux, Docker, REST",https://hh.ru/vacancy/54383968
+54798332,Middle backend-разработчик,Челябинск,90000,2,7,"Git, MySQL, HTML, Docker, PHP7, REST API, SOLID",https://hh.ru/vacancy/54798332
+50624355,PHP-программист (Backend-разработчик),Москва,90000,2,7,"PHP, JavaScript, MySQL, Git, Linux, XML, ООП",https://hh.ru/vacancy/50624355
+53821190,Back-end разработчик (удаленно),Самара,90000,2,6,"Git, PHP, ООП, Laravel, MySQL, Code review",https://hh.ru/vacancy/53821190
+52917839,Back-end разработчик (удаленно),Челябинск,90000,2,6,"Git, PHP, ООП, Laravel, MySQL, Code review",https://hh.ru/vacancy/52917839
+53821747,Back-end разработчик (удаленно),Курган,90000,2,6,"Git, PHP, ООП, Laravel, MySQL, Code review",https://hh.ru/vacancy/53821747
+53821692,Back-end разработчик (удаленно),Миасс,90000,2,6,"Git, PHP, ООП, Laravel, MySQL, Code review",https://hh.ru/vacancy/53821692
+54644073,Веб-разработчик (backend),Владивосток,90000,2,5,"PHP, MySQL, Git, Linux, Английский язык",https://hh.ru/vacancy/54644073
+54806244,Junior/Middle Backend developer,Новосибирск,90000,2,5,"Python, ООП, SQL, Flask, Django",https://hh.ru/vacancy/54806244
+53952115,Back-end Middle Developer,Москва,90000,2,5,"Git, Symfony, PHP, MySQL, YII2",https://hh.ru/vacancy/53952115
+51200799,PHP программист back-end middle (удаленно),Тольятти,90000,2,4,"JavaScript, Ajax, MySQL, PHP",https://hh.ru/vacancy/51200799
+54801473,Back-end разработчик,Москва,90000,2,1,SQL,https://hh.ru/vacancy/54801473
+54572210,Backend разработчик Laravel,Санкт-Петербург,87500,2,17,"PHP, JavaScript, MySQL, HTML, CSS3, MVC, ООП, HTML5, Git, PHP5, CMS Wordpress, Bootstrap, Ajax, Умение работать в коллективе, Мобильность, laravel, vue",https://hh.ru/vacancy/54572210
+54243547,Middle/junior Backend NodeJS разработчик,Краснодар,87500,2,5,"высшее образование, Node.js, JavaScript, Разработка ПО, Английский язык",https://hh.ru/vacancy/54243547
+54244802,Back-end разработчик,Белгород,85000,2,19,"Vue.js, Gitlab, MariaDB, JS, Удаленная работа, Стабильность, Готовность обучаться, Лояльность, Умение организовать работу, Java, Самостоятельная работа, Backend, Java Script, Работа в условиях многозадачности, Умение работать в условиях многозадачности, Умение адаптироваться, Стремление развиваться, Желание работать и развиваться, Желание учиться и развиваться",https://hh.ru/vacancy/54244802
+54244803,Back-end разработчик,Тула,85000,2,19,"Vue.js, Gitlab, MariaDB, JS, Удаленная работа, Стабильность, Готовность обучаться, Лояльность, Умение организовать работу, Java, Самостоятельная работа, Backend, Java Script, Работа в условиях многозадачности, Умение работать в условиях многозадачности, Умение адаптироваться, Стремление развиваться, Желание работать и развиваться, Желание учиться и развиваться",https://hh.ru/vacancy/54244803
+54244804,Back-end разработчик,Челябинск,85000,2,19,"Vue.js, Gitlab, MariaDB, JS, Удаленная работа, Стабильность, Готовность обучаться, Лояльность, Умение организовать работу, Java, Самостоятельная работа, Backend, Java Script, Работа в условиях многозадачности, Умение работать в условиях многозадачности, Умение адаптироваться, Стремление развиваться, Желание работать и развиваться, Желание учиться и развиваться",https://hh.ru/vacancy/54244804
+54814220,"Junior backend developer (C#, ASP.NET Core)",Москва,85000,2,9,"Работа в условиях многозадачности, Умение работать в условиях многозадачности, Опрятность, Энтузиазм, Ответственность и пунктуальность, C#, ASP.NET, Entity Framework, SQL",https://hh.ru/vacancy/54814220
+51029542,Backend-разработчик,Ростов-на-Дону,85000,2,14,"Git, PostgreSQL, MySQL, MongoDB, ООП, PHP, Golang, PHP5, Linux, Node.js, MS SQL, SQL, Go, Backend",https://hh.ru/vacancy/51029542
+54244581,"BackEnd разработчик, PHP (удалённая работа)",Санкт-Петербург,85000,2,11,"Git, PHP, Golang, ООП, Блокчейн, Криптовалюта, Yii, Laravel, Blockchain, REST API, Docker",https://hh.ru/vacancy/54244581
+54377294,Junior Backend developer (Node.js/Nest.js),Санкт-Петербург,85000,2,9,"SQL, JavaScript, Git, Node.js, C#, Blockchain, TypeScript, Nest.js, PostgreSQL",https://hh.ru/vacancy/54377294
+53090092,Разработчик Python - Middle/Senior backend программист,Тула,82500,2,14,"HTML, CSS, MySQL, Администрирование сайтов, MS SQL, HTML5, Создание сайтов, Веб-программирование, Разработка CMS, Ajax, Python, Django Framework, SQL, Git",https://hh.ru/vacancy/53090092
+54213677,Программист PHP / Backend-разработчик,Санкт-Петербург,80000,2,29,"Git, MySQL, PHP, ООП, JavaScript, API, MS SQL, MVC, JS, Google API, PHP5, PHP7, Веб-программирование, SQL, Linux, 1С-Битрикс, Laravel, чужой код, Яндекс API, Phyton, Yii, React, Lotus Symphony, JSON API, Python, Управление проектами, Billing, junior, middle",https://hh.ru/vacancy/54213677
+54571892,Middle Backend PHP Developer,Таганрог,80000,2,22,"ООП, PostgreSQL, MySQL, SQL, Английский язык, RabbitMQ, Doctrine, PHPUnit, MS SQL, PHP, Unit Testing, MVC, Cистемы управления базами данных, Базы данных, Composer, ORM, Symfony, Знание английского языка, SQL запросы, REST, laravel, CakePHP",https://hh.ru/vacancy/54571892
+48120169,Junior Backend developer в Travel Tech,Санкт-Петербург,80000,2,10,"Ruby, Ruby On Rails, Git, JavaScript, HTML, CSS, PostgreSQL, Python, Django Framework, Backend",https://hh.ru/vacancy/48120169
+54604376,"Web, backend, PHP-разработчик",Екатеринбург,80000,2,11,"MySQL, Git, PHP, HTML, HTML/CSS, Java Script, Nginx, apache, Redis, Laravel, CSS",https://hh.ru/vacancy/54604376
+54538273,Backend developer (NestJS),Омск,80000,2,8,"PostgreSQL, Удаленная работа, Backend, JS, Node.js, Git, docker, NestJS",https://hh.ru/vacancy/54538273
+54483828,Backend разработчик php,Казань,80000,2,9,"PHP, Git, MySQL, Yii, Laravel, PHP5, 1С-Битрикс, CMS Wordpress, API",https://hh.ru/vacancy/54483828
+54696782,Middle Backend-разработчик в стартап,Москва,80000,2,7,"Golang, Linux, Nginx, PostgreSQL, Docker, PHP, Laravel",https://hh.ru/vacancy/54696782
+54702843,Junior/Middle Python Developer (Backend) - разработчик Питон,Новосибирск,80000,2,5,"Python, Linux, Django Framework, Bash, Docker-compose",https://hh.ru/vacancy/54702843
+50391087,Программист Backend .NET/ С#,Томск,80000,2,5,"C#, ASP.NET, Entity Framework, Git, .NET Framework",https://hh.ru/vacancy/50391087
+49849900,Инженер-программист (Middle Backend Kotlin Developer),Ярославль,80000,2,6,"Java, Kotlin, Spring, Docker, PostgreSQL, Linux",https://hh.ru/vacancy/49849900
+49862630,Инженер-программист (Middle Backend Kotlin Developer),Рыбинск,80000,2,6,"Java, Kotlin, Spring, Docker, PostgreSQL, Linux",https://hh.ru/vacancy/49862630
+53561819,Python backend-developer,Челябинск,80000,2,5,"Linux, Python, Git, Docker, Redis",https://hh.ru/vacancy/53561819
+54408567,Fullstack разработчик Middle (frontend/backend),Пенза,77500,2,13,"PHP, JavaScript, jQuery, CSS, HTML, HTML5, Joomla CMS, CSS3, 1С-Битрикс, Bootstrap, CMS Wordpress, Кроссбраузерная верстка, Администрирование сайтов",https://hh.ru/vacancy/54408567
+54750614,Backend-разработчик,Уфа,73000,2,12,"1С-Битрикс, PHP, CSS, ООП, HTML5, CSS3, JavaScript, Git, Ajax, SQL, Backend, PHP5",https://hh.ru/vacancy/54750614
+54259081,Laravel разработчик сайтов (Back-end),Нижний Новгород,70000,2,9,"Nginx, Git, Linux, MySQL, PHP, Apache HTTP Server, ООП, Symfony, Laravel",https://hh.ru/vacancy/54259081
+54622597,Программист Back-end,Уфа,70000,2,8,"Python, Django Framework, SQL, Linux, Базы данных, Golang, IPTV, C++",https://hh.ru/vacancy/54622597
+54712442,Back-end разработчик (Web-программист),Киров (Кировская область),70000,2,8,"JavaScript, CSS, jQuery, HTML, PHP, MS SQL, Linux, Git",https://hh.ru/vacancy/54712442
+47009544,Программист (Backend-разработчик),Волгоград,70000,2,5,"Git, Python, JavaScript, Bootstrap, Django Framework",https://hh.ru/vacancy/47009544
+54410753,Junior Golang backend developer (удаленки нет!),Москва,70000,2,7,"Git, SQL, Linux, MySQL, PostgreSQL, CI, Базы данных",https://hh.ru/vacancy/54410753
+52357594,Backend разработчик,Ростов-на-Дону,70000,2,5,"MySQL, Git, PHP, Bootstrap, Yii2",https://hh.ru/vacancy/52357594
+54754182,Backend-разработчик,Рязань,70000,2,3,"Git, SQL, ООП",https://hh.ru/vacancy/54754182
+53804029,QA Test Automation Engineer (backend),Тольятти,68000,2,9,"Git, Linux, ООП, PHP, API, Java, Тестирование, Веб-программирование, Python",https://hh.ru/vacancy/53804029
+54775759,Middle Backend в Digital- агентство,Москва,67500,2,6,"1С-Битрикс, Работа в команде, Тайм-менеджмент, Веб-программирование, Joomla CMS, CMS Wordpress",https://hh.ru/vacancy/54775759
+54847248,Бэкэнд-разработчик 1С битрикс,Тюмень,65000,2,4,"PHP, Работа с базами данных, HTML, Работа в команде",https://hh.ru/vacancy/54847248
+54621332,Backend-разработчик pre-middle (PHP),Иваново (Ивановская область),65000,2,6,"MySQL, PHP, Git, ООП, PHP5, Backend",https://hh.ru/vacancy/54621332
+54137874,Бэкенд-программист (PHP),Барнаул,60000,2,10,"PHP, ООП, Git, MVC, Веб-программирование, Аналитическое мышление, Работа в команде, MySQL, Laravel, Backend",https://hh.ru/vacancy/54137874
+54369490,Программист / Back-end разработчик в студию Дальнего Востока,Хабаровск,60000,2,14,"Laravel, SQL, JavaScript, PHP, MySQL, Git, jQuery, Sass, Gulp, HTML, CSS, Ajax, MS SQL, Apache HTTP Server",https://hh.ru/vacancy/54369490
+54696863,Backend Developer (PHP),Киров (Кировская область),60000,2,14,"Git, ООП, MySQL, Linux, SQL, CSS, HTML, Composer, Symfony, Laravel, PHP, JavaScript, RabbitMQ, Jenkins",https://hh.ru/vacancy/54696863
+54535224,Backend developer,Пенза,60000,2,12,"ООП, PHP, HTML, Node.js, CI/CD, Laravel, Symfony, Git, CSS, JavaScript, Linux, PostgreSQL",https://hh.ru/vacancy/54535224
+54814091,Backend Разработчик / Backend Node.js,Киров (Кировская область),60000,2,8,"Node.js, MongoDB, ORM, ES6+, TypeScript, PostgreSQL, Nest.js, Redis",https://hh.ru/vacancy/54814091
+54340309,Backend-программист,Уфа,60000,2,6,"CSS, Умение работать в коллективе, PostgreSQL, PHP, Git, SQL",https://hh.ru/vacancy/54340309
+46508867,Junior Web-разработчик Backend,Ростов-на-Дону,60000,2,6,"ООП, HTML, CSS, HTTP, MySQL, PHP",https://hh.ru/vacancy/46508867
+39957930,Junior NodeJS - разработчик (backend),Томск,55000,2,7,"Node.js, SQL, PostgreSQL, Git, NoSQL, JavaScript, Nest.js",https://hh.ru/vacancy/39957930
+54232900,Бекенд разработчик на PHP,Волгоград,55000,2,7,"Git, PHP, Linux, MySQL, ООП, SQL, Работа в команде",https://hh.ru/vacancy/54232900
+54158760,Backend-разработчик PHP (Junior),Екатеринбург,52500,2,10,"PHP, Yii, HTML, JavaScript, MySQL, jQuery, Linux, Git, PostgreSQL, ООП",https://hh.ru/vacancy/54158760
+54498158,Разработчик back-end,Симферополь,50000,2,6,"JavaScript, SQL, Пользователь ПК, Умение работать в коллективе, PHP, MySQL",https://hh.ru/vacancy/54498158
+54435248,Разработчик back-end,Москва,50000,2,6,"JavaScript, SQL, Пользователь ПК, Умение работать в коллективе, PHP, MySQL",https://hh.ru/vacancy/54435248
+54687196,Junior Backend-разработчик (Python),Санкт-Петербург,50000,2,8,"Python, Git, Django Framework, PostgreSQL, SQL, Flask, Docker, Scrum",https://hh.ru/vacancy/54687196
+54374103,Junior / Middle Backend разработчик,Барнаул,50000,2,3,"Python, Django Framework, Git",https://hh.ru/vacancy/54374103
+54369787,Junior Backend-разработчик,Самара,45000,2,10,"PHP, PHP5, Golang, MySQL, HTML, CSS, ООП, JavaScript, TypeScript, Node.js",https://hh.ru/vacancy/54369787
+44557107,Backend-разработчик,Пермь,45000,2,3,"C#, ASP.NET, SQL",https://hh.ru/vacancy/44557107
+54129373,Веб-программист (разработчик fullstack / back-end),Иркутск,40000,2,17,"Веб-программирование, HTML, JavaScript, CSS, MySQL, PHP, Adobe Photoshop, CSS3, CMS Wordpress, Git, Ajax, 1С-Битрикс, Bootstrap, Symfony, vue, Drupal, figma",https://hh.ru/vacancy/54129373
+54766073,"Программист (Web, Frontend, Backend)",Челябинск,40000,2,9,"JavaScript, CSS3, HTML5, MySQL, PHP, HTML-верстка, Bitrix24, 1С-Битрикс, CMS Wordpress",https://hh.ru/vacancy/54766073
+53986006,Junior Backend Developer (PHP),Киров (Кировская область),40000,2,11,"Git, ООП, MySQL, Linux, SQL, CSS, HTML, Composer, Symfony, Laravel, PHP",https://hh.ru/vacancy/53986006
+54427975,"Junior Backend разработчик (Python, Django, GraphQL)",Волгоград,40000,2,7,"GraphQL, Python, Django Framework, PostgreSQL, Git, Linux, ООП",https://hh.ru/vacancy/54427975
+54754194,Младший backend-разработчик,Рязань,40000,2,2,"Git, SQL",https://hh.ru/vacancy/54754194
+54733451,Начинающий python backend разработчик,Санкт-Петербург,32500,2,5,"Python, Nginx, Git, Angular, TypeScript/Javascript",https://hh.ru/vacancy/54733451
+54568265,Web-разработчик / Backend,Ростов-на-Дону,30000,2,9,"HTML, Bootstrap, js, CSS, jQuery, Symfony, laravel, Yii, Frontend",https://hh.ru/vacancy/54568265
+54682101,Веб разработчик frontend & backend,Пенза,20000,2,14,"JavaScript, PHP, Gulp, jQuery, Less, CMS Wordpress, Coffeecup HTML Editor, CSS, Frontend, Backend, Ответственность, Wordpress, Веб-программирование, Кроссбраузерная верстка",https://hh.ru/vacancy/54682101
+52118211,Senior backend developer (Node.js),Москва,350000,0,5,"PostgreSQL, TDD, BDD, Socket.io, Node.js",https://hh.ru/vacancy/52118211
+52118210,Senior backend developer (Node.js),Санкт-Петербург,350000,0,5,"PostgreSQL, TDD, BDD, Socket.io, Node.js",https://hh.ru/vacancy/52118210
+49947753,Бэкенд-разработчик в команду Авито Недвижимости,Москва,285000,0,7,"Python, SQL, ООП, Golang, PostgreSQL, Redis, PHP",https://hh.ru/vacancy/49947753
+54152457,Руководитель backend,Москва,205000,0,5,"SQL, Teamleading, Базы данных, Java, Spring",https://hh.ru/vacancy/54152457
+52093821,Backend developer,Томск,200000,0,3,"Node.js, PostgreSQL, TypeScript",https://hh.ru/vacancy/52093821
+54595868,Backend-developer,Москва,160000,0,9,"MySQL, Английский язык, PHP, Laravel, HTML/CSS, GitHub, SOLID, DRY, Java Script",https://hh.ru/vacancy/54595868
+49621682,Middle Backend разработчик (Node.js+ C/C++ (игры),Новосибирск,130000,0,5,"Git, Node.js, C++, JavaScript, Математическая статистика",https://hh.ru/vacancy/49621682
+54147040,Backend Разработчик .Net & T-SQL / SQL Server,Самара,100000,0,7,"Базы данных, MS SQL Server, C#, SQL, .NET Framework, SQL Server, MVC",https://hh.ru/vacancy/54147040
+54425248,Backend-разработчик (Django),Санкт-Петербург,75000,0,4,"MySQL, PostgreSQL, Django Framework, Flask",https://hh.ru/vacancy/54425248
+50860123,Junior PHP Backend разработчик (Core Team),Москва,70000,0,8,"Git, MySQL, PHP, ООП, SQL, backend, начало карьеры, Highload",https://hh.ru/vacancy/50860123
+48891774,Junior Web-разработчик Backend (Удалённо),Ростов-на-Дону,60000,0,7,"ООП, HTML, CSS, Ajax, HTTP, MySQL, PHP",https://hh.ru/vacancy/48891774
+42636573,Backend-разработчик Kotlin/Java (junior),Барнаул,51500,0,5,"Git, Spring Framework, SQL, Java, XML",https://hh.ru/vacancy/42636573
+54619991,Backend-разработчик junior,Томск,50000,0,7,"Linux, PHP, Git, ООП, SQL, Работа в команде, Работа с базами данных",https://hh.ru/vacancy/54619991
+54145470,Junior backend developer,Томск,50000,0,7,"Linux, PHP, Git, ООП, SQL, Работа в команде, Работа с базами данных",https://hh.ru/vacancy/54145470
+54156619,Support/Backend manager/Менеджер службы поддержки,Москва,50000,0,3,"Покер, Тех. поддержка, Русский язык",https://hh.ru/vacancy/54156619
+51465662,Junior - разработчик C# (команда Backend),Пермь,50000,0,4,"C#, Git, .NET Framework, .Net Core",https://hh.ru/vacancy/51465662
+54319351,Junior Backend Software developer,Ростов-на-Дону,48000,0,6,"C/C++, ООП, Design Patterns, Численные методы, Программирование, Разработка ПО",https://hh.ru/vacancy/54319351
+54744781,Начинающий бэкенд-программист,Барнаул,45000,0,7,"Git, PHP, ООП, Веб-программирование, Аналитическое мышление, Желание прокачиваться, Умение работать в команде",https://hh.ru/vacancy/54744781
+54538014,Бэкенд-разработчик (стажер),Кемерово,40000,0,10,"PHP, Python, golang, Git, SQL, HTML, CSS, JavaScript, Nginx, Docker",https://hh.ru/vacancy/54538014
+54621389,Backend-разработчик junior (PHP),Иваново (Ивановская область),40000,0,6,"MySQL, PHP, Git, ООП, PHP5, Backend",https://hh.ru/vacancy/54621389
+54313894,Cтажер-разработчик C# (fullstack / back-end),Москва,35000,0,6,"C#, ООП, React, SQL, .NET Core, ASP.NET Core",https://hh.ru/vacancy/54313894
+54121038,"Back-end разработчик - стажер, удалённо (php, Java/Kotlin)",Санкт-Петербург,22500,0,4,"1С-Битрикс, JavaScript, PHP, HTML",https://hh.ru/vacancy/54121038
+43796626,Стажер Backend Developer,Тюмень,22500,0,4,"MySQL, ООП, PHP, HTML",https://hh.ru/vacancy/43796626
