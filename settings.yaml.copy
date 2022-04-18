@@ -1,8 +1,8 @@
 app:
   hh_api_url: "https://api.hh.ru"
 postgres:
-  user: ""
-  password: postgres
-  database: rim
+  user: postgres_user
+  password: postgres_user
+  database: postgres_db
   host: 127.0.0.1
   port: 5432
