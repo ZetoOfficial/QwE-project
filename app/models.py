@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, ARRAY
 
 from app.database import Base
 
@@ -12,5 +12,5 @@ class Vacancy(Base):
     salary = Column(Integer)
     experience = Column(String)
     description = Column(String)
-    key_skills = Column(String)
+    key_skills = Column(ARRAY(String))
     alternate_url = Column(String)
