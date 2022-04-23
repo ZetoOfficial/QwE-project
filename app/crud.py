@@ -1,8 +1,12 @@
+from typing import Optional
 from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models import Vacancy as VacancyORM
-from app.schemas import Vacancy
+from app.schemas import Vacancy, VacancyDB
+from settings import getLogger
+
+logger = getLogger(__name__)
 
 
 def get_vacancies(limit: int = 100, db: Session = get_db()) -> list[Vacancy]:
@@ -17,7 +21,7 @@ def get_vacancies(limit: int = 100, db: Session = get_db()) -> list[Vacancy]:
     return db.query(VacancyORM).limit(limit=limit).all()
 
 
-def get_vacancy_by_id(vacancy_id: int, db: Session = get_db()) -> Vacancy:
+def get_vacancy_by_id(vacancy_id: int, db: Session = get_db()) -> Optional[Vacancy]:
     """Получение вакансии по идентификатору
 
     Args:
@@ -40,18 +44,21 @@ def create_vacancy(vacancy: Vacancy, db: Session = get_db()) -> Vacancy:
     Returns:
         Vacancy: вакансия
     """
-    # id = Column(Integer, primary_key=True)
-    # name = Column(String)
-    # area = Column(String)
-    # salary = Column(Integer)
-    # experience = Column(String)
-    # description = Column(String)
-    # key_skills = Column(String)
-    # alternate_url = Column(String)
-
     db_vacancy = get_vacancy_by_id(vacancy.id)
     if not db_vacancy:
-        db_vacancy = VacancyORM(id=vacancy.id, name=vacancy.name)
+        if salary := vacancy.salary:
+            num = (salary.start or 0) + (salary.to or 0)
+            salary = num if (vacancy.salary.currency == "RUR") else num * 76
+        db_vacancy = VacancyORM(
+            id=vacancy.id,
+            name=vacancy.name,
+            area=vacancy.area.name,
+            salary=salary,
+            experience=vacancy.experience.name,
+            description=vacancy.description,
+            key_skills=[skill.name for skill in skills] if (skills := vacancy.key_skills) else None,
+            alternate_url=vacancy.alternate_url,
+        )
         db.add(db_vacancy)
         db.commit()
         db.refresh(db_vacancy)
