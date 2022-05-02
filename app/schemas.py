@@ -65,10 +65,15 @@ class Area(BaseModel):
     city: str
 
 
-class AreaVacancy(BaseModel):
-    name: str
-    area: str
+class City(BaseModel):
     code: str
+    region: str
+
+
+class AreaVacancy(BaseModel):
+    city: City
+    cnt: int
+    color: str
 
     class Config:
         orm_mode = True

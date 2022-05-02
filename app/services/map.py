@@ -1,4 +1,5 @@
 from app.crud import get_vacancies_for_areas
+from app.schemas import AreaVacancy
 from collections import Counter
 
 
@@ -22,9 +23,9 @@ def get_color(count: int) -> str:
             return "#202020"
 
 
-def coloraise():
+def coloraise() -> list[AreaVacancy]:
     all_areas = dict(Counter([vac for vac in get_vacancies_for_areas()]))
     out = []
     for item in sorted(all_areas.items(), key=lambda i: i[1], reverse=True):
-        out.append({"city": item[0], "cnt": item[1], "color": get_color(item[1])})
+        out.append(AreaVacancy.parse_obj({"city": item[0], "cnt": item[1], "color": get_color(item[1])}))
     return out
