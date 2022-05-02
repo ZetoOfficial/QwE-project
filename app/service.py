@@ -1,22 +1,14 @@
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
 
 from app.crud import get_vacancies
 from app.schemas import VacancyDB
-from app.models import Base
-from app.database import engine
-
-Base.metadata.create_all(bind=engine)
+from app.services.map import coloraise
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
 origins = [
-    "http://utmn.su",
-    "https://utmn.su",
-    "http://api.utmn.su",
-    "https://api.utmn.su",
-    "http://localhost",
-    "http://localhost:8080",
+    "*",
 ]
 
 app.add_middleware(
@@ -29,5 +21,10 @@ app.add_middleware(
 
 
 @app.get("/api/vacancies/", response_model=list[VacancyDB])
-def get_all_vacansies(limit: int = 100):
+def get_all_vacancies(limit: int = 100):
     return get_vacancies(limit=limit)
+
+
+@app.get("/api/areas/")
+def get_areas():
+    return coloraise()
