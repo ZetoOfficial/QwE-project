@@ -2,9 +2,11 @@ from json import loads
 
 from requests import get as r_get
 
-from app.schemas import Vacancies, Vacancy
-from app.crud import create_vacancy, get_vacancy_by_id
+from app.schemas import Vacancies, Vacancy, Area
+from app.crud import create_vacancy, get_vacancy_by_id, create_area
 from settings import settings as s, getLogger
+
+from .regions_parser import RegionParser
 
 logger = getLogger(__name__)
 
@@ -74,3 +76,34 @@ class HHParser:
             logger.info(f"Получено {len(data)} вакансий с {page} стр")
 
         return [self.get_vacancy(item.get("id")) for item in data]
+
+    def get_areas(self):
+        with r_get(f"{self._api_url}/areas/113/") as req:
+            data = loads(req.content.decode()).get("areas", [])
+        reg_parser = RegionParser()
+        city_codes = reg_parser.get_city_codes()
+        for r_i, region in enumerate(data, start=1):
+            if not len(region["areas"]):
+                create_area(
+                    Area(
+                        id=int(region["id"]),
+                        city=region["name"],
+                        code=city_codes.get(region["name"]),
+                        region=region["name"],
+                    )
+                )
+                logger.info(
+                    f'{int(region["id"])} {city_codes.get(region["name"])} {region["name"]} {region["name"]}'
+                )
+            for c_i, city in enumerate(region["areas"], start=1):
+                create_area(
+                    Area(
+                        id=int(city["id"]),
+                        city=city["name"],
+                        code=city_codes.get(region["name"]) or city_codes.get(city["name"]),
+                        region=region["name"],
+                    )
+                )
+                logger.info(
+                    f'{int(city["id"])} {city_codes.get(region["name"]) or city_codes.get(city["name"])} {city["name"]} {region["name"]}'
+                )
