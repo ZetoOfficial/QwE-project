@@ -14,3 +14,12 @@ class Vacancy(Base):
     description = Column(String)
     key_skills = Column(ARRAY(String))
     alternate_url = Column(String)
+
+
+class Area(Base):
+    __tablename__ = "area"
+
+    id = Column(Integer, primary_key=True)
+    code = Column(String)
+    region = Column(String)
+    city = Column(String)
