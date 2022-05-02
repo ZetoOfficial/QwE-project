@@ -2,8 +2,8 @@ from typing import Optional
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import Vacancy as VacancyORM
-from app.schemas import Vacancy, VacancyDB
+from app.models import Vacancy as VacancyORM, Area as AreaORM
+from app.schemas import Area, Vacancy
 from settings import getLogger
 
 logger = getLogger(__name__)
@@ -19,6 +19,16 @@ def get_vacancies(limit: int = 100, db: Session = get_db()) -> list[Vacancy]:
         list[Vacancy]: Список всех вакансий
     """
     return db.query(VacancyORM).limit(limit=limit).all()
+
+
+def get_vacancies_for_areas(db: Session = get_db()):
+    return (
+        db.query(VacancyORM, AreaORM)
+        .with_entities(AreaORM.code, AreaORM.region)
+        .filter(VacancyORM.area == AreaORM.city)
+        .order_by(AreaORM.code.desc())
+        .all()
+    )
 
 
 def get_vacancy_by_id(vacancy_id: int, db: Session = get_db()) -> Optional[Vacancy]:
@@ -63,3 +73,26 @@ def create_vacancy(vacancy: Vacancy, db: Session = get_db()) -> Vacancy:
         db.commit()
         db.refresh(db_vacancy)
     return db_vacancy
+
+
+def get_area_by_city(city: str, db: Session = get_db()) -> Area:
+    return db.query(AreaORM).filter(AreaORM.city == city).first()
+
+
+def get_areas_by_code(code: str, db: Session = get_db()) -> list[Area]:
+    return db.query(AreaORM).filter(AreaORM.code == code).all()
+
+
+def create_area(area: Area, db: Session = get_db()) -> Area:
+    db_area = get_area_by_city(area.city)
+    if not db_area:
+        db_area = AreaORM(
+            id=area.id,
+            code=area.code,
+            region=area.region,
+            city=area.city,
+        )
+        db.add(db_area)
+        db.commit()
+        db.refresh(db_area)
+    return db_area

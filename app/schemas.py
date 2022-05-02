@@ -2,7 +2,7 @@ from typing import Optional
 from pydantic import BaseModel, Field
 
 
-class Area(BaseModel):
+class AreaModel(BaseModel):
     id: int
     name: str
     url: str
@@ -41,7 +41,7 @@ class VacancyDB(BaseModel):
 class Vacancy(BaseModel):
     id: int
     name: str
-    area: Area
+    area: AreaModel
     salary: Optional[Salary]
     experience: Experience
     description: str
@@ -56,3 +56,19 @@ class Vacancies(BaseModel):
     per_page: int
     page: int
     alternate_url: str
+
+
+class Area(BaseModel):
+    id: int
+    code: Optional[str]
+    region: str
+    city: str
+
+
+class AreaVacancy(BaseModel):
+    name: str
+    area: str
+    code: str
+
+    class Config:
+        orm_mode = True
