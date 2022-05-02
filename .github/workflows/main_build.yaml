@@ -17,18 +17,16 @@ jobs:
           switches: -av --delete --exclude-from '.gitignore' --exclude '.git'
           path: ./
           remote_path: /var/www/QwE-project-temp
-          remote_host: 18.222.100.55
-          remote_port: 22
+          remote_host: ${{ secrets.REPO_HOST }}
           remote_user: git
           remote_key: ${{ secrets.REPO_DEPLOY_KEY }}
 
       - name: Remove Old & Move New & Create Environment
         uses: appleboy/ssh-action@master
         with:
-          host: 18.222.100.55
+          host: ${{ secrets.REPO_HOST }}
           username: git
           key: ${{ secrets.REPO_DEPLOY_KEY }}
-          port: 22
           script: |
             cp /home/git/configs/QwE-project.settings.yaml /var/www/QwE-project-temp/settings.yaml
             sudo rm -rf /var/www/QwE-project-old
@@ -43,10 +41,9 @@ jobs:
       - name: Migrations
         uses: appleboy/ssh-action@master
         with:
-          host: 18.222.100.55
+          host: ${{ secrets.REPO_HOST }}
           username: git
           key: ${{ secrets.REPO_DEPLOY_KEY }}
-          port: 22
           script: |
             cd /var/www/QwE-project
             source env/bin/activate
@@ -56,9 +53,8 @@ jobs:
       - name: Restart service
         uses: appleboy/ssh-action@master
         with:
-          host: 18.222.100.55
+          host: ${{ secrets.REPO_HOST }}
           username: git
           key: ${{ secrets.REPO_DEPLOY_KEY }}
-          port: 22
           script: |
             systemctl restart qwe.service
