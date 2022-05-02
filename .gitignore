@@ -3,3 +3,5 @@ __pycache__/
 example
 settings.yaml
 *.log
+cache
+old_files
