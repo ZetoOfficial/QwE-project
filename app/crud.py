@@ -9,7 +9,7 @@ from settings import getLogger
 logger = getLogger(__name__)
 
 
-def get_vacancies(limit: int = 100, db: Session = get_db()) -> list[Vacancy]:
+def get_vacancies(limit: int = 0, offset: int = 0, db: Session = get_db()) -> list[Vacancy]:
     """Получение всех вакансий
 
     Args:
@@ -18,7 +18,14 @@ def get_vacancies(limit: int = 100, db: Session = get_db()) -> list[Vacancy]:
     Returns:
         list[Vacancy]: Список всех вакансий
     """
-    return db.query(VacancyORM).limit(limit=limit).all()
+    vacancies = db.query(VacancyORM).filter(
+        VacancyORM.key_skills.is_not(None), VacancyORM.salary.is_not(None)
+    )
+    if limit:
+        vacancies = vacancies.limit(limit)
+    if offset:
+        vacancies = vacancies.offset(offset)
+    return vacancies.all()
 
 
 def get_vacancies_for_areas(db: Session = get_db()):
@@ -29,6 +36,26 @@ def get_vacancies_for_areas(db: Session = get_db()):
         .order_by(AreaORM.code.desc())
         .all()
     )
+
+
+def get_exp_and_salary(db: Session = get_db()):
+    return (
+        db.query(VacancyORM)
+        .with_entities(VacancyORM.experience, VacancyORM.salary)
+        .filter(VacancyORM.salary.is_not(None))
+        .all()
+    )
+
+
+def get_all_skills(limit: int = 0, db: Session = get_db()):
+    skills = (
+        db.query(VacancyORM)
+        .with_entities(VacancyORM.key_skills, VacancyORM.salary)
+        .filter(VacancyORM.key_skills.is_not(None), VacancyORM.salary.is_not(None))
+    )
+    if limit:
+        skills = skills.limit(limit=limit)
+    return skills.all()
 
 
 def get_vacancy_by_id(vacancy_id: int, db: Session = get_db()) -> Optional[Vacancy]:
