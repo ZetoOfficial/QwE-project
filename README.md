@@ -29,5 +29,5 @@ pip install -r requirements.txt
 ### Запуск
 
 ```Bash
-python main.py
+uvicorn app.service:app
 ```
