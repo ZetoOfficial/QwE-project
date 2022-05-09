@@ -3,24 +3,36 @@ from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models import Vacancy as VacancyORM, Area as AreaORM
-from app.schemas import Area, Vacancy
+from app.schemas import Area, Vacancy, Filter
 from settings import getLogger
 
 logger = getLogger(__name__)
 
 
-def get_vacancies(limit: int = 0, offset: int = 0, db: Session = get_db()) -> list[Vacancy]:
+def get_vacancies(
+    limit: int = 0, offset: int = 0, filter_: Filter = None, db: Session = get_db()
+) -> list[Vacancy]:
     """Получение всех вакансий
 
     Args:
+        limit (int, optional): Лимитированное кол-во элементов. Defaults to 0.
+        offset (int, optional): Смещение. Defaults to 0.
+        filter_ (Filter, optional): Фильтры для вакансий. По умолчанию их нет.
         db (Session, optional): дб. Defaults to get_db().
 
     Returns:
-        list[Vacancy]: Список всех вакансий
+        list[Vacancy]: Список собранных вакансий
     """
     vacancies = db.query(VacancyORM).filter(
         VacancyORM.key_skills.is_not(None), VacancyORM.salary.is_not(None)
     )
+    if filter_:
+        if salary := filter_.salary:
+            vacancies = vacancies.filter(VacancyORM.salary.in_(range(*salary)))
+        if experience := filter_.experience:
+            vacancies = vacancies.filter(VacancyORM.experience.in_(experience))
+        if area := filter_.area:
+            vacancies = vacancies.filter(VacancyORM.area.in_(area))
     if limit:
         vacancies = vacancies.limit(limit)
     if offset:
@@ -108,6 +120,17 @@ def get_area_by_city(city: str, db: Session = get_db()) -> Area:
 
 def get_areas_by_code(code: str, db: Session = get_db()) -> list[Area]:
     return db.query(AreaORM).filter(AreaORM.code == code).all()
+
+
+def update_vacancy(vacancy: Vacancy, db: Session = get_db()) -> Optional[Vacancy]:
+    db_vacancy = get_vacancy_by_id(vacancy_id=vacancy.id)
+    if db_vacancy:
+        db_vacancy.description = vacancy.description
+        ...  # и тд, всё, что нужно изменить
+        db.add(db_vacancy)
+        db.commit()
+        db.refresh(db_vacancy)
+    return db_vacancy
 
 
 def create_area(area: Area, db: Session = get_db()) -> Area:
