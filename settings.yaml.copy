@@ -1,6 +1,7 @@
 app:
   hh_api_url: "https://api.hh.ru"
   cache_folder: "/home/beffin/Projects/QwE-project/cache"
+  media_folder: "/tmp"
 postgres:
   user: postgres_user
   password: postgres_user

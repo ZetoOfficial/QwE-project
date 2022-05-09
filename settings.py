@@ -17,6 +17,7 @@ with open(CONFIG_FILE, "r") as f:
 class App(BaseModel):
     hh_api_url: str
     cache_folder: str
+    media_folder: str
 
 
 class Postgres(BaseModel):
