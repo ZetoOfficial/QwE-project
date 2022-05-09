@@ -49,6 +49,12 @@ class Vacancy(BaseModel):
     alternate_url: str
 
 
+class Filter(BaseModel):
+    area: Optional[list[str]] = None
+    salary: Optional[tuple[int, int]] = None
+    experience: Optional[list[str]] = None
+
+
 class Vacancies(BaseModel):
     items: list[dict]
     found: int
