@@ -3,7 +3,7 @@ from json import loads
 from requests import get as r_get
 
 from app.schemas import Vacancies, Vacancy, Area
-from app.crud import create_vacancy, get_vacancy_by_id, create_area
+from app.crud import create_vacancy, get_vacancy_by_id, create_area, update_vacancy
 from settings import settings as s, getLogger
 
 from .regions_parser import RegionParser
@@ -25,13 +25,13 @@ class HHParser:
             Vacancy: Вакансия
         """
         logger.debug(f"Получение вакансии: {id}")
-        if vacancy := get_vacancy_by_id(id):
-            logger.debug(f"Вакансия получена: {vacancy.name}")
-            return vacancy
         with r_get(f"{self._api_url}/vacancies/{id}") as req:
-            vacancy = create_vacancy(Vacancy.parse_obj(loads(req.content.decode())))
+            if not (vacancy := get_vacancy_by_id(id)):
+                vacancy = Vacancy.parse_obj(loads(req.content.decode()))
             logger.debug(f"Вакансия получена: {vacancy.name}")
-            return vacancy
+            # vacancy.description = "???"
+            # update_vacancy(vacancy)
+            return create_vacancy(vacancy)
 
     def get_initial_data(self, search_text: str = "NAME:Backend", area: int = 113) -> Vacancies:
         """Получение общей иниформации о кол-ве вакансий
@@ -82,28 +82,34 @@ class HHParser:
             data = loads(req.content.decode()).get("areas", [])
         reg_parser = RegionParser()
         city_codes = reg_parser.get_city_codes()
-        for r_i, region in enumerate(data, start=1):
+        for region in data:
+            rs1 = region["name"].replace("АО", "автономный округ").lower()
+            rs2 = region["name"].replace("АО", "автономная область").lower()
+            code_ = None
+            if int(region["id"]) == 1368:  # Ханты-Мансийский АО - Югра"
+                code_ = "86"
+            elif int(region["id"]) == 1475:  # Республика Северная Осетия-Алания
+                code_ = "15"
             if not len(region["areas"]):
                 create_area(
                     Area(
                         id=int(region["id"]),
                         city=region["name"],
-                        code=city_codes.get(region["name"]),
+                        code=city_codes.get(rs1) or city_codes.get(rs2) or code_,
                         region=region["name"],
                     )
                 )
-                logger.info(
-                    f'{int(region["id"])} {city_codes.get(region["name"])} {region["name"]} {region["name"]}'
-                )
-            for c_i, city in enumerate(region["areas"], start=1):
+                logger.info(f'{int(region["id"])} {region["name"]} {region["name"]}')
+            for city in region["areas"]:
                 create_area(
                     Area(
                         id=int(city["id"]),
                         city=city["name"],
-                        code=city_codes.get(region["name"]) or city_codes.get(city["name"]),
+                        code=city_codes.get(rs1)
+                        or city_codes.get(rs2)
+                        or city_codes.get(city["name"])
+                        or code_,
                         region=region["name"],
                     )
                 )
-                logger.info(
-                    f'{int(city["id"])} {city_codes.get(region["name"]) or city_codes.get(city["name"])} {city["name"]} {region["name"]}'
-                )
+                logger.info(f'{int(city["id"])} {city["name"]} {region["name"]}')

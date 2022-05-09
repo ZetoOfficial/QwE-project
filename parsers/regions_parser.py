@@ -64,7 +64,7 @@ class RegionParser(BasicParser):
             name = tr[0].text_content().strip()
             code = [re.split(r"\D+", code.strip())[0] for code in tr[1].text_content().strip().split(",")][0]
             print(name, code)
-            city_codes[name] = code
+            city_codes[name.lower()] = code
         return city_codes
 
 
