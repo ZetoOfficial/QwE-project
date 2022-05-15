@@ -3,7 +3,7 @@ from json import loads
 from requests import get as r_get
 
 from app.schemas import Vacancies, Vacancy, Area
-from app.crud import create_vacancy, get_vacancy_by_id, create_area, update_vacancy
+from app.crud import create_vacancy, get_vacancy_by_id, create_area
 from settings import settings as s, getLogger
 
 from .regions_parser import RegionParser
@@ -29,59 +29,63 @@ class HHParser:
             if not (vacancy := get_vacancy_by_id(id)):
                 vacancy = Vacancy.parse_obj(loads(req.content.decode()))
             logger.debug(f"Вакансия получена: {vacancy.name}")
-            # vacancy.description = "???"
-            # update_vacancy(vacancy)
             return create_vacancy(vacancy)
 
-    def get_initial_data(self, search_text: str = "NAME:Backend", area: int = 113) -> Vacancies:
-        """Получение общей иниформации о кол-ве вакансий
+    def get_page(self, params: dict = {}) -> list[Vacancy]:
+        """Получение подробных вакансий со страницы
 
         Args:
-            search_text (_type_, optional): Название вакансий. Defaults to "NAME:Backend".
-            area (int, optional): Регион поиска. Defaults to 113 (Россия).
+            params (dict, optional): Дополнительные параметры для запроса. По умолчанию их нет.
+
+        Returns:
+            list[Vacancy]: Список вакансий с подробной информацией
+        """
+        with r_get(f"{self._api_url}/vacancies", params) as req:
+            data = loads(req.content.decode())
+            logger.info(f"Получено {len(data)} вакансий с {data.get('page', 0)} стр")
+
+        return [self.get_vacancy(item.get("id")) for item in data.get("items", [])]
+
+    def get_all_vacancies_data(self, search_text: str = "NAME:Backend", area: int = 113) -> list[Vacancy]:
+        """Получение всех вакансий (с подробностями)
+
+        Args:
+            search_text (_type_, optional): Название вакансий. По умолчанию "NAME:Backend".
+            area (int, optional): Регион поиска. По умолчанию 113 (Россия).
 
         Returns:
             Vacancies: Общая информация о вакансиях
         """
         params = {
             "text": search_text,
+            "only_with_salary": True,
             "area": area,
             "page": 0,
             "per_page": self._per_page,
         }
         logger.debug("Инициализация запроса")
         with r_get(f"{self._api_url}/vacancies", params) as req:
-            return Vacancies.parse_obj(loads(req.content.decode()))
+            first_page = loads(req.content.decode())
+        all_pages = [self.get_vacancy(first_page.get("id"))]
+        for page in range(1, first_page.get("pages", 1)):
+            params["page"] = page
+            all_pages += self.get_page(params)
+        return all_pages
 
-    def getPage(self, page: int = 0, search_text: str = "NAME:Backend", area: int = 113) -> list[Vacancy]:
-        """Получение подробных вакансий со страницы
+    def save_and_get_areas(self, parent_area: int = 113) -> list[Area]:
+        """Сохранение (в бд) и получение Areas (код, регион, город)
 
         Args:
-            page (int, optional): Страница в поиске. Defaults to 0.
-            search_text (_type_, optional): Название вакансии. Defaults to "NAME:Backend".
-            area (int, optional): Регион поиска. Defaults to 113 (Россия).
+            parent_area (int, optional): Регион поиска. По умолчанию 113 (Россия). Другие пока не поддерживаются...
 
         Returns:
-            list[Vacancy]: Список вакансий с подробной информацией
+            list[Area]: Список полученных Areas (код, регион, город)
         """
-
-        params = {
-            "text": search_text,
-            "area": area,
-            "page": page,
-            "per_page": self._per_page,
-        }
-        with r_get(f"{self._api_url}/vacancies", params) as req:
-            data = loads(req.content.decode()).get("items", [])
-            logger.info(f"Получено {len(data)} вакансий с {page} стр")
-
-        return [self.get_vacancy(item.get("id")) for item in data]
-
-    def get_areas(self):
-        with r_get(f"{self._api_url}/areas/113/") as req:
+        with r_get(f"{self._api_url}/areas/{parent_area}/") as req:
             data = loads(req.content.decode()).get("areas", [])
         reg_parser = RegionParser()
         city_codes = reg_parser.get_city_codes()
+        output_areas = []
         for region in data:
             rs1 = region["name"].replace("АО", "автономный округ").lower()
             rs2 = region["name"].replace("АО", "автономная область").lower()
@@ -90,26 +94,21 @@ class HHParser:
                 code_ = "86"
             elif int(region["id"]) == 1475:  # Республика Северная Осетия-Алания
                 code_ = "15"
-            if not len(region["areas"]):
-                create_area(
-                    Area(
-                        id=int(region["id"]),
-                        city=region["name"],
-                        code=city_codes.get(rs1) or city_codes.get(rs2) or code_,
-                        region=region["name"],
-                    )
-                )
-                logger.info(f'{int(region["id"])} {region["name"]} {region["name"]}')
+            if not len(region["areas"]):  # На случай, если у региона нет городов (Москва, например)
+                region["areas"].append({"id": region["id"], "name": region["name"]})
             for city in region["areas"]:
-                create_area(
-                    Area(
-                        id=int(city["id"]),
-                        city=city["name"],
-                        code=city_codes.get(rs1)
-                        or city_codes.get(rs2)
-                        or city_codes.get(city["name"])
-                        or code_,
-                        region=region["name"],
+                output_areas.append(
+                    create_area(
+                        Area(
+                            id=int(city["id"]),
+                            city=city["name"],
+                            code=city_codes.get(rs1)
+                            or city_codes.get(rs2)
+                            or city_codes.get(city["name"])
+                            or code_,
+                            region=region["name"],
+                        )
                     )
                 )
                 logger.info(f'{int(city["id"])} {city["name"]} {region["name"]}')
+        return output_areas

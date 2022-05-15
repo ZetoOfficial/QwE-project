@@ -1,10 +1,12 @@
 from typing import Optional
+
+from settings import getLogger
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import Vacancy as VacancyORM, Area as AreaORM
-from app.schemas import Area, Vacancy, Filter
-from settings import getLogger
+from app.models import Area as AreaORM
+from app.models import Vacancy as VacancyORM
+from app.schemas import Area, Filter, Vacancy
 
 logger = getLogger(__name__)
 
@@ -15,10 +17,9 @@ def get_vacancies(
     """Получение всех вакансий
 
     Args:
-        limit (int, optional): Лимитированное кол-во элементов. Defaults to 0.
-        offset (int, optional): Смещение. Defaults to 0.
+        limit (int, optional): Лимитированное кол-во элементов. По умолчанию 0.
+        offset (int, optional): Смещение. По умолчанию 0.
         filter_ (Filter, optional): Фильтры для вакансий. По умолчанию их нет.
-        db (Session, optional): дб. Defaults to get_db().
 
     Returns:
         list[Vacancy]: Список собранных вакансий
@@ -41,6 +42,7 @@ def get_vacancies(
 
 
 def get_vacancies_for_areas(db: Session = get_db()):
+    """Получение регионов с их кодами РФ от вакансий"""
     return (
         db.query(VacancyORM, AreaORM)
         .with_entities(AreaORM.code, AreaORM.region)
@@ -51,6 +53,7 @@ def get_vacancies_for_areas(db: Session = get_db()):
 
 
 def get_exp_and_salary(db: Session = get_db()):
+    """Получение опыта и заработной платы от вакансий"""
     return (
         db.query(VacancyORM)
         .with_entities(VacancyORM.experience, VacancyORM.salary)
@@ -60,6 +63,7 @@ def get_exp_and_salary(db: Session = get_db()):
 
 
 def get_all_skills(limit: int = 0, db: Session = get_db()):
+    """Получение навыков и зарплаты от вакансий"""
     skills = (
         db.query(VacancyORM)
         .with_entities(VacancyORM.key_skills, VacancyORM.salary)
@@ -71,28 +75,12 @@ def get_all_skills(limit: int = 0, db: Session = get_db()):
 
 
 def get_vacancy_by_id(vacancy_id: int, db: Session = get_db()) -> Optional[Vacancy]:
-    """Получение вакансии по идентификатору
-
-    Args:
-        vacancy_id (int): идентификатор вакансии
-        db (Session, optional): дб. Defaults to get_db().
-
-    Returns:
-        Vacancy: вакансия
-    """
+    """Получение вакансии по идентификатору"""
     return db.query(VacancyORM).filter(VacancyORM.id == vacancy_id).first()
 
 
 def create_vacancy(vacancy: Vacancy, db: Session = get_db()) -> Vacancy:
-    """Создание вакансии
-
-    Args:
-        vacancy (Vacancy): вакансия
-        db (Session, optional): дб. Defaults to get_db().
-
-    Returns:
-        Vacancy: вакансия
-    """
+    """Создание вакансии"""
     db_vacancy = get_vacancy_by_id(vacancy.id)
     if not db_vacancy:
         if salary := vacancy.salary:
@@ -105,7 +93,7 @@ def create_vacancy(vacancy: Vacancy, db: Session = get_db()) -> Vacancy:
             salary=salary,
             experience=vacancy.experience.name,
             description=vacancy.description,
-            key_skills=[skill.name for skill in skills] if (skills := vacancy.key_skills) else None,
+            key_skills=[skill.name for skill in vacancy.key_skills] if vacancy.key_skills else None,
             alternate_url=vacancy.alternate_url,
         )
         db.add(db_vacancy)
@@ -114,15 +102,29 @@ def create_vacancy(vacancy: Vacancy, db: Session = get_db()) -> Vacancy:
     return db_vacancy
 
 
+def create_area(area: Area, db: Session = get_db()) -> Area:
+    """Создание местности"""
+    db_area = get_area_by_city(area.city)
+    if not db_area:
+        db_area = AreaORM(**(area.dict()))
+        db.add(db_area)
+        db.commit()
+        db.refresh(db_area)
+    return db_area
+
+
 def get_area_by_city(city: str, db: Session = get_db()) -> Area:
+    """Получение местности по городу"""
     return db.query(AreaORM).filter(AreaORM.city == city).first()
 
 
 def get_areas_by_code(code: str, db: Session = get_db()) -> list[Area]:
+    """Получение местностей по коду"""
     return db.query(AreaORM).filter(AreaORM.code == code).all()
 
 
 def update_vacancy(vacancy: Vacancy, db: Session = get_db()) -> Optional[Vacancy]:
+    """Обновление существующей вакансии"""
     db_vacancy = get_vacancy_by_id(vacancy_id=vacancy.id)
     if db_vacancy:
         db_vacancy.description = vacancy.description
@@ -131,18 +133,3 @@ def update_vacancy(vacancy: Vacancy, db: Session = get_db()) -> Optional[Vacancy
         db.commit()
         db.refresh(db_vacancy)
     return db_vacancy
-
-
-def create_area(area: Area, db: Session = get_db()) -> Area:
-    db_area = get_area_by_city(area.city)
-    if not db_area:
-        db_area = AreaORM(
-            id=area.id,
-            code=area.code,
-            region=area.region,
-            city=area.city,
-        )
-        db.add(db_area)
-        db.commit()
-        db.refresh(db_area)
-    return db_area

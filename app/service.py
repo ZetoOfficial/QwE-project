@@ -1,26 +1,26 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
+from settings import settings as s
 
 from app.crud import get_vacancies
 from app.schemas import (
-    VacancyDB,
     AreaVacancy,
-    SkillsDemand,
-    SkillsSalary,
-    PreviewInfo,
     ExperienceSalary,
     Filter,
+    PreviewInfo,
+    SkillsDemand,
+    SkillsSalary,
+    VacancyDB,
 )
 from app.services import (
+    Downloader,
     coloraise,
+    get_experience_salary,
     get_skills_demand,
     get_skills_salary,
     preview_information,
-    get_experience_salary,
-    Downloader,
 )
-from settings import settings as s
 
 app = FastAPI()
 
@@ -76,5 +76,5 @@ def get_download_data(filename: str = "Вакансии", file_format: str = ".c
         case ".xlsx":
             path = downloader.download_as_xlsx()
         case _:
-            raise
+            raise HTTPException(status_code=400, detail="Invalid file_format type")
     return FileResponse(path, media_type="application/octet-stream", filename=f"{filename}{file_format}")

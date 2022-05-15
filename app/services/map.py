@@ -1,9 +1,11 @@
+from collections import Counter
+
 from app.crud import get_vacancies_for_areas
 from app.schemas import AreaVacancy
-from collections import Counter
 
 
 def get_color(count: int) -> str:
+    """Получение цвета на основе числа"""
     match count:
         case c if c in range(3):
             return "#D3D3D3"
@@ -24,6 +26,7 @@ def get_color(count: int) -> str:
 
 
 def coloraise() -> list[AreaVacancy]:
+    """Соотносит кол-во вакансий в регионе с цветом"""
     all_areas = dict(Counter([vac for vac in get_vacancies_for_areas()]))
     out = []
     for item in sorted(all_areas.items(), key=lambda i: i[1], reverse=True):

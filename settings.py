@@ -1,7 +1,8 @@
+from logging import DEBUG, INFO, FileHandler, StreamHandler, basicConfig, getLogger
 from pathlib import Path
-from yaml import load, SafeLoader
-from pydantic import BaseSettings, BaseModel
-from logging import basicConfig, getLogger, FileHandler, StreamHandler, INFO, DEBUG
+
+from pydantic import BaseModel, BaseSettings
+from yaml import SafeLoader, load
 
 CONFIG_FILE = str(Path(__file__).parent.absolute()) + "/settings.yaml"
 LOGFILE_FILE = str(Path(__file__).parent.absolute()) + "/qwe.log"
