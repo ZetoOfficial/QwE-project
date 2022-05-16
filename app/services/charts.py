@@ -12,7 +12,7 @@ def average(lst: list, base: int = 1) -> int:
 def get_skills_demand(limit: int) -> SkillsDemand:
     """Получение соотнесённых навыков с их частотой упоминания"""
     data = get_all_skills()
-    only_skills = [skills["key_skills"] for skills in data]
+    only_skills = sum([skills["key_skills"] for skills in data], [])
     s_skills = sorted(Counter(only_skills).items(), key=lambda x: x[1], reverse=True)[:limit]
     return SkillsDemand.parse_obj([{"value": skill[1], "name": skill[0]} for skill in s_skills])
 
@@ -32,7 +32,7 @@ def preview_information() -> PreviewInfo:
     """Получение основной информации о навыках"""
     vacancies = get_vacancies()
     data = get_all_skills()
-    only_skills = [skills["key_skills"] for skills in data]
+    only_skills = sum([skills["key_skills"] for skills in data], [])
     return PreviewInfo.parse_obj(
         {
             "average_salary": average([vacancy.salary for vacancy in vacancies], 1000),

@@ -27,8 +27,8 @@ def get_color(count: int) -> str:
 
 def coloraise() -> list[AreaVacancy]:
     """Соотносит кол-во вакансий в регионе с цветом"""
-    all_areas = dict(Counter([vac for vac in get_vacancies_for_areas()]))
+    all_areas = Counter([vac for vac in get_vacancies_for_areas()]).items()
     out = []
-    for item in sorted(all_areas.items(), key=lambda i: i[1], reverse=True):
+    for item in sorted(all_areas, key=lambda i: i[1], reverse=True):
         out.append(AreaVacancy.parse_obj({"city": item[0], "cnt": item[1], "color": get_color(item[1])}))
     return out

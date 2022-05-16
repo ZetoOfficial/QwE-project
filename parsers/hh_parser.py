@@ -25,6 +25,7 @@ class HHParser:
             Vacancy: Вакансия
         """
         logger.debug(f"Получение вакансии: {id}")
+        print(f"{self._api_url}/vacancies/{id}")
         with r_get(f"{self._api_url}/vacancies/{id}") as req:
             if not (vacancy := get_vacancy_by_id(id)):
                 vacancy = Vacancy.parse_obj(loads(req.content.decode()))
@@ -42,7 +43,7 @@ class HHParser:
         """
         with r_get(f"{self._api_url}/vacancies", params) as req:
             data = loads(req.content.decode())
-            logger.info(f"Получено {len(data)} вакансий с {data.get('page', 0)} стр")
+            logger.info(f"Получено {len(data.get('items', []))} вакансий с {data.get('page', 0)} стр")
 
         return [self.get_vacancy(item.get("id")) for item in data.get("items", [])]
 
@@ -66,8 +67,8 @@ class HHParser:
         logger.debug("Инициализация запроса")
         with r_get(f"{self._api_url}/vacancies", params) as req:
             first_page = loads(req.content.decode())
-        all_pages = [self.get_vacancy(first_page.get("id"))]
-        for page in range(1, first_page.get("pages", 1)):
+        all_pages = []
+        for page in range(0, first_page.get("pages", 1)):
             params["page"] = page
             all_pages += self.get_page(params)
         return all_pages
