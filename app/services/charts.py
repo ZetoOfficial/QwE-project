@@ -27,7 +27,7 @@ def get_skills_demand(limit: int) -> list[SkillsDemand]:
 
 def get_skills_salary(limit: int) -> SkillsSalary:
     """Получение соотнесёности кол-ва навыков с заработной платой"""
-    data = sorted(get_all_skills(), key=lambda k: k["salary"], reverse=True)[:limit]
+    data = sorted(get_all_skills(), key=lambda k: k["salary"], reverse=True)
     len_skills, salaries = [], []
     for skills, salary in data:
         if len(skills) in len_skills:
@@ -36,7 +36,7 @@ def get_skills_salary(limit: int) -> SkillsSalary:
             continue
         len_skills.append(len(skills))
         salaries.append(salary)
-    return SkillsSalary.parse_obj({"len_skills": len_skills, "salary": salaries})
+    return SkillsSalary.parse_obj({"len_skills": len_skills[:limit], "salary": salaries[:limit]})
 
 
 def preview_information() -> PreviewInfo:
