@@ -5,3 +5,4 @@ settings.yaml
 *.log
 cache
 old_files
+.vscode

@@ -85,7 +85,7 @@ def create_vacancy(vacancy: Vacancy, db: Session = get_db()) -> Vacancy:
     if not db_vacancy:
         if salary := vacancy.salary:
             num = (salary.start or 0) + (salary.to or 0)
-            salary = num if (vacancy.salary.currency == "RUR") else num * 76
+            salary = num if (vacancy.salary.currency == "RUR") else num * 60
         db_vacancy = VacancyORM(
             id=vacancy.id,
             name=vacancy.name,
