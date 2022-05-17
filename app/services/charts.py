@@ -36,7 +36,9 @@ def get_skills_salary(limit: int) -> SkillsSalary:
             continue
         len_skills.append(len(skills))
         salaries.append(salary)
-    return SkillsSalary.parse_obj({"len_skills": len_skills[:limit], "salary": salaries[:limit]})
+    x = zip(len_skills[:limit], salaries[:limit])
+    xs = sorted(x, key=lambda i: i[1], reverse=True)
+    return SkillsSalary.parse_obj({"len_skills": [x[0] for x in xs], "salary": [x[1] for x in xs]})
 
 
 def preview_information() -> PreviewInfo:
