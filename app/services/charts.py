@@ -29,7 +29,7 @@ def get_skills_demand(limit: int) -> list[SkillsDemand]:
 
 
 def get_skills_salary(limit: int) -> SkillsSalary:
-    """Получение соотнесёности кол-ва навыков с заработной платой"""
+    """Получение соотнесённости кол-ва навыков с заработной платой"""
     data = sorted(get_all_skills(), key=lambda k: k["salary"], reverse=True)
     len_skills, salaries = [], []
     for skills, salary in data:
@@ -68,7 +68,7 @@ def preview_information() -> PreviewInfo:
 
 
 def get_experience_salary() -> ExperienceSalary:
-    """Получение соотнесёности навыков и средней зп"""
+    """Получение соотнесённости навыков и средней зп"""
     data = get_exp_and_salary()
     average_exp_salary_data = {}
     for exp, salary in data:
