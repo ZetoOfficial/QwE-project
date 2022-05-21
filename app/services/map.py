@@ -30,5 +30,9 @@ def coloraise() -> list[AreaVacancy]:
     all_areas = Counter([vac for vac in get_vacancies_for_areas()]).items()
     out = []
     for item in sorted(all_areas, key=lambda i: i[1], reverse=True):
-        out.append(AreaVacancy.parse_obj({"city": item[0], "cnt": item[1], "color": get_color(item[1])}))
+        out.append(
+            AreaVacancy.parse_obj(
+                {"city": item[0], "cnt": item[1], "color": get_color(item[1])}
+            )
+        )
     return out

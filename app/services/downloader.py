@@ -18,7 +18,11 @@ class Downloader:
 
     def download_as_csv(self) -> str:
         """Выгрузка в csv формат"""
-        vacancies = sorted(get_vacancies(), key=lambda v: (v.area, v.experience, v.salary), reverse=True)
+        vacancies = sorted(
+            get_vacancies(),
+            key=lambda v: (v.area, v.experience, v.salary),
+            reverse=True,
+        )
         path = self.generate_path(".csv")
         with open(path, "w") as f:
             writer = DictWriter(f, list(VacancyDB.schema()["properties"].keys()))

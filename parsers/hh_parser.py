@@ -2,9 +2,10 @@ from json import loads
 
 from requests import get as r_get
 
-from app.schemas import Vacancies, Vacancy, Area
-from app.crud import create_vacancy, get_vacancy_by_id, create_area
-from settings import settings as s, getLogger
+from app.crud import create_area, create_vacancy, get_vacancy_by_id
+from app.schemas import Area, Vacancies, Vacancy
+from settings import getLogger
+from settings import settings as s
 
 from .regions_parser import RegionParser
 
@@ -43,11 +44,15 @@ class HHParser:
         """
         with r_get(f"{self._api_url}/vacancies", params) as req:
             data = loads(req.content.decode())
-            logger.info(f"Получено {len(data.get('items', []))} вакансий с {data.get('page', 0)} стр")
+            logger.info(
+                f"Получено {len(data.get('items', []))} вакансий с {data.get('page', 0)} стр"
+            )
 
         return [self.get_vacancy(item.get("id")) for item in data.get("items", [])]
 
-    def get_all_vacancies_data(self, search_text: str = "NAME:Backend", area: int = 113) -> list[Vacancy]:
+    def get_all_vacancies_data(
+        self, search_text: str = "NAME:Backend", area: int = 113
+    ) -> list[Vacancy]:
         """Получение всех вакансий (с подробностями)
 
         Args:
@@ -95,7 +100,9 @@ class HHParser:
                 code_ = "86"
             elif int(region["id"]) == 1475:  # Республика Северная Осетия-Алания
                 code_ = "15"
-            if not len(region["areas"]):  # На случай, если у региона нет городов (Москва, например)
+            if not len(
+                region["areas"]
+            ):  # На случай, если у региона нет городов (Москва, например)
                 region["areas"].append({"id": region["id"], "name": region["name"]})
             for city in region["areas"]:
                 output_areas.append(

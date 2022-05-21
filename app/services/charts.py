@@ -20,9 +20,12 @@ def median(lst: list):
 def get_skills_demand(limit: int) -> list[SkillsDemand]:
     """Получение соотнесённых навыков с их частотой упоминания"""
     data = get_all_skills()
-    only_skills = sum([skills["key_skills"] for skills in data], [])
-    s_skills = sorted(Counter(only_skills).items(), key=lambda x: x[1], reverse=True)[:limit]
-    return [SkillsDemand.parse_obj({"value": skill[1], "name": skill[0]}) for skill in s_skills]
+    only_skills = Counter(sum([skills["key_skills"] for skills in data], [])).items()
+    s_skills = sorted(only_skills, key=lambda x: x[1], reverse=True)[:limit]
+    return [
+        SkillsDemand.parse_obj({"value": skill[1], "name": skill[0]})
+        for skill in s_skills
+    ]
 
 
 def get_skills_salary(limit: int) -> SkillsSalary:
@@ -38,7 +41,9 @@ def get_skills_salary(limit: int) -> SkillsSalary:
         salaries.append(salary)
     x = zip(len_skills[:limit], salaries[:limit])
     xs = sorted(x, key=lambda i: i[1], reverse=True)
-    return SkillsSalary.parse_obj({"len_skills": [x[0] for x in xs], "salary": [x[1] for x in xs]})
+    return SkillsSalary.parse_obj(
+        {"len_skills": [x[0] for x in xs], "salary": [x[1] for x in xs]}
+    )
 
 
 def preview_information() -> PreviewInfo:
@@ -49,8 +54,12 @@ def preview_information() -> PreviewInfo:
     return PreviewInfo.parse_obj(
         {
             "average_salary": median([vacancy.salary for vacancy in vacancies]),
-            "average_exp": Counter([vacancy.experience for vacancy in vacancies]).most_common(1)[0][0],
-            "average_skills_names": " & ".join([skill[0] for skill in Counter(only_skills).most_common(2)]),
+            "average_exp": Counter(
+                [vacancy.experience for vacancy in vacancies]
+            ).most_common(1)[0][0],
+            "average_skills_names": " & ".join(
+                [skill[0] for skill in Counter(only_skills).most_common(2)]
+            ),
             "average_skills_len": average(
                 [len(vacancy.key_skills) for vacancy in vacancies if vacancy.key_skills]
             ),
@@ -67,7 +76,9 @@ def get_experience_salary() -> ExperienceSalary:
         average_exp_salary_data[exp] = [*old_salary, salary]
     for exp, salaries in average_exp_salary_data.items():
         average_exp_salary_data[exp] = median(salaries)
-    average_exp_salary_data = dict(sorted(average_exp_salary_data.items(), key=lambda item: item[1]))
+    average_exp_salary_data = dict(
+        sorted(average_exp_salary_data.items(), key=lambda item: item[1])
+    )
     return ExperienceSalary.parse_obj(
         {
             "exp_names": [exp for exp, _ in average_exp_salary_data.items()],

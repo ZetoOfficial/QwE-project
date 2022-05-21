@@ -1,12 +1,12 @@
 from typing import Optional
 
-from settings import getLogger
 from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models import Area as AreaORM
 from app.models import Vacancy as VacancyORM
 from app.schemas import Area, Filter, Vacancy
+from settings import getLogger
 
 logger = getLogger(__name__)
 
@@ -93,7 +93,9 @@ def create_vacancy(vacancy: Vacancy, db: Session = get_db()) -> Vacancy:
             salary=salary,
             experience=vacancy.experience.name,
             description=vacancy.description,
-            key_skills=[skill.name for skill in vacancy.key_skills] if vacancy.key_skills else None,
+            key_skills=[skill.name for skill in vacancy.key_skills]
+            if vacancy.key_skills
+            else None,
             alternate_url=vacancy.alternate_url,
         )
         db.add(db_vacancy)
