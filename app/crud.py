@@ -1,5 +1,3 @@
-from typing import Optional
-
 from sqlalchemy.orm import Session
 
 from app.database import get_db
@@ -41,6 +39,10 @@ def get_vacancies(
     return vacancies.all()
 
 
+def get_all_areas(db: Session = get_db()):
+    return db.query(AreaORM).all()
+
+
 def get_vacancies_for_areas(db: Session = get_db()):
     """Получение регионов с их кодами РФ от вакансий"""
     return (
@@ -74,7 +76,7 @@ def get_all_skills(limit: int = 0, db: Session = get_db()):
     return skills.all()
 
 
-def get_vacancy_by_id(vacancy_id: int, db: Session = get_db()) -> Optional[Vacancy]:
+def get_vacancy_by_id(vacancy_id: int, db: Session = get_db()) -> Vacancy:
     """Получение вакансии по идентификатору"""
     return db.query(VacancyORM).filter(VacancyORM.id == vacancy_id).first()
 
@@ -83,14 +85,11 @@ def create_vacancy(vacancy: Vacancy, db: Session = get_db()) -> Vacancy:
     """Создание вакансии"""
     db_vacancy = get_vacancy_by_id(vacancy.id)
     if not db_vacancy:
-        if salary := vacancy.salary:
-            num = (salary.start or 0) + (salary.to or 0)
-            salary = num if (vacancy.salary.currency == "RUR") else num * 60
         db_vacancy = VacancyORM(
             id=vacancy.id,
             name=vacancy.name,
             area=vacancy.area.name,
-            salary=salary,
+            salary=vacancy.salary.total if vacancy.salary else None,
             experience=vacancy.experience.name,
             description=vacancy.description,
             key_skills=[skill.name for skill in vacancy.key_skills]
@@ -125,7 +124,7 @@ def get_areas_by_code(code: str, db: Session = get_db()) -> list[Area]:
     return db.query(AreaORM).filter(AreaORM.code == code).all()
 
 
-def update_vacancy(vacancy: Vacancy, db: Session = get_db()) -> Optional[Vacancy]:
+def update_vacancy(vacancy: Vacancy, db: Session = get_db()) -> Vacancy:
     """Обновление существующей вакансии"""
     db_vacancy = get_vacancy_by_id(vacancy_id=vacancy.id)
     if db_vacancy:

@@ -19,6 +19,7 @@ class Salary(BaseModel):
     to: Optional[int] = 0
     currency: str
     gross: bool
+    total: Optional[int] = None
 
 
 class Skill(BaseModel):
@@ -80,7 +81,6 @@ class City(BaseModel):
 class AreaVacancy(BaseModel):
     city: City
     cnt: int
-    color: str
 
     class Config:
         orm_mode = True

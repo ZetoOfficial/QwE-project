@@ -27,7 +27,10 @@ class RegionParser(BasicParser):
         )
         html = fromstring(page)
         city_codes = {}
-        for tr in html.xpath('//*[@id="mw-content-text"]/div[1]/table/tbody/tr'):
+        regions = html.xpath('//*[@id="mw-content-text"]/div[1]/table/tbody/tr')
+        for tr in regions:
+            if len(tr) != 5:
+                continue
             name = tr[0].text_content().strip().lower()
             codes = tr[1].text_content().strip().split(",")
             code = [re.split(r"\D+", code.strip())[0] for code in codes][0]

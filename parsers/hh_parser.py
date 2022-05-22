@@ -1,11 +1,11 @@
-from json import loads
+import json
+from typing import Optional
 
-from requests import get as r_get
+import requests
 
-from app.crud import create_area, create_vacancy, get_vacancy_by_id
-from app.schemas import Area, Vacancies, Vacancy
+from app.crud import create_area, create_vacancy, get_vacancy_by_id, update_vacancy
+from app.schemas import Area, Salary, Vacancy
 from settings import getLogger
-from settings import settings as s
 
 from .regions_parser import RegionParser
 
@@ -13,8 +13,32 @@ logger = getLogger(__name__)
 
 
 class HHParser:
-    _api_url: str = s.app.hh_api_url
-    _per_page: int = 100
+    _api_url: str
+    _per_page: int
+    _dictionaries: dict
+
+    def __init__(self, url: str, per_page: int):
+        self._api_url = url
+        self._per_page = per_page
+        self._dictionaries = self.get_dictionaries()
+
+    def get_dictionaries(self) -> dict:
+        return requests.get(f"{self._api_url}/dictionaries").json()
+
+    def get_currency_info(self, code: str) -> dict:
+        return next(
+            curr for curr in self._dictionaries["currency"] if curr["code"] == code
+        )
+
+    def convert_salary(self, salary: Salary) -> Optional[int]:
+        if salary is None or salary.start is None and salary.to is None:
+            return None
+        if salary.start and salary.to:
+            total = (salary.start + salary.to) // 2
+        else:
+            total = (salary.start or 0) + (salary.to or 0)
+        currency = self.get_currency_info(salary.currency)
+        return int(total / currency["rate"])
 
     def get_vacancy(self, id: int) -> Vacancy:
         """Получение подробной информации о вакансии по идентификатору
@@ -26,11 +50,13 @@ class HHParser:
             Vacancy: Вакансия
         """
         logger.debug(f"Получение вакансии: {id}")
-        print(f"{self._api_url}/vacancies/{id}")
-        with r_get(f"{self._api_url}/vacancies/{id}") as req:
-            if not (vacancy := get_vacancy_by_id(id)):
-                vacancy = Vacancy.parse_obj(loads(req.content.decode()))
-            logger.debug(f"Вакансия получена: {vacancy.name}")
+        if vacancy := get_vacancy_by_id(id):
+            return vacancy
+        with requests.get(f"{self._api_url}/vacancies/{id}") as req:
+            vacancy = Vacancy.parse_obj(json.loads(req.content.decode()))
+            if vacancy.salary:
+                vacancy.salary.total = self.convert_salary(vacancy.salary)
+            logger.debug(f"Получена новая вакансия: {vacancy.name}")
             return create_vacancy(vacancy)
 
     def get_page(self, params: dict = {}) -> list[Vacancy]:
@@ -42,8 +68,8 @@ class HHParser:
         Returns:
             list[Vacancy]: Список вакансий с подробной информацией
         """
-        with r_get(f"{self._api_url}/vacancies", params) as req:
-            data = loads(req.content.decode())
+        with requests.get(f"{self._api_url}/vacancies", params) as req:
+            data = json.loads(req.content.decode())
             logger.info(
                 f"Получено {len(data.get('items', []))} вакансий с {data.get('page', 0)} стр"
             )
@@ -64,18 +90,18 @@ class HHParser:
         """
         params = {
             "text": search_text,
-            "only_with_salary": True,
             "area": area,
             "page": 0,
             "per_page": self._per_page,
         }
-        logger.debug("Инициализация запроса")
-        with r_get(f"{self._api_url}/vacancies", params) as req:
-            first_page = loads(req.content.decode())
+        logger.info("Инициализация запроса")
+        with requests.get(f"{self._api_url}/vacancies", params) as req:
+            first_page = json.loads(req.content.decode())
         all_pages = []
         for page in range(0, first_page.get("pages", 1)):
             params["page"] = page
             all_pages += self.get_page(params)
+            logger.info(f"Собрано {len(all_pages)} из {first_page['found']}")
         return all_pages
 
     def save_and_get_areas(self, parent_area: int = 113) -> list[Area]:
@@ -87,8 +113,8 @@ class HHParser:
         Returns:
             list[Area]: Список полученных Areas (код, регион, город)
         """
-        with r_get(f"{self._api_url}/areas/{parent_area}/") as req:
-            data = loads(req.content.decode()).get("areas", [])
+        with requests.get(f"{self._api_url}/areas/{parent_area}/") as req:
+            data = json.loads(req.content.decode()).get("areas", [])
         reg_parser = RegionParser()
         city_codes = reg_parser.get_city_codes()
         output_areas = []
