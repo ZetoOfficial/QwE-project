@@ -14,7 +14,7 @@ def median(lst: list):
     index = n // 2
     if n % 2:
         return sorted(lst)[index]
-    return sum(sorted(lst)[index - 1 : index + 1]) / 2
+    return sorted(lst)[index - 1 : index + 1][0]
 
 
 def get_skills_demand(limit: int) -> list[SkillsDemand]:
