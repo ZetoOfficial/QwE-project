@@ -81,6 +81,7 @@ class City(BaseModel):
 class AreaVacancy(BaseModel):
     city: City
     cnt: int
+    color: str
 
     class Config:
         orm_mode = True
