@@ -11,14 +11,13 @@ basicConfig(
     format="[%(asctime)s] [%(levelname)s] [%(name)s] [%(funcName)s():%(lineno)s] %(message)s",
     handlers=[FileHandler(LOGFILE_FILE), StreamHandler()],
 )
-with open(CONFIG_FILE, "r") as f:
-    cfg = load(f, SafeLoader)
 
 
 class App(BaseModel):
     hh_api_url: str
     cache_folder: str
     media_folder: str
+    env: str
 
 
 class Postgres(BaseModel):
@@ -34,4 +33,5 @@ class Settings(BaseSettings):
     postgres: Postgres
 
 
-settings = Settings.parse_obj(cfg)
+with open(CONFIG_FILE, "r") as f:
+    settings = Settings.parse_obj(load(f, SafeLoader))
