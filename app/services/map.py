@@ -8,21 +8,21 @@ def get_color(count: int) -> str:
     """Получение цвета на основе числа"""
     match count:
         case c if c in range(3):
-            return "#D3D3D3"
+            return "#d5d8f2"
         case c if c in range(6):
-            return "#BEBEBE"
+            return "#959bd0"
         case c if c in range(11):
-            return "#A0A0A0"
+            return "#aaaed3"
         case c if c in range(20):
-            return "#888888"
+            return "#979ac6"
         case c if c in range(30):
-            return "#686868"
+            return "#6f739a"
         case c if c in range(50):
-            return "#585858"
+            return "#4c5285"
         case c if c in range(75):
-            return "#484848"
+            return "#393f7a"
         case _:
-            return "#202020"
+            return "#2c326a"
 
 
 def coloraise() -> list[AreaVacancy]:

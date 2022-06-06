@@ -77,6 +77,4 @@ def get_download_data(filename: str = "Вакансии", file_format: str = ".c
             path = downloader.download_as_xlsx()
         case _:
             raise HTTPException(status_code=400, detail="Invalid file_format type")
-    return FileResponse(
-        path, media_type="application/octet-stream", filename=f"{filename}{file_format}"
-    )
+    return FileResponse(path, media_type="application/octet-stream", filename=f"{filename}{file_format}")
