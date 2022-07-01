@@ -1,5 +1,7 @@
 app:
-  cache_folder: "cache"
+  cache_folder: "/home/beffin/Projects/QwE-project/cache"
+  origins:
+    - "*"
 postgres:
   user: postgres
   password: postgres

@@ -1,8 +1,8 @@
-from logging import DEBUG, INFO, FileHandler, StreamHandler, basicConfig, getLogger
+from logging import DEBUG, FileHandler, StreamHandler, basicConfig, getLogger
 from pathlib import Path
 
 from pydantic import BaseModel, BaseSettings
-from yaml import SafeLoader, load
+from yaml import safe_load
 
 CONFIG_FILE = str(Path(__file__).parent.absolute()) + "/settings.yaml"
 LOGFILE_FILE = str(Path(__file__).parent.absolute()) + "/qwe.log"
@@ -11,12 +11,11 @@ basicConfig(
     format="[%(asctime)s] [%(levelname)s] [%(name)s] [%(funcName)s():%(lineno)s] %(message)s",
     handlers=[FileHandler(LOGFILE_FILE), StreamHandler()],
 )
-with open(CONFIG_FILE, "r") as f:
-    cfg = load(f, SafeLoader)
 
 
 class App(BaseModel):
     cache_folder: str
+    origins: list[str]
 
 
 class Postgres(BaseModel):
@@ -32,4 +31,8 @@ class Settings(BaseSettings):
     postgres: Postgres
 
 
-settings = Settings.parse_obj(cfg)
+def load_settings(path: Path | str = CONFIG_FILE) -> Settings:
+    if isinstance(path, str):
+        path = Path(path)
+    with path.open() as f:
+        return Settings.parse_obj(safe_load(f))
