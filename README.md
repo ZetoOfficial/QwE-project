@@ -1,6 +1,9 @@
-# Сервис для выгрузки и анализа вакансий с hh ru api
+# Test service for uploading vacancies from api.hh.ru
+A small project work for the university.<br>
+The service collects data on vacancies of backend developers in Russia, then aggregates and returns the data for the frontend.<br>
+The project was created to analyze the demand for backend developers in Russia.<br>
 
-## Стек
+## Technology
 
 - `python3.10`
 - `SQLAlchemy`
@@ -9,25 +12,15 @@
 - `pydantic`
 - `alembic`
 
-## Установка
+## Config
 
-### Настройка virtualenv
+Copy the `settings.yaml.copy` file to `settings.yaml`
 
-```Bash
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-### Настройка
-
-В файле `settings.yaml.copy` лежит пример конфига сервиса.
-
-- Секция `app`: настройки парсера (hh api url)
-- Секция `postgres`: настройки базы данных (пользователь, пароль, бд, хост, порт)
-
-### Запуск
-
-```Bash
-uvicorn app.service:app
-```
+- Section `app`:
+- - `cache_folder` - Cache folder for parselib
+- Section `postgres`:
+- - `user` - Database user
+- - `password` - Database password
+- - `database` - Database name
+- - `host` -  Postgres host
+- - `port` -  Postgres port
