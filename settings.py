@@ -16,6 +16,7 @@ basicConfig(
 class App(BaseModel):
     cache_folder: str
     endpoint: str
+    environment: str
     origins: list[str]
 
 
