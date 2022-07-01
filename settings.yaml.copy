@@ -1,5 +1,6 @@
 app:
   cache_folder: "/home/beffin/Projects/QwE-project/cache"
+  endpoint: '/api'
   origins:
     - "*"
 postgres:
