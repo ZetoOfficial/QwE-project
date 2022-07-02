@@ -14,6 +14,7 @@ basicConfig(
 
 
 class App(BaseModel):
+    media_folder: str
     cache_folder: str
     endpoint: str
     environment: str

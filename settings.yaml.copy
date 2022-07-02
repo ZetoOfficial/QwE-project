@@ -1,6 +1,7 @@
 app:
-  cache_folder: "/home/beffin/Projects/QwE-project/cache"
-  endpoint: '/api'
+  media_folder: ""
+  cache_folder: ""
+  endpoint: "/api"
   environment: dev
   origins:
     - "*"
