@@ -155,5 +155,8 @@ cython_debug/
 # PyCharm
 .idea/
 
+# VsCode
+.vscode
+
 # Config
 settings.yaml
