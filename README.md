@@ -18,6 +18,10 @@ Copy the `settings.yaml.copy` file to `settings.yaml`
 
 - Section `app`:
 - - `cache_folder` - Cache folder for parselib
+- - `media_folder` - Media folder for save reports
+- - `endpoint`: - Api endpoint
+- - `environment`: - Environment
+- - `origins`: Origins
 - Section `postgres`:
 - - `user` - Database user
 - - `password` - Database password
