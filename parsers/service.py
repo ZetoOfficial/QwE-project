@@ -6,7 +6,7 @@ from .hh_parser import HHParser
 def run_vacancies_parser():
     """Парсит вакансии с hh.ru"""
     hh = HHParser(s.app.hh_api_url, 100)
-    hh.get_all_vacancies_data()
+    hh.load_all_vacancies()
 
 
 def run_regions_parser():
