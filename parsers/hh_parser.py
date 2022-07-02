@@ -3,8 +3,8 @@ from typing import Optional
 
 import requests
 
-from app.crud import create_area, create_vacancy, get_vacancy_by_id, update_vacancy
-from app.schemas import Area, Salary, Vacancy
+from app.schemas import Area, AreaInput, Vacancy, VacancyInput
+from app.services import AreaService, VacancyService
 from settings import getLogger
 
 from .regions_parser import RegionParser
@@ -13,12 +13,11 @@ logger = getLogger(__name__)
 
 
 class HHParser:
-    _api_url: str
+    _api_url: str = "https://api.hh.ru"
     _per_page: int
     _dictionaries: dict
 
-    def __init__(self, url: str, per_page: int):
-        self._api_url = url
+    def __init__(self, per_page: int):
         self._per_page = per_page
         self._dictionaries = self.get_dictionaries()
 
@@ -26,21 +25,19 @@ class HHParser:
         return requests.get(f"{self._api_url}/dictionaries").json()
 
     def get_currency_info(self, code: str) -> dict:
-        return next(
-            curr for curr in self._dictionaries["currency"] if curr["code"] == code
-        )
+        return next(curr for curr in self._dictionaries["currency"] if curr["code"] == code)
 
-    def convert_salary(self, salary: Salary) -> Optional[int]:
-        if salary is None or salary.start is None and salary.to is None:
-            return None
-        if salary.start and salary.to:
-            total = (salary.start + salary.to) // 2
+    def convert_salary(self, salary: dict) -> Optional[int]:
+        if salary is None or salary["from"] is None and salary["to"] is None:
+            return
+        if salary["from"] and salary["to"]:
+            total = (salary["from"] + salary["to"]) // 2
         else:
-            total = (salary.start or 0) + (salary.to or 0)
-        currency = self.get_currency_info(salary.currency)
+            total = (salary["from"] or 0) + (salary["to"] or 0)
+        currency = self.get_currency_info(salary["currency"])
         return int(total / currency["rate"])
 
-    def get_vacancy(self, id: int) -> Vacancy:
+    async def get_vacancy(self, id: int) -> Vacancy:
         """Получение подробной информации о вакансии по идентификатору
 
         Args:
@@ -49,17 +46,29 @@ class HHParser:
         Returns:
             Vacancy: Вакансия
         """
-        logger.debug(f"Получение вакансии: {id}")
-        if vacancy := get_vacancy_by_id(id):
-            return vacancy
+        vacancy = await VacancyService.get_vacancies_by_ids([id])
+        if vacancy:
+            return vacancy[0]
         with requests.get(f"{self._api_url}/vacancies/{id}") as req:
-            vacancy = Vacancy.parse_obj(json.loads(req.content.decode()))
-            if vacancy.salary:
-                vacancy.salary.total = self.convert_salary(vacancy.salary)
-            logger.debug(f"Получена новая вакансия: {vacancy.name}")
-            return create_vacancy(vacancy)
+            vacancy = json.loads(req.content.decode())
+            salary = None
+            if vacancy["salary"]:
+                vacancy["salary"]["total"] = self.convert_salary(vacancy["salary"])
+                salary = vacancy["salary"]["total"]
+            logger.debug(f"get new vacancy: ({id}) {vacancy['name']}")
+            input = VacancyInput(
+                name=vacancy["name"],
+                area=vacancy["area"]["name"],
+                salary=salary,
+                experience=vacancy["experience"]["name"],
+                description=vacancy["description"],
+                key_skills=[_["name"] for _ in vacancy["key_skills"]],
+                published_at=vacancy["published_at"],
+                alternate_url=vacancy["alternate_url"],
+            )
+            return await VacancyService.create_vacancy(input)
 
-    def get_page(self, params: dict = {}) -> list[Vacancy]:
+    async def get_page(self, params: dict = {}) -> list[Vacancy]:
         """Получение подробных вакансий со страницы
 
         Args:
@@ -70,19 +79,14 @@ class HHParser:
         """
         with requests.get(f"{self._api_url}/vacancies", params) as req:
             data = json.loads(req.content.decode())
-            logger.info(
-                f"Получено {len(data.get('items', []))} вакансий с {data.get('page', 0)} стр"
-            )
+            logger.info(f"Получено {len(data.get('items', []))} вакансий с {data.get('page', 0)} стр")
+        return [(await self.get_vacancy(int(item.get("id")))) for item in data.get("items", [])]
 
-        return [self.get_vacancy(item.get("id")) for item in data.get("items", [])]
-
-    def get_all_vacancies_data(
-        self, search_text: str = "NAME:Backend", area: int = 113
-    ) -> list[Vacancy]:
+    async def load_all_vacancies(self, search_text: str = "NAME:Backend", area: int = 113) -> list[Vacancy]:
         """Получение всех вакансий (с подробностями)
 
         Args:
-            search_text (_type_, optional): Название вакансий. По умолчанию "NAME:Backend".
+            search_text (str, optional): Название вакансий. По умолчанию "NAME:Backend".
             area (int, optional): Регион поиска. По умолчанию 113 (Россия).
 
         Returns:
@@ -100,11 +104,11 @@ class HHParser:
         all_pages = []
         for page in range(0, first_page.get("pages", 1)):
             params["page"] = page
-            all_pages += self.get_page(params)
+            all_pages += await self.get_page(params)
             logger.info(f"Собрано {len(all_pages)} из {first_page['found']}")
         return all_pages
 
-    def save_and_get_areas(self, parent_area: int = 113) -> list[Area]:
+    async def save_and_get_areas(self, parent_area: int = 113) -> list[Area]:
         """Сохранение (в бд) и получение Areas (код, регион, город)
 
         Args:
@@ -126,21 +130,21 @@ class HHParser:
                 code_ = "86"
             elif int(region["id"]) == 1475:  # Республика Северная Осетия-Алания
                 code_ = "15"
-            if not len(
-                region["areas"]
-            ):  # На случай, если у региона нет городов (Москва, например)
+            if not len(region["areas"]):  # На случай, если у региона нет городов (Москва, например)
                 region["areas"].append({"id": region["id"], "name": region["name"]})
             for city in region["areas"]:
                 output_areas.append(
-                    create_area(
-                        Area(
-                            id=int(city["id"]),
-                            city=city["name"],
-                            code=city_codes.get(rs1)
-                            or city_codes.get(rs2)
-                            or city_codes.get(city["name"])
-                            or code_,
-                            region=region["name"],
+                    (
+                        await AreaService.create_area(
+                            Area(
+                                id=int(city["id"]),
+                                city=city["name"],
+                                code=city_codes.get(rs1)
+                                or city_codes.get(rs2)
+                                or city_codes.get(city["name"])
+                                or code_,
+                                region=region["name"],
+                            )
                         )
                     )
                 )

@@ -1,5 +1,14 @@
-from parsers.service import run_regions_parser, run_vacancies_parser
+import asyncio
+
+from parsers import HHParser
+
+
+async def main():
+    parser = HHParser(per_page=100)
+    await parser.save_and_get_areas()
+    await parser.load_all_vacancies()
+
 
 if __name__ == "__main__":
-    run_vacancies_parser()
-    # run_regions_parser()
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main())

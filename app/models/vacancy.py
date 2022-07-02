@@ -1,6 +1,6 @@
-from sqlalchemy import ARRAY, Column, Integer, String
+from sqlalchemy import ARRAY, Boolean, Column, Date, Integer, String
 
-from app.database import Base
+from .base import Base
 
 
 class Vacancy(Base):
@@ -13,13 +13,6 @@ class Vacancy(Base):
     experience = Column(String)
     description = Column(String)
     key_skills = Column(ARRAY(String))
+    published_at = Column(Date)
+    archive = Column(Boolean, default=False)
     alternate_url = Column(String)
-
-
-class Area(Base):
-    __tablename__ = "area"
-
-    id = Column(Integer, primary_key=True)
-    code = Column(String)
-    region = Column(String)
-    city = Column(String)

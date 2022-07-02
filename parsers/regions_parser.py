@@ -5,10 +5,10 @@ from parselab.cache import FileCache
 from parselab.network import NetworkManager
 from parselab.parsing import BasicParser
 
-from settings import getLogger
-from settings import settings as s
+from settings import getLogger, load_settings
 
 logger = getLogger(__name__)
+s = load_settings()
 
 
 class RegionParser(BasicParser):
@@ -22,9 +22,7 @@ class RegionParser(BasicParser):
         Returns:
             dict: {субъект: код,}
         """
-        page = self.get_page(
-            "https://ru.wikipedia.org/wiki/Коды_субъектов_Российской_Федерации"
-        )
+        page = self.get_page("https://ru.wikipedia.org/wiki/Коды_субъектов_Российской_Федерации")
         html = fromstring(page)
         city_codes = {}
         regions = html.xpath('//*[@id="mw-content-text"]/div[1]/table/tbody/tr')
