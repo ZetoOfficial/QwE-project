@@ -54,7 +54,7 @@ class ChartService:
 
     @staticmethod
     async def get_preview_info() -> PreviewInfo:
-        vacancies = await CRUDVacancy.get_all_vacancies(0, 0)
+        vacancies = await CRUDVacancy.get_all_vacancies()
         skills = await CRUDChart.get_all_skills()
         only_skills = sum([_["key_skills"] for _ in skills], [])
         return PreviewInfo.parse_obj(

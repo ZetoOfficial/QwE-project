@@ -1,12 +1,7 @@
 from collections import Counter
 from typing import Dict
 
-from sqlalchemy import delete, select, update
-from sqlalchemy.ext.asyncio import AsyncSession
-
-from app.cruds import CRUDArea, CRUDVacancy
-from app.database import SessionLocal
-from app.models import Area as ORMArea
+from app.cruds import CRUDArea
 from app.schemas import Area, AreaInput
 from app.utils import int_to_color
 
@@ -17,7 +12,7 @@ class AreaService:
         return await CRUDArea.create_area(input)
 
     @staticmethod
-    async def get_all_areas(limit: int, offset: int) -> list[Area]:
+    async def get_all_areas(limit: int = -1, offset: int = 0) -> list[Area]:
         return await CRUDArea.get_all_areas(limit, offset)
 
     @staticmethod
@@ -34,7 +29,7 @@ class AreaService:
 
     @staticmethod
     async def get_areas_with_vacancy_count() -> list[Dict]:
-        areas = await CRUDArea.get_all_areas(0, 0)
+        areas = await CRUDArea.get_all_areas()
         instead_areas = await CRUDArea.get_area_instead_of_vacancies()
         default_color = int_to_color(0)
         all_vacancies_area = Counter(instead_areas).items()

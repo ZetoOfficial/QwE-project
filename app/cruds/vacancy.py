@@ -18,15 +18,14 @@ class CRUDVacancy:
         return orm_obj
 
     @staticmethod
-    async def get_all_vacancies(limit: int, offset: int) -> list[Vacancy]:
+    async def get_all_vacancies(limit: int = -1, offset: int = 0) -> list[Vacancy]:
         async with SessionLocal() as s:
             s: AsyncSession
             async with s.begin():
                 query = select(ORMVacancy)
-                if limit:
+                if limit >= 0:
                     query = query.limit(limit)
-                if offset:
-                    query = query.offset(offset)
+                query = query.offset(offset)
                 result = await s.execute(query)
         return result.scalars().all()
 

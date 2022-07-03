@@ -19,15 +19,14 @@ class CRUDArea:
         return orm_obj
 
     @staticmethod
-    async def get_all_areas(limit: int, offset: int) -> list[Area]:
+    async def get_all_areas(limit: int = -1, offset: int = 0) -> list[Area]:
         async with SessionLocal() as s:
             s: AsyncSession
             async with s.begin():
                 query = select(ORMArea)
-                if limit:
+                if limit >= 0:
                     query = query.limit(limit)
-                if offset:
-                    query = query.offset(offset)
+                query = query.offset(offset)
                 result = await s.execute(query)
         return result.scalars().all()
 

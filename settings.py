@@ -1,7 +1,7 @@
 from logging import DEBUG, FileHandler, StreamHandler, basicConfig, getLogger
 from pathlib import Path
 
-from pydantic import BaseModel, BaseSettings
+from pydantic import AnyHttpUrl, BaseModel, BaseSettings
 from yaml import safe_load
 
 CONFIG_FILE = str(Path(__file__).parent.absolute()) + "/settings.yaml"
@@ -16,6 +16,7 @@ basicConfig(
 class App(BaseModel):
     media_folder: str
     cache_folder: str
+    service_host: AnyHttpUrl
     endpoint: str
     environment: str
     origins: list[str]
